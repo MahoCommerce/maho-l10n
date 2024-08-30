@@ -4,3 +4,7 @@ files:
     scheme: 'source_phrase,translation'
   - source: /en_US/template/email/*.html
     translation: /%locale_with_underscore%/template/email/%original_file_name%
+  - source: /en_US/template/email/html/*.html
+    translation: /%locale_with_underscore%/template/email/html/%original_file_name%
+  - source: /en_US/template/email/sales/*.html
+    translation: /%locale_with_underscore%/template/email/sales/%original_file_name%
