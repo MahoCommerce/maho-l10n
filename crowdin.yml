@@ -1,6 +1,6 @@
 files:
-  - source: /app/locale/en_US/*.csv
-    translation: /app/locale/%locale_with_underscore%/%original_file_name%
+  - source: /en_US/*.csv
+    translation: /%locale_with_underscore%/%original_file_name%
     scheme: 'source_phrase,translation'
-  - source: /app/locale/en_US/template/email/*.html
-    translation: /app/locale/%locale_with_underscore%/template/email/%original_file_name%
+  - source: /en_US/template/email/*.html
+    translation: /%locale_with_underscore%/template/email/%original_file_name%
