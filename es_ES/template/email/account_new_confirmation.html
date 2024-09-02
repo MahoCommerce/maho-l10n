@@ -14,7 +14,7 @@
 @-->
 
 {{template config_path="design/email/header"}}
-{{inlinecss file="email-inline.css"}}
+{{inlinecss file="email-inline.cs"}}
 
 <table cellpadding="0" cellspacing="0" border="0">
     <tr>
@@ -23,24 +23,24 @@
                 <tr>
                     <td class="action-content">
                         <h1>{{htmlescape var=$customer.name}},</h1>
-                        <p>Your email {{var customer.email}} must be confirmed before using it to log in to our store.</p>
+                        <p>Tu correo electrónico {{var customer.email}} debe ser confirmado antes de usarlo para iniciar sesión en nuestra tienda.</p>
                         <p class="highlighted-text">
-                            Use the following values when prompted to log in:<br/>
-                            <strong>Email:</strong> {{var customer.email}}<br/>
-                            <strong>Password</strong>: (the password you set when creating your account)
+                            Usa los siguientes valores cuando se te pida para iniciar sesión:<br/>
+                            <strong>Correo electrónico:</strong> {{var customer.email}}<br/>
+                            <strong>Contraseña</strong>: (la contraseña que estableces al crear tu cuenta)
                         </p>
-                        <p>Click here to confirm your email and instantly log in (the link is valid only once):</p>
+                        <p>Haga clic aquí para confirmar su correo electrónico e iniciar sesión al instante (el enlace es válido sólo una vez):</p>
                         <table cellspacing="0" cellpadding="0" class="action-button" >
                             <tr>
                                 <td>
-                                    <a href="{{store url=&quot;customer/account/confirm/&quot; _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}"><span>Confirm Account</span></a>
+                                    <a href="{{store url=&quot;customer/account/confirm/&quot; _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}"><span>Confirmar cuenta</span></a>
                                 </td>
                             </tr>
                         </table>
                         <p>
-                            If you have any questions, please feel free to contact us at
+                            Si tienes alguna pregunta, no dude en ponerse en contacto con nosotros en
                             <a href="mailto:{{var store_email}}">{{var store_email}}</a>
-                            {{depend store_phone}} or by phone at <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
+                            {{depend store_phone}} o por teléfono en <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
                         </p>
                     </td>
                 </tr>
