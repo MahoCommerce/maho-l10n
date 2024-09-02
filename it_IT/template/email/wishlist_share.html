@@ -10,7 +10,7 @@
 @-->
 
 {{template config_path="design/email/header"}}
-{{inlinecss file="email-inline.css"}}
+{{inlinecss file="email-inline.cs"}}
 
 <table cellpadding="0" cellspacing="0" border="0">
     <tr>
@@ -18,7 +18,7 @@
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td class="action-content">
-                        <h1>Hey, take a look at my wishlist from {{var store.getFrontendName()}}.</h1>
+                        <h1>Ehi, dai un'occhiata alla mia lista dei desideri di {{var store.getFrontendName()}}.</h1>
                         <table cellspacing="0" cellpadding="0" class="message-container">
                             <tr>
                                 <td>{{var message}}</td>
@@ -26,9 +26,9 @@
                         </table>
                         {{var items}}
                         {{depend salable}}
-                        <p><strong><a href="{{var addAllLink}}">Add all items to shopping cart</a></strong> |
+                        <p><strong><a href="{{var addAllLink}}">Aggiungi tutti gli articoli al carrello</a></strong> <unk>
                         {{/depend}}
-                        <strong><a href="{{var viewOnSiteLink}}">View all wishlist items</a></strong></p>
+                        <strong><a href="{{var viewOnSiteLink}}">Visualizza tutti gli articoli della lista dei desideri</a></strong></p>
                     </td>
                 </tr>
             </table>
