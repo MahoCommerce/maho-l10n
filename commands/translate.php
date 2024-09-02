@@ -13,7 +13,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class Translate extends Command
 {
     const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
-    const GROQ_MODEL = 'llama-3.1-70b-versatile';
+    const GROQ_MODEL = 'llama3-70b-8192';
     const MAGENTO2_BASE_URL = 'https://raw.githubusercontent.com/magento-l10n/language-{locale}/master/{locale}.csv';
     const OPENMAGE_BASE_URL = 'https://raw.githubusercontent.com/luigifab/openmage-translations/main/locales/{locale}/{filename}';
     const SOURCE_DIRECTORY = './en_US/';
@@ -34,6 +34,18 @@ class Translate extends Command
         $this->locale = $input->getArgument('locale');
         $apiKey = $input->getArgument('api-key');
         $targetDirectory = "./{$this->locale}/";
+
+        $a = $this->translateContent("File MIME Type", $apiKey, $output);
+        $output->writeln($a);
+        $a = $this->translateContent("Automatically Return Credit Memo Item to Stock", $apiKey, $output);
+        $output->writeln($a);
+        $a = $this->translateContent("Gender is mandatory", $apiKey, $output);
+        $output->writeln($a);
+        $a = $this->translateContent("Options is mandatory", $apiKey, $output);
+        $output->writeln($a);
+        $a = $this->translateContent("Newsletter", $apiKey, $output);
+        $output->writeln($a);
+        die();
 
         if (!is_dir(self::SOURCE_DIRECTORY)) {
             $output->writeln("<error>Error: The source directory ./en_US does not exist.</error>");
@@ -205,20 +217,19 @@ class Translate extends Command
                     'model' => self::GROQ_MODEL,
                     'messages' => [
                         ['role' => 'system', 'content' => <<<EOF
-You are a translation assistant. Your task is to translate the given content to the specified locale.
-- Consider that the context is an ecommerce software/website. For example (in italian) "run" should be translated to "esegui", not "corri". Use this same logic for every language.
-- Think about the context (ecommerce website/software/platform) and make sure your translation makes sense in the context
-- Only output the translated content, nothing else, no comments or anything
-- Every time you see the word openmage or magento, translate it to Maho
-- Try not to translate specific terms like "url rewrites" or "layered navigation" or others that may sound weird in the target language 
-- Maintain the casing of the words if possible
-- Preserve any special characters or formatting in the original text
-- You have to translate every message you receive, whatever it means
+You are an expert in translations of ecommerce software platforms. Your task is to translate the given content to "{$this->locale}".
+- The context is an ecommerce software/website. For example (in italian) "run" should be translated to "esegui", not "corri". Use this same logic for every language.
+- Only output the translated content, nothing else, no comments or anything.
+- Every time you see the word openmage or magento, translate it to Maho.
+- Try not to translate specific terms like CMS, newsletter, "url rewrites", "layered navigation" or others that may sound weird in the target language.
+- Maintain the casing of the words if possible.
+- Preserve any special characters or formatting in the original text.
+- You have to translate every message you receive, whatever it means.
 EOF
                         ],
-                        ['role' => 'user', 'content' => "Translate the following content to {$this->locale}:\n\n\"$content\""]
+                        ['role' => 'user', 'content' => $content]
                     ],
-                    'temperature' => 0.5,
+                    'temperature' => 0,
                     'max_tokens' => 2000,
                 ];
 
