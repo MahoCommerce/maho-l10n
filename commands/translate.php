@@ -35,6 +35,7 @@ class Translate extends Command
         $apiKey = $input->getArgument('api-key');
         $targetDirectory = "./{$this->locale}/";
 
+        /* some tests to decide which model to use
         $a = $this->translateContent("File MIME Type", $apiKey, $output);
         $output->writeln($a);
         $a = $this->translateContent("Automatically Return Credit Memo Item to Stock", $apiKey, $output);
@@ -46,6 +47,7 @@ class Translate extends Command
         $a = $this->translateContent("Newsletter", $apiKey, $output);
         $output->writeln($a);
         die();
+        */
 
         if (!is_dir(self::SOURCE_DIRECTORY)) {
             $output->writeln("<error>Error: The source directory ./en_US does not exist.</error>");
