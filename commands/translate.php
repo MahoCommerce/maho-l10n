@@ -140,7 +140,7 @@ class Translate extends Command
                 $rowCount++;
 
                 if ($rowCount % 10 === 0) {
-                    $output->writeln("Processed " . $rowCount . " rows");
+                    $output->writeln("<info>Processed " . $rowCount . " rows</info>");
                 }
             } catch (\Exception $e) {
                 $output->writeln("<error>Error processing row: " . $e->getMessage() . "</error>");
@@ -163,12 +163,12 @@ class Translate extends Command
             // Check if translation exists in Magento 2 data
             if (isset($this->magento2Translations[$identifier])) {
                 $row[1] = $this->magento2Translations[$identifier];
-                $output->writeln("<info>Using Magento 2 translation for: $identifier</info>");
+                $output->writeln("Using Magento 2 for: $identifier");
             }
             // Check if translation exists in OpenMage data
             elseif (isset($this->openMageTranslations[$identifier])) {
                 $row[1] = $this->openMageTranslations[$identifier];
-                $output->writeln("<info>Using OpenMage translation for: $identifier</info>");
+                $output->writeln("Using OpenMage for: $identifier");
             }
             else {
                 $translatedContent = $this->translateContent($content, $apiKey, $output);
@@ -188,7 +188,7 @@ class Translate extends Command
 
     private function translateContent($content, $apiKey, OutputInterface $output): string
     {
-        $output->writeln("<info>Using AI translation for: $content</info>");
+        $output->writeln("Using AI for: $content");
 
         $maxRetries = 3;
         $retryCount = 0;
