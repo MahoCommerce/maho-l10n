@@ -204,9 +204,9 @@ class Translate extends Command
     {
         $output->writeln("Using AI for: $content");
 
-        $maxRetries = 3;
+        $maxRetries = 999;
         $retryCount = 0;
-        $waitTime = 10; // seconds
+        $waitTime = 20; // seconds
 
         // Capture leading and trailing spaces
         $leadingSpaces = strlen($content) - strlen(ltrim($content));
