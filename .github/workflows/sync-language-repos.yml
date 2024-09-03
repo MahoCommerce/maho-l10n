@@ -20,8 +20,6 @@ jobs:
 
       - name: Checkout main repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Fetch all history for all branches and tags
 
       - name: Set up Git
         run: |
@@ -38,13 +36,23 @@ jobs:
         run: |
           for dir in *_*/; do
             lang=${dir%/}
+          
+            # Skip en_US folder
+            if [ "$lang" == "en_US" ]; then
+              echo "Skipping en_US folder"
+              continue
+            fi
+          
             echo "Processing $lang"
           
             # Clone the language-specific repo
             git clone https://x-access-token:$GH_TOKEN@github.com/mahocommerce/maho-language-$lang.git temp_$lang
           
-            # Copy contents from main repo to language-specific repo
-            rsync -av --delete $lang/ temp_$lang/
+            # Ensure the app/locale/xx_XX directory exists in the target repo
+            mkdir -p temp_$lang/app/locale/$lang
+          
+            # Copy contents from main repo to the correct location in language-specific repo
+            rsync -av --delete $lang/ temp_$lang/app/locale/$lang/
           
             # Check for changes
             cd temp_$lang
