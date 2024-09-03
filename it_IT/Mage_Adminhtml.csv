@@ -14,7 +14,7 @@
 "(Starting with)","(A partire da)"
 "(When 'No', only mapped fields will be imported. When mapping, use 'column1', 'column2', etc.)","(Quando 'No', solo i campi mappati saranno importati. Quando esegui la mappatura, utilizza 'column1', 'column2', etc.)"
 "(You have to increase php memory_limit before changing this value)","(Prima di cambiare questo valore devi aumentare il php memory_limit)"
-"(\\t for tab)","\t"
+"(\\t for tab)","(\\t per tabulazione)"
 "* - If indexing is in progress, it will be killed and new indexing process will start.","* - Se l'indicizzazione è in corso, verrà uccisa e verrà avviato un nuovo processo di indicizzazione."
 "* Required Fields","* Campi obbligatori"
 "- Click on any of the time parts to increase it","- Click su una delle parti per incrementarlo"
