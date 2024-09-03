@@ -1,0 +1,44 @@
+<!--@subject Welcome, {{var customer.name}}! @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"htmlescape var=$customer.name":"Customer Name",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var customer.email":"Customer Email"}
+@-->
+
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.cs"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>Bienvenido a {{var store.getFrontendName()}}.</h1>
+            <p>To log in when visiting our site just click <a href="{{store url="customer/account/"}}">Login</a> or <a href="{{store url="customer/account/"}}">My Account</a> at the top of every page, and then enter your email address and password.</p>
+            <p class="highlighted-text">
+                Usa los siguientes valores cuando se te pida para iniciar sesión:<br/>
+                <strong>Correo</strong>: {{var customer.email}}<br/>
+                <strong>Contraseña</strong>: (la contraseña que estableces al crear tu cuenta)
+            </p>
+            <p>Cuando inicie sesión en su cuenta, podrá hacer lo siguiente:</p>
+            <ul>
+                <li>Proceder a través de la compra más rápido al realizar una compra</li>
+                <li>Compruebe el estado de los pedidos</li>
+                <li>Ver pedidos anteriores</li>
+                <li>Hacer cambios en la información de su cuenta</li>
+                <li>Cambiar tu contraseña</li>
+                <li>Almacenar direcciones alternativas (para enviar a varios miembros de la familia y amigos!)</li>
+            </ul>
+            <p>
+                Si tienes alguna pregunta, no dude en ponerse en contacto con nosotros en
+                <a href="mailto:{{var store_email}}">{{var store_email}}</a>
+                {{depend store_phone}} o por teléfono en <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}
