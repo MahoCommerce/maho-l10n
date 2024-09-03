@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  sync-language-folders:
+  sync-language-repos:
     runs-on: ubuntu-latest
     steps:
       - name: Generate token
@@ -30,7 +30,7 @@ jobs:
         id: date
         run: echo "DATE=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
 
-      - name: Sync language folders and tag
+      - name: Sync language repos and tag
         env:
           GH_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: |
@@ -45,8 +45,11 @@ jobs:
           
             echo "Processing $lang"
           
-            # Clone the language-specific repo
-            git clone https://x-access-token:$GH_TOKEN@github.com/mahocommerce/maho-language-$lang.git temp_$lang
+            # Try to clone the language-specific repo
+            if ! git clone https://x-access-token:$GH_TOKEN@github.com/mahocommerce/maho-language-$lang.git temp_$lang 2>/dev/null; then
+              echo "Repository for $lang does not exist. Skipping."
+              continue
+            fi
           
             # Ensure the app/locale/xx_XX directory exists in the target repo
             mkdir -p temp_$lang/app/locale/$lang
