@@ -1,0 +1,19 @@
+<!--@subject Welcome, {{var name}} @-->
+<!--@vars
+{"htmlescape var=$userName":"User name",
+"var $applicationName":"Application name",
+"var $status":"Token new status"}
+@-->
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>Hello, {{htmlescape var=$userName}}</h1>
+            <p>Ihre Autorisierung zu <b>{{htmlescape var=$applicationName}}</b> wurde in <b>{{htmlescape var=$status}}</b> vom Admin-Team geändert.</p>
+        </td>
+    </tr>
+</table>
+
+{{Template config_path="design/email/footer"}}

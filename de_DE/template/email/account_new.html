@@ -1,0 +1,44 @@
+<!--@subject Welcome, {{var customer.name}}! @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"htmlescape var=$customer.name":"Customer Name",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var customer.email":"Customer Email"}
+@-->
+
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>Willkommen bei {{var store.getFrontendName()}}.</h1>
+            <p>Um sich beim Besuch unserer Seite anzumelden, klicken Sie einfach auf <a href="{{store url="customer/account/"}}">Anmelden</a> oder <a href="{{store url="customer/account/"}}">Mein Konto</a> oben auf jeder Seite und geben Sie dann Ihre E-Mail-Adresse und Ihr Passwort ein.</p>
+            <p class="highlighted-text">
+                Verwenden Sie die folgenden Werte, wenn Sie aufgefordert werden, sich anzumelden:<br/>
+                <strong>E-Mail</strong>: {{var customer.email}}<br/>
+                <strong>Passwort</strong>: (das Passwort, das Sie bei der Erstellung Ihres Kontos gesetzt haben)
+            </p>
+            <p>Wenn Sie sich bei Ihrem Konto anmelden, können Sie Folgendes tun:</p>
+            <ul>
+                <li>Beim Kauf schneller durch die Kasse gehen</li>
+                <li>Status der Bestellungen überprüfen</li>
+                <li>Vergangene Bestellungen anzeigen</li>
+                <li>Änderungen an Ihren Kontoinformationen vornehmen</li>
+                <li>Ändern Sie Ihr Passwort</li>
+                <li>Alternative Adressen speichern (für den Versand an mehrere Familienmitglieder und Freunde!)</li>
+            </ul>
+            <p>
+                Wenn Sie irgendwelche Fragen haben bitte kontaktieren Sie uns unter
+                <a href="mailto:{{var store_email}}">{{var store_email}}</a>
+                {{depend store_phone}} oder telefonisch unter <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{{Template config_path="design/email/footer"}}
