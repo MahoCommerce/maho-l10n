@@ -10,7 +10,7 @@
 "(If left empty will be auto-generated)","(Caso esteja vazio será gerado automaticamente)"
 "(Leave empty for first spreadsheet)","(Deixar vazio para a primeira planilha)"
 "(Products will be added/updated to this store if 'store' column is blank or missing in the import file.)","(Produtos serão adicionados/atualizados nesta loja se a coluna 'loja' estiver em branco ou faltar no ficheiro de importação.)"
-"(Shift-)Click or drag to change value","(Clique-)Clique ou arraste para alterar valor"
+"(Shift-)Click or drag to change value","(Shift-)Clique ou arraste para alterar valor"
 "(Starting with)","(Início com)"
 "(When 'No', only mapped fields will be imported. When mapping, use 'column1', 'column2', etc.)","(Quando 'Não', apenas campos mapeados serão importados. Ao mapear, use 'coluna1', 'coluna2', etc.)"
 "(You have to increase php memory_limit before changing this value)","(Deve aumentar o limite de memória PHP antes de alterar este valor)"
