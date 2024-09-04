@@ -38,7 +38,7 @@
 "Error Text","Texte d'erreur"
 "Follow this link to unsubscribe <!-- This tag is for unsubscribe link  --><a href=""{{var subscriber.getUnsubscriptionLink()}}"">{{var subscriber.getUnsubscriptionLink()}}</a>","Cliquez sur ce lien pour vous désinscrire <!-- Sert au lien de désinscription --><a href=""{{var subscriber.getUnsubscriptionLink()}}"">{{var subscriber.getUnsubscriptionLink()}}</a>"
 "Guest","Invité"
-"ID","Identifiant"
+"ID","ID"
 "Invalid queue selected.","File d'attente sélectionnée invalide."
 "Invalid subscription ID.","Identifiant d'inscription invalide."
 "Invalid subscription confirmation code.","Code de confirmation d'inscription invalide."

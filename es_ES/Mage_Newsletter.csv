@@ -38,7 +38,7 @@
 "Error Text","Texto de error"
 "Follow this link to unsubscribe <!-- This tag is for unsubscribe link  --><a href=""{{var subscriber.getUnsubscriptionLink()}}"">{{var subscriber.getUnsubscriptionLink()}}</a>","Sigue este enlace para anular tu suscripción <!-- Esta etiqueta es para el enlace de anulación--><a href=""{{var subscriber.getUnsubscriptionLink()}}"">{{var subscriber.getUnsubscriptionLink()}}</a>"
 "Guest","Visitante"
-"ID","Número de Identificación (ID)"
+"ID","ID"
 "Invalid queue selected.","Cola de procesamiento no válida seleccionada."
 "Invalid subscription ID.","ID de suscripción no válido."
 "Invalid subscription confirmation code.","Código de confirmación de suscripción no válido."

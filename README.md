@@ -5,6 +5,7 @@
 ```
 Powered by Maho
 (\\t for tab)
-CMS
-(Shift-)Click or drag
+"CMS"
+"(Shift-)Click or drag
+"ID"
 ```

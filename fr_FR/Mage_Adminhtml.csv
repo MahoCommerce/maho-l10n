@@ -454,7 +454,7 @@
 "Helper for options rendering doesn't implement required interface.","Le helper utilisé pour le rendu des options n'implémente pas l'interface requise."
 "Hero Products","Produits Héros"
 "Home","Accueil"
-"ID","Identifiant"
+"ID","ID"
 "ID Path","ID chemin"
 "IP Address","Adresse IP"
 "IPN (Instant Payment Notification) Only","Notification instantanée de paiement (IPN) seulement"
