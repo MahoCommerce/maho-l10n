@@ -6,4 +6,5 @@
 Powered by Maho
 (\\t for tab)
 CMS
+(Shift-)Click or drag
 ```
