@@ -1,0 +1,68 @@
+<!--@subject Payment Transaction Failed Reminder @-->
+<!--@vars
+{"var reason":"Transaction Failed Reason",
+"var checkoutType":"Checkout Type",
+"var customerEmail":"Customer Email",
+"var customer":"Customer Name",
+"var items":"Shopping Cart Items",
+"var total":"Total",
+"var billingAddress.format('html')":"Billing Address",
+"var shippingAddress.format('html')":"Shipping Address",
+"var shippingMethod":"Shipping Method",
+"var paymentMethod":"Payment Method",
+"var dateAndTime":"Date and Time of Transaction"}
+@-->
+
+<table>
+    <thead>
+    <tr>
+        <th>Η συναλλαγή πληρωμής απέτυχε.</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <p>
+                <b>Λόγος</b><br />
+                {{var reason}}
+            </p>
+            <p>
+                <b>Τύπος Ολοκλήρωσης Παραγγελίας</b><br />
+                {{var checkoutType}}
+            </p>
+            <p>
+                <b>Πελάτης:</b><br />
+                <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
+            </p>
+            <p>
+                <b>Αντικείμενα</b><br />
+                {{var items}}
+            </p>
+            <p>
+                <b>Σύνολο:</b><br />
+                {{var total}}
+            </p>
+            <p>
+                <b>Διεύθυνση Χρέωσης:</b><br />
+                {{var billingAddress.format('html')}}
+            </p>
+            <p>
+                <b>Διεύθυνση Αποστολής:</b><br />
+                {{var shippingAddress.format('html')}}
+            </p>
+            <p>
+                <b>Μέθοδος Αποστολής:</b><br />
+                {{var shippingMethod}}
+            </p>
+            <p>
+                <b>Μέθοδος Πληρωμής:</b><br />
+                {{var paymentMethod}}
+            </p>
+            <p>
+                <b>Ημερομηνία & Ώρα:</b><br />
+                {{var dateAndTime}}
+            </p>
+        </td>
+    </tr>
+    </tbody>
+</table>
