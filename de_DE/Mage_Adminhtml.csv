@@ -1298,5 +1298,4 @@
 "to","bis"
 "website(%s) scope","Website(%s) Geltungsbereich"
 "{{base_url}} is not recommended to use in a production environment to declare the Base Unsecure URL / Base Secure URL. It is highly recommended to change this value in your Maho <a href=""%s"">configuration</a>.","{{base_url}} wird in einer Produktionsumgebung nicht empfohlen, um die Basis-unsichere URL / Basis-sichere URL zu deklarieren. Es wird dringend empfohlen, diesen Wert in Ihrer Maho <a href=""%s"">Konfiguration</a> zu ändern."
-"Powered by Maho","Powered by Maho"
 "At least one currency has to be allowed.","Mindestens eine Währung muss zugelassen werden."
