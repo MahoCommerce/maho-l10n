@@ -1298,5 +1298,4 @@
 "to","σε"
 "website(%s) scope","Εμβέλεια ιστότοπου(%s)"
 "{{base_url}} is not recommended to use in a production environment to declare the Base Unsecure URL / Base Secure URL. It is highly recommended to change this value in your Maho <a href=""%s"">configuration</a>.","{{base_url}} δεν συνιστάται να χρησιμοποιείται σε παραγωγικό περιβάλλον για να δηλώσει το Βασικό Ασφαλές URL / Βασικό Ασφαλές URL. Συνιστάται έντονα να αλλάξετε αυτή την τιμή στις ρυθμίσεις του Maho <a href=""%s"">διαμόρφωσης</a>."
-"Powered by Maho","Powered by Maho"
 "At least one currency has to be allowed.","Ελάχιστα ένα νόμισμα πρέπει να επιτρέπεται."
