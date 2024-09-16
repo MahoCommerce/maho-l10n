@@ -27,7 +27,7 @@ jobs:
 
       - name: Get current date
         id: date
-        run: echo "DATE=$(date +'%y.%m.%d')" >> $GITHUB_OUTPUT
+        run: echo "DATE=$(date +'%y.%-m.%-d')" >> $GITHUB_OUTPUT
 
       - name: Sync language repos and tag
         env:
