@@ -54,7 +54,7 @@
 "From Date","Fecha de inicio"
 "General Information","Información general"
 "Generate","Generar"
-"ID","ID"
+"ID","Número de Identificación (ID)"
 "If %s %s %s for a subselection of items in cart matching %s of these conditions:","Si %s %s %s para una subselección de artículos en carrito que coinciden con %s de estas condiciones:"
 "If an item is %s in the cart with %s of these conditions true:","Si un artículo está %s en el carrito con %s de estas condiciones verdaderas:"
 "If empty no separation.","Si está vacío no hay separación."
