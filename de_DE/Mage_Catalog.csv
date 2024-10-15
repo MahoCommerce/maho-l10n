@@ -103,7 +103,7 @@
 "Attribute add","Attribut hinzufügen"
 "Attribute code is invalid. Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter. Do not use ""event"" for an attribute code.","Attributcode ist ungültig. Bitte verwenden Sie nur Buchstaben (a-z), Zahlen (0-9) oder Unterstrich (_) in diesem Feld, der erste Charakter sollte ein Buchstabe sein. Verwenden Sie nicht ""Ereignis"" für einen Attributcode."
 "Attribute code is invalid. Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter. Do not use event"" for an attribute code.""","Attributcode ist ungültig. Bitte verwenden Sie nur Buchstaben (a-z), Zahlen (0-9) oder Unterstrich (_) in diesem Feld, der erste Charakter sollte ein Buchstabe sein. Verwenden Sie nicht ""Ereignis"" für einen Attributcode."
-"Attribute group with the \""/name/\"" name already exists","Attributgruppe mit dem Namen „/name/“ existiert bereits"
+"Attribute group with the \"/name/\" name already exists","Attribute group with the \"/name/\" name already exists"
 "Attribute remove","Attribute entfernen"
 "Attribute with the same code already exists","Attribut mit diesem Code existiert bereits"
 "Attributes","Attribute"
