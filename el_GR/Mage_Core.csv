@@ -419,7 +419,7 @@
 "Validate HTTP_X_FORWARDED_FOR","Επικύρωση HTTP_X_FORWARDED_FOR"
 "Validate REMOTE_ADDR","Επικύρωση REMOTE_ADDR"
 "Validation has failed.","Η επικύρωση απέτυχε."
-"Values less than 60 are ignored. Note that changes will apply after logout.","Τιμές μικρότερες από 60 αγνοούνται. Σημειώστε ότι οι αλλαγές θα εφαρμοστούν μετά την αποσύνδεση."
+"Value must be between %d and %d","Value must be between %d and %d"
 "Variable Code must be unique.","Ο Κώδικας Μεταβλητής πρέπει να είναι μοναδικός."
 "Warning! Enabling this feature is not recommended on production environments because it represents a potential security risk.","Προειδοποίηση! Η ενεργοποίηση αυτής της λειτουργίας δεν συνιστάται σε παραγωγικά περιβάλλοντα επειδή αντιπροσωπεύει ένα πιθανό κίνδυνο ασφαλείας."
 "Web","Ιστοσελίδα"
