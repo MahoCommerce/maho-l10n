@@ -103,7 +103,7 @@
 "Attribute add","Atributo adicionar"
 "Attribute code is invalid. Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter. Do not use ""event"" for an attribute code.","Código de atributo é inválido. Por favor, use apenas letras (a-z), números (0-9) ou sublinhado (_) neste campo, o primeiro caractere deve ser uma letra. Não use ""evento"" para um código de atributo."
 "Attribute code is invalid. Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter. Do not use event"" for an attribute code.""","Código de atributo é inválido. Por favor, use apenas letras (a-z), números (0-9) ou sublinhado (_) neste campo, o primeiro caractere deve ser uma letra. Não use ""evento"" para um código de atributo."
-"Attribute group with the \""/name/\"" name already exists","Grupo de atributo com o nome \""/name/\"" já existe"
+"Attribute group with the \"/name/\" name already exists","Attribute group with the \"/name/\" name already exists"
 "Attribute remove","Remover Atributo"
 "Attribute with the same code already exists","Já existe atributo com o mesmo código"
 "Attributes","Atributos"

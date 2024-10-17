@@ -103,7 +103,7 @@
 "Attribute add","Χαρακτηριστικό προσθήκη"
 "Attribute code is invalid. Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter. Do not use ""event"" for an attribute code.","Ο κωδικός χαρακτηριστικού δεν είναι έγκυρος. Παρακαλώ χρησιμοποιήστε μόνο γράμματα (a-z), αριθμούς (0-9) ή υπογράμμιση (_) σε αυτό το πεδίο, το πρώτο χαρακτήρα πρέπει να είναι γράμμα. Μην χρησιμοποιείτε ""event"" ως κωδικό χαρακτηριστικού."
 "Attribute code is invalid. Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter. Do not use event"" for an attribute code.""","Ο κωδικός χαρακτηριστικού δεν είναι έγκυρος. Παρακαλούμε χρησιμοποιήστε μόνο γράμματα (a-z), αριθμούς (0-9) ή υπογράμμιση (_) σε αυτό το πεδίο, το πρώτο γράμμα πρέπει να είναι γράμμα. Μην χρησιμοποιείτε ""event"" ως κωδικό χαρακτηριστικού."
-"Attribute group with the \""/name/\"" name already exists","Ομάδα χαρακτηριστικών με το όνομα „/name/“ ήδη υπάρχει"
+"Attribute group with the \"/name/\" name already exists","Attribute group with the \"/name/\" name already exists"
 "Attribute remove","Διαγραφή Χαρακτηριστικού"
 "Attribute with the same code already exists","Ένα Χαρακτηριστικό με τον ίδιο κώδικα υπάρχει ήδη"
 "Attributes","Χαρακτηριστικά"
