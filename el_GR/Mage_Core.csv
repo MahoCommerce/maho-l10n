@@ -142,6 +142,7 @@
 "File name is too long. Maximum length is %s.","Το όνομα του αρχείου είναι πολύ μεγάλο. Μέγιστο μήκος είναι %s."
 "File not found","Το αρχείο δεν βρέθηκε"
 "File system","Σύστημα Αρχείων"
+"File type for image conversions","File type for image conversions"
 "File with an extension ""%value%"" is protected and cannot be uploaded","Αρχεία με την επέκταση ""%value%"" είναι προστατευμένα και δεν μπορούν να μεταφορτωθούν"
 "First Day of Week","Πρώτη Ημέρα της Εβδομάδας"
 "Flush Cache Storage","Εκκαθάριση προσωρινής μνήμης αποθήκευσης"
