@@ -1294,7 +1294,6 @@
 "Your password has been updated.","Parola dvs. a fost actualizată."
 "Your password reset link has expired.","Link-ul dumneavoastră de resetare parolă a expirat."
 "Your server PHP settings allow you to upload files not more than %s at a time. Please modify post_max_size (currently is %s) and upload_max_filesize (currently is %s) values in php.ini if you want to upload larger files.","Setările PHP ale serverului dvs. vă permit să încărcați fișiere de maxim %s odată. Modificați valorile post_max_size (care momentan e %s) și upload_max_filesize (care momentan e %s) din fișierul php.ini dacă doriți să încărcați fișiere mai mari."
-"Your web server is configured incorrectly. As a result, configuration files with sensitive information are accessible from the outside. Please contact your hosting provider.","Serverul dvs. web e configurat incorect. Drept urmare, fișierele de configurare care conțin informații delicate sunt accesibile din exterior. Contactați furnizorul de găzduire."
 "Zip/Postal Code","Cod poștal"
 "Zip/Postal Code:","Cod Poștal:"
 "[ deleted ]","[ șters ]"
