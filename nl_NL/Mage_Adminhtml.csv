@@ -1294,7 +1294,6 @@
 "Your password has been updated.","Uw wachtwoord is bijgewerkt."
 "Your password reset link has expired.","Uw wachtwoord-reset-link is verlopen"
 "Your server PHP settings allow you to upload files not more than %s at a time. Please modify post_max_size (currently is %s) and upload_max_filesize (currently is %s) values in php.ini if you want to upload larger files.","De PHP-instellingen van uw server staan niet toe om files  te uploaden die groter zijn dan %s. Wijzig de waarden van post_max_size (nu %s) en upload_max_filesize (nu %s) in php.ini als u grotere files wilt uploaden."
-"Your web server is configured incorrectly. As a result, configuration files with sensitive information are accessible from the outside. Please contact your hosting provider.","Uw webserver is niet correct geconfigureerd. Als gevolg hiervan zijn configuratiebestanden met gevoelige informatie van buitenaf toegankelijk. Neem a.u.b. contact op met uw hostingprovider."
 "Zip/Postal Code","Postcode"
 "Zip/Postal Code:","Postcode:"
 "[ deleted ]","[ verwijderd ]"
