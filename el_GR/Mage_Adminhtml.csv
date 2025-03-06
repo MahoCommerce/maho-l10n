@@ -1294,7 +1294,6 @@
 "Your password has been updated.","Το συνθηματικό σας έχει ενημερωθεί."
 "Your password reset link has expired.","Ο σύνδεσμος επαναφοράς κωδικού πρόσβασης έχει λήξει."
 "Your server PHP settings allow you to upload files not more than %s at a time. Please modify post_max_size (currently is %s) and upload_max_filesize (currently is %s) values in php.ini if you want to upload larger files.","Ο διακομιστής σας PHP σας επιτρέπει να μεταφορτώνετε αρχεία όχι περισσότερα από %s κάθε φορά. Παρακαλούμε τροποποιήστε τις τιμές post_max_size (τώρα είναι %s) και upload_max_filesize (τώρα είναι %s) στο php.ini εάν θέλετε να μεταφορτώνετε μεγαλύτερα αρχεία."
-"Your web server is configured incorrectly. As a result, configuration files with sensitive information are accessible from the outside. Please contact your hosting provider.","Ο διακομιστής ιστού σας έχει λάθος ρύθμιση. Ως αποτέλεσμα, τα αρχεία ρυθμίσεων με ευαίσθητες πληροφορίες είναι προσβάσιμα από το εξωτερικό. Παρακαλούμε επικοινωνήστε με τον παρόχο φιλοξενίας σας."
 "Zip/Postal Code","Ταχυδρομικός κώδικας"
 "Zip/Postal Code:","Ταχυδρομικός Κωδικός:"
 "[ deleted ]","[ διεγράφη ]"
