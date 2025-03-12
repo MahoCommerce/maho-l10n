@@ -169,6 +169,7 @@
 "Incorrect credit card expiration date.","Εσφαλμένη ημερομηνία λήξης πιστωτικής κάρτας."
 "Input type ""%value%"" not found in the input types list.","Τύπος εισόδου ""%value%"" δεν βρέθηκε στη λίστα τύποι εισόδου."
 "Invalid MIME type.","Άκυρο τύπο MIME."
+"Invalid URL","Invalid URL"
 "Invalid URL '%value%'.","Άκυρη διεύθυνση URL '%value%'."
 "Invalid URL scheme.","Άκυρο σχήμα διεύθυνσης URL."
 "Invalid base url type","Άκυρος τύπος βασικού url"
