@@ -535,6 +535,8 @@
 "Key %s does not contain scalar value","Sleutel %s bevat geen scalaire waarde"
 "Key %s does not exist in array","Sleutel %s bestaat niet in array"
 "Last 24 Hours","Laatste 24 uur"
+"Last 3 Months","Last 3 Months"
+"Last 6 Months","Last 6 Months"
 "Last 5 Orders","Laatste 5 bestellingen"
 "Last 5 Search Terms","Laatste 5 zoektermen"
 "Last 7 Days","Laatste 7 dagen"
