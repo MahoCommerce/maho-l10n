@@ -535,6 +535,8 @@
 "Key %s does not contain scalar value","Cheia %s nu conține valoare scalară"
 "Key %s does not exist in array","Cheia %s nu există în matrice"
 "Last 24 Hours","Ultimele 24 de ore"
+"Last 3 Months","Last 3 Months"
+"Last 6 Months","Last 6 Months"
 "Last 5 Orders","Ultimele 5 Comenzi"
 "Last 5 Search Terms","Ultimii 5 Termeni de Căutare"
 "Last 7 Days","Ultimele 7 zile"
