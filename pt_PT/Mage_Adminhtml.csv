@@ -535,6 +535,8 @@
 "Key %s does not contain scalar value","Chave %s não contém valor escalar"
 "Key %s does not exist in array","Chave %s não existe em matriz"
 "Last 24 Hours","Últimas 24 horas"
+"Last 3 Months","Last 3 Months"
+"Last 6 Months","Last 6 Months"
 "Last 5 Orders","Últimos 5 Pedidos"
 "Last 5 Search Terms","Últimos 5 Termos de Pesquisa"
 "Last 7 Days","Últimos 7 dias"
