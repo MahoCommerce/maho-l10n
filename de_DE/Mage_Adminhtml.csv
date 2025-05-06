@@ -535,6 +535,8 @@
 "Key %s does not contain scalar value","Schlüssel %s enthält keinen skalaren Wert"
 "Key %s does not exist in array","Schlüssel %s existiert nicht im Array"
 "Last 24 Hours","Letzte 24 Stunden"
+"Last 3 Months","Last 3 Months"
+"Last 6 Months","Last 6 Months"
 "Last 5 Orders","Letzte 5 Bestellungen"
 "Last 5 Search Terms","Letzte 5 Suchbegriffe"
 "Last 7 Days","Letzte 7 Tage"
