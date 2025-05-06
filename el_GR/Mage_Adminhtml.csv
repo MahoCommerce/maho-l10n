@@ -535,6 +535,8 @@
 "Key %s does not contain scalar value","Κλειδί %s δεν περιέχει σκαляρική τιμή"
 "Key %s does not exist in array","Κλειδί %s δεν υπάρχει στο πίνακα"
 "Last 24 Hours","Τελευταίες 24 ώρες"
+"Last 3 Months","Last 3 Months"
+"Last 6 Months","Last 6 Months"
 "Last 5 Orders","Τελευταίες 5 Παραγγελίες"
 "Last 5 Search Terms","Τελευταίοι 5 Όροι Αναζήτησης"
 "Last 7 Days","Τελευταίες 7 ημέρες"
