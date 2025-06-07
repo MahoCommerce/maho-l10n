@@ -29,6 +29,7 @@
 "Allows customers to stay logged in when switching between different stores.","Επιτρέπει στους πελάτες να παραμένουν συνδεδεμένοι όταν μετακινούνται μεταξύ διαφορετικών καταστημάτων."
 "Alternative text for next link in pagination menu. If empty, default arrow image will used.","Εναλλακτικό κείμενο για το επόμενο σύνδεσμο στο μενού-pagination. Αν είναι κενό, θα χρησιμοποιηθεί η προεπιλεγμένη εικόνα βέλους."
 "Alternative text for previous link in pagination menu. If empty, default arrow image will used.","Εναλλακτικό κείμενο για προηγούμενο σύνδεσμο στο μενού-pagination. Εάν είναι κενό, θα χρησιμοποιηθεί η προεπιλεγμένη εικόνα βέλους."
+"An error occured.","An error occured."
 "An error occurred while saving. Please review the error log.","Σφάλμα κατά τη διάρκεια αποθήκευσης. Παρακαλώ επανεξέτασε το αρχείο καταγραφής σφαλμάτων."
 "Anchor Text for Next","Κείμενο Σημείου Αγκύρωσης για Επόμενο"
 "Anchor Text for Previous","Κείμενο Σημείου Αγκύρωσης για Προηγούμενο"
