@@ -1320,3 +1320,8 @@
 "website(%s) scope","acoperire site(%s)"
 "{{base_url}} is not recommended to use in a production environment to declare the Base Unsecure URL / Base Secure URL. It is highly recommended to change this value in your Maho <a href=""%s"">configuration</a>.","{{base_url}} nu este recomandat să fie utilizat într-un mediu de producție pentru a declara URL-ul de bază necriptat / URL-ul de bază criptat. Este foarte recomandat să schimbați această valoare în configurația dvs. Maho <a href=""%s"">de configurare</a>."
 "At least one currency has to be allowed.","Cel puțin o valută trebuie să fie permisă."
+"Trailing Slash Behavior","Trailing Slash Behavior"
+"Redirect to URL without trailing slash","Redirect to URL without trailing slash"
+"Redirect to URL with trailing slash","Redirect to URL with trailing slash"
+"Do nothing","Do nothing"
+"Without this setting, a page could be accessible with both URLs: \"example.com/category\" and \"example.com/category/\". This creates duplicate content issues for SEO. Use this setting to automatically redirect to a canonical URL format.","Without this setting, a page could be accessible with both URLs: \"example.com/category\" and \"example.com/category/\". This creates duplicate content issues for SEO. Use this setting to automatically redirect to a canonical URL format."
