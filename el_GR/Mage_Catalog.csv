@@ -315,6 +315,7 @@
 "Filterable (with results)","Φιλτράρισμα (με αποτελέσματα)"
 "Filter model name must be declared.","Το όνομα μοντέλου φίλτρου πρέπει να δηλωθεί."
 "Filter must be an object. Please set correct filter.","Το φίλτρο πρέπει να είναι ένα αντικείμενο. Παρακαλώ ορίστε το σωστό φίλτρο."
+"Filters","Filters"
 "First Name","Όνομα"
 "Fixed","Σταθερή"
 "For internal use.","Για εσωτερική χρήση."
