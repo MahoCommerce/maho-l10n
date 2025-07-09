@@ -315,6 +315,7 @@
 "Filterable (with results)","Filtrowalne (z wynikami)"
 "Filter model name must be declared.","Nazwa modelu filtru musi być zadeklarowana."
 "Filter must be an object. Please set correct filter.","Filtr musi być obiektem. Ustaw poprawny filtr."
+"Filters","Filters"
 "First Name","Imię"
 "Fixed","Stały"
 "For internal use.","Dla użytku wewnętrznego."
