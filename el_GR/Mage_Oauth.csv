@@ -1,5 +1,3 @@
-"%name% '%value%' is too long. It must has length %min% symbols.","%όνομα% '%τιμή%' είναι πολύ μεγάλο. Πρέπει να έχει μήκος %min% σύμβολα."
-"%name% '%value%' is too short. It must has length %min% symbols.","%όνομα% '%τιμή%' είναι πολύ μικρό. Πρέπει να έχει μήκος %min% σύμβολα."
 "* Required Fields","* Απαιτούμενα πεδία"
 "<strong>%s</strong> requests access to your account","<strong>%s</strong> ζητεί πρόσβαση στο λογό σας"
 "Admin","Διαχείριση"
