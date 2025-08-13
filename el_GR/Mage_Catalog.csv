@@ -689,6 +689,7 @@
 "The category has been saved.","Η κατηγορία έχει αποθηκευτεί."
 "The comparison list was cleared.","Η λίστα σύγκρισης διαγράφηκε."
 "The file '%s' for '%s' has an invalid extension","Το αρχείο '%s' για '%s' έχει άκυρη επέκταση"
+"The file '%s' for '%s' has invalid upload data.","The file '%s' for '%s' has invalid upload data."
 "The file '%s' you uploaded is larger than %s Megabytes allowed by server","Το αρχείο '%s' που ανέβασα είναι μεγαλύτερο από %s Megabytes που επιτρέπονται από τον διακομιστή"
 "The file was only partially uploaded. Please try again.","The file was only partially uploaded. Please try again."
 "The file you uploaded is larger than %s Megabytes allowed by server","Το αρχείο που ανέβασα είναι μεγαλύτερο από %s Megabytes που επιτρέπονται από τον διακομιστή"
