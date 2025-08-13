@@ -1,5 +1,3 @@
-"%name% '%value%' is too long. It must has length %min% symbols.","%name% '%value%' e prea lung. Trebuie să aibă lungimea de %min% simboluri."
-"%name% '%value%' is too short. It must has length %min% symbols.","%name% '%value%' e prea scurt. Trebuie să aibă lungimea de %min% simboluri."
 "* Required Fields","* Campuri obligatorii"
 "<strong>%s</strong> requests access to your account","<strong>%s</strong> necesită acces la contul dvs."
 "Admin","Administrator"
