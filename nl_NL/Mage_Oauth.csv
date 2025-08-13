@@ -1,5 +1,3 @@
-"%name% '%value%' is too long. It must has length %min% symbols.","%name% '%value%' is te lang. Het moet %min% symbolen lang zijn."
-"%name% '%value%' is too short. It must has length %min% symbols.","%name% '%value%' is te kort. Het moet minstens %min% tekens lang zijn."
 "* Required Fields","* Verplichte velden"
 "<strong>%s</strong> requests access to your account","<strong>%s</strong> vraagt toegang tot uw account"
 "Admin","Beheerder"
