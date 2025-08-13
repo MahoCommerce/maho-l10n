@@ -689,6 +689,7 @@
 "The category has been saved.","De categorie is opgeslagen."
 "The comparison list was cleared.","De vergelijkingslijst werd gewist."
 "The file '%s' for '%s' has an invalid extension","Het bestand '%s' voor '%s' heeft een ongeldige extensie"
+"The file '%s' for '%s' has invalid upload data.","The file '%s' for '%s' has invalid upload data."
 "The file '%s' you uploaded is larger than %s Megabytes allowed by server","Het bestand '%s' dat u heeft geüpload is groter dan %s megabytes toegestaan door de server"
 "The file was only partially uploaded. Please try again.","The file was only partially uploaded. Please try again."
 "The file you uploaded is larger than %s Megabytes allowed by server","Het bestand dat u heeft geüpload is groter dan %s megabytes toegestaan door de server"
