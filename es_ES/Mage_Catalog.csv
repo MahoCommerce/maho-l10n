@@ -689,6 +689,7 @@
 "The category has been saved.","La categoría ha sido guardada."
 "The comparison list was cleared.","La lista de comparación se borró."
 "The file '%s' for '%s' has an invalid extension","El archivo '%s' para '%s' tiene una extensión no válida"
+"The file '%s' for '%s' has invalid upload data.","The file '%s' for '%s' has invalid upload data."
 "The file '%s' you uploaded is larger than %s Megabytes allowed by server","El archivo '%s' que ha subido es más grande que los %s megabytes permitidos por el servidor"
 "The file was only partially uploaded. Please try again.","The file was only partially uploaded. Please try again."
 "The file you uploaded is larger than %s Megabytes allowed by server","El archivo que ha subido es más grande que %s Megabytes permitidos por el servidor"
