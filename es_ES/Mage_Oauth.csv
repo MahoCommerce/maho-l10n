@@ -1,5 +1,3 @@
-"%name% '%value%' is too long. It must has length %min% symbols.","%name% '%value%' es demasiado largo. Debe tener una longitud de %min% símbolos."
-"%name% '%value%' is too short. It must has length %min% symbols.","%name% '%value%' es demasiado corto. Debe tener una longitud de %min% símbolos."
 "* Required Fields","* Campos obligatorios"
 "<strong>%s</strong> requests access to your account","<strong>%s</strong> solicita acceso a tu cuenta"
 "Admin","Administrar"
