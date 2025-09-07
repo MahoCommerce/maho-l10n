@@ -694,6 +694,7 @@
 "The file was only partially uploaded. Please try again.","The file was only partially uploaded. Please try again."
 "The file you uploaded is larger than %s Megabytes allowed by server","Plik, który został przesłany, jest większy niż %s Megabajtów dozwolonych przez serwer"
 "The filters must be an array.","Filtrowanie muszą być tablicą."
+"The following file extensions are not allowed for security reasons: %s","The following file extensions are not allowed for security reasons: %s"
 "The From Date value should be less than or equal to the To Date value.","Wartość daty początkowej powinna być mniejsza lub równa wartości daty końcowej."
 "The image contents is not valid base64 data.","Zawartość obrazu nie jest ważnymi danymi base64."
 "The image is not specified.","Obraz nie jest określony."
