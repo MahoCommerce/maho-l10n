@@ -694,6 +694,7 @@
 "The file was only partially uploaded. Please try again.","The file was only partially uploaded. Please try again."
 "The file you uploaded is larger than %s Megabytes allowed by server","Fișierul încărcat e mai mare de %s Megabytes permiși de server."
 "The filters must be an array.","Filtrele trebuie să fie matrice."
+"The following file extensions are not allowed for security reasons: %s","The following file extensions are not allowed for security reasons: %s"
 "The From Date value should be less than or equal to the To Date value.","Valoarea Data De La trebuie să fie mai mică sau egală cu valoarea Data Pînă La"
 "The image contents is not valid base64 data.","Conținutul imaginii nu reprezintă date valide baza64."
 "The image is not specified.","Imaginea nu e specificată."
