@@ -13,6 +13,7 @@
 "Can not determine attribute filter type","Kan attribuutfiltertype niet bepalen"
 "Can not find required columns: %s","Kan geen vereiste kolommen vinden: %s"
 "Cannot get autoincrement value","Kan geen autoincrement waarde ophalen"
+"Categories","Categories"
 "Check Data","Controleer data"
 "Checked rows: %d, checked entities: %d, invalid rows: %d, total errors: %d","Geselecteerde rijen: %d, geselecteerde entiteiten: %d, ongeldige rijen: %d, totaal fouten: %d"
 "Column names: ""%s"" are invalid","Kolomnamen: ""%s"" zijn ongeldig"
