@@ -13,6 +13,7 @@
 "Can not determine attribute filter type","No se puede determinar el tipo de filtro de atributo"
 "Can not find required columns: %s","No se pueden encontrar las columnas requeridas: %s"
 "Cannot get autoincrement value","No se puede obtener un incremento automático del valor"
+"Categories","Categories"
 "Check Data","Verificar los datos"
 "Checked rows: %d, checked entities: %d, invalid rows: %d, total errors: %d","Filas comprobadas: %d, entidades comprobadas: %d, filas no válidas: %d, errores totales: %d"
 "Column names: ""%s"" are invalid","Nombres de columna: ""%s"" no válidos"
