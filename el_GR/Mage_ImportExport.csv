@@ -13,6 +13,7 @@
 "Can not determine attribute filter type","Δεν μπορώ να προσδιορίσω τον τύπο φίλτρου χαρακτηριστικού"
 "Can not find required columns: %s","Δεν μπορώ να βρω τις απαιτούμενες στήλες: %s"
 "Cannot get autoincrement value","Δεν μπορεί να δοθεί τιμή αυτόματης αύξησης"
+"Categories","Categories"
 "Check Data","Έλεγχος Δεδομένων"
 "Checked rows: %d, checked entities: %d, invalid rows: %d, total errors: %d","Ελεγσάμε rows: %d, ελεγσάμε entities: %d, δεν έχε σφαλέ rows: %d, συνολικά σφαλά: %d"
 "Column names: ""%s"" are invalid","Ονόματα Στήλων: ""%s"" είναι άκυρα"
