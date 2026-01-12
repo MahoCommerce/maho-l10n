@@ -1153,7 +1153,7 @@
 "Wrong transaction ID specified.","ID tranzacție specificat greșit."
 "XML","XML"
 "XML data is invalid.","Datele XML sunt invalide."
-"XML object is not instance of ""Varien_Simplexml_Element"".","Obiectul XML nu e instanță de ""Varien_Simplexml_Element""."
+"XML object is not instance of ""\Maho\Simplexml\Element"".","XML object is not instance of ""\Maho\Simplexml\Element""."
 "Year","anulat"
 "Yes","Da"
 "Yes (301 Moved Permanently)","Da (301 Mutat Permanent)"
