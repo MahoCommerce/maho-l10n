@@ -1153,7 +1153,7 @@
 "Wrong transaction ID specified.","Verkeerd transactie-ID opgegeven."
 "XML","XML"
 "XML data is invalid.","XML-gegevens zijn ongeldig."
-"XML object is not instance of ""Varien_Simplexml_Element"".","XML-object is geen instantie van ""Maho_Simplexml_Element""."
+"XML object is not instance of ""\Maho\Simplexml\Element"".","XML object is not instance of ""\Maho\Simplexml\Element""."
 "Year","Jaar"
 "Yes","Ja"
 "Yes (301 Moved Permanently)","Ja (301 Permanent verplaatst)"
