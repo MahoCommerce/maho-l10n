@@ -432,7 +432,7 @@
 "Wrong file info format","Nieprawidłowy format informacji pliku"
 "Wrong number of arguments for %s","Zła liczba argumentów dla %s"
 "XML data is invalid.","Dane XML są nieprawidłowe."
-"XML object is not instance of ""Varien_Simplexml_Element"".","Obiekt XML nie jest instancją ""Varien_Simplexml_Element""."
+"XML object is not instance of ""\Maho\Simplexml\Element"".","XML object is not instance of ""\Maho\Simplexml\Element""."
 "Yes","Tak"
 "Your design change for the specified store intersects with another one, please specify another date range.","Zmiana projektu dla określonego sklepu nakłada się z inną, proszę określić inny zakres dat."
 "You will have to log in after you save your custom admin path.","Będziesz musiał zalogować się po zapisaniu niestandardowej ścieżki administracyjnej."
