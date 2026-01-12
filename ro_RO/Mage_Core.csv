@@ -432,7 +432,7 @@
 "Wrong file info format","Format fișier info greșit"
 "Wrong number of arguments for %s","Număr greșit de argumente pentru %s"
 "XML data is invalid.","Datele XML sunt invalide."
-"XML object is not instance of ""Varien_Simplexml_Element"".","Obiectul XML nu e instanță de ""Varien_Simplexml_Element""."
+"XML object is not instance of ""\Maho\Simplexml\Element"".","XML object is not instance of ""\Maho\Simplexml\Element""."
 "Yes","Da"
 "Your design change for the specified store intersects with another one, please specify another date range.","Schimbarea dvs. de aspect pentru magazinul specificat se intersectează cu alta, vă rugăm specificați un alt interval de dată."
 "You will have to log in after you save your custom admin path.","Veți fi nevoit să vă logați după ce salvați calea administrator personalizată."
