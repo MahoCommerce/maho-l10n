@@ -1153,7 +1153,7 @@
 "Wrong transaction ID specified.","Λάθος αναγνωριστικό συναλλαγής καθορίστηκε."
 "XML","XML"
 "XML data is invalid.","Τα δεδομένα XML είναι άκυρα."
-"XML object is not instance of ""Varien_Simplexml_Element"".","Το αντικείμενο XML δεν είναι παρουσία του ""Varien_Simplexml_Element""."
+"XML object is not instance of ""\Maho\Simplexml\Element"".","XML object is not instance of ""\Maho\Simplexml\Element""."
 "Year","Έτος"
 "Yes","Ναί"
 "Yes (301 Moved Permanently)","Ναι (301 μεταφέρονται οριστικά)"
