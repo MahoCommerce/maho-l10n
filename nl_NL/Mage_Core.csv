@@ -432,7 +432,7 @@
 "Wrong file info format","Verkeerd bestand-informatie formaat"
 "Wrong number of arguments for %s","Fout aantal argumenten voor %s"
 "XML data is invalid.","XML-gegevens zijn ongeldig."
-"XML object is not instance of ""Varien_Simplexml_Element"".","XML-object is geen instantie van ""Maho_Simplexml_Element""."
+"XML object is not instance of ""\Maho\Simplexml\Element"".","XML object is not instance of ""\Maho\Simplexml\Element""."
 "Yes","Ja"
 "Your design change for the specified store intersects with another one, please specify another date range.","Uw ontwerpwijziging voor de gespecificeerde winkel overlapt met een andere, specificeer een ander datumbereik."
 "You will have to log in after you save your custom admin path.","U moet zich aanmelden nadat u uw aangepaste beheerderspad hebt opgeslagen."
