@@ -432,7 +432,7 @@
 "Wrong file info format","Λάθος μορφή πληροφοριών αρχείου"
 "Wrong number of arguments for %s","Εσφαλμένος αριθμός ορισμάτων για %s"
 "XML data is invalid.","Τα δεδομένα XML είναι άκυρα."
-"XML object is not instance of ""Varien_Simplexml_Element"".","Το αντικείμενο XML δεν είναι παρουσία του ""Varien_Simplexml_Element""."
+"XML object is not instance of ""\Maho\Simplexml\Element"".","XML object is not instance of ""\Maho\Simplexml\Element""."
 "Yes","Ναί"
 "Your design change for the specified store intersects with another one, please specify another date range.","Η αλλαγή σχεδίου σας για το καθορισμένο κατάστημα διασταυρώνεται με άλλη, παρακαλούμε ορίστε άλλο εύρος ημερομηνιών."
 "You will have to log in after you save your custom admin path.","Θα πρέπει να συνδεθείτε μετά από το να αποθηκεύσετε το προσαρμοσμένο διαδρομή διαχειριστή σας."
