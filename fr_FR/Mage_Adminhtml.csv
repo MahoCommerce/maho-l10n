@@ -1153,7 +1153,7 @@
 "Wrong transaction ID specified.","Mauvais identifiant de transaction."
 "XML","XML"
 "XML data is invalid.","Les données XML sont invalides"
-"XML object is not instance of ""Varien_Simplexml_Element"".","L'objet XML n'est pas une instance de ""Varien_Simplexml_Element""."
+"XML object is not instance of ""\Maho\Simplexml\Element"".","XML object is not instance of ""\Maho\Simplexml\Element""."
 "Year","Année"
 "Yes","Oui"
 "Yes (301 Moved Permanently)","Oui (301 Document déplacé de façon permanente)"
