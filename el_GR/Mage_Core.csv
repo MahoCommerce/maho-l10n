@@ -43,7 +43,6 @@
 "Base URL","Διευθύνση URL βάσης"
 "Before modifying the store view code please make sure that it is not used in index.php.","Πριν τροποποιήσετε τον κωδικό προβολής καταστήματος, σιγουρευτείτε ότι δεν χρησιμοποιείται στο index.php."
 "Before modifying the website code please make sure that it is not used in index.php.","Πριν τροποποιήσετε τον κώδικα του ιστοχώρου, βεβαιωθείτε ότι δεν χρησιμοποιείται στο index.php."
-"Browser Capabilities Detection","Ανίχνευση Δυνατοτήτων Προγράμματος Περιήγησης"
 "Cache Storage Management","Διαχείριση αποθήκευσης της μνήμης cache"
 "Cache storage may contain additional data. Are you sure that you want flush it?","Η αποθήκευση缓存 μπορεί να περιέχει πρόσθετα δεδομένα. Είσαι σίγουρος ότι θέλεις να το εκκενώσεις;"
 "Can't retrieve entity config: %s","Δε μπορούν να ανακτηθούν οι ρυθμίσεις της οντότητας: %s"
