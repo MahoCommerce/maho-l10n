@@ -43,7 +43,6 @@
 "Base URL","URL de bază"
 "Before modifying the store view code please make sure that it is not used in index.php.","Înainte de a modifica codul vitrinei asigurați-vă că nu este folosit în index.php."
 "Before modifying the website code please make sure that it is not used in index.php.","Înainte de a modifica codul site-ului asigurați-vă că nu este folosit în index.php."
-"Browser Capabilities Detection","Detectare Capacități Browser"
 "Cache Storage Management","Management stocare cache"
 "Cache storage may contain additional data. Are you sure that you want flush it?","Stocarea cache-ului ar putea conține date adiționale. Sunteți sigur că doriți să o goliți?"
 "Can't retrieve entity config: %s","Nu pot obține configurația entității: %s"
