@@ -43,7 +43,6 @@
 "Base URL","Basis URL"
 "Before modifying the store view code please make sure that it is not used in index.php.","Voordat u de winkelweergavecode wijzigt, controleer of deze niet wordt gebruikt in index.php."
 "Before modifying the website code please make sure that it is not used in index.php.","Voordat u de websitecode wijzigt, controleer of deze niet in index.php wordt gebruikt."
-"Browser Capabilities Detection","Detectie van browsermogelijkheden"
 "Cache Storage Management","Beheer cachegeheugen"
 "Cache storage may contain additional data. Are you sure that you want flush it?","Opslagcache kan aanvullende gegevens bevatten. Weet u zeker dat u deze wilt wissen?"
 "Can't retrieve entity config: %s","Kan entity-config niet ophalen: %s"
