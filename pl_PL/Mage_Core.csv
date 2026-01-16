@@ -43,7 +43,6 @@
 "Base URL","Bazowy URL"
 "Before modifying the store view code please make sure that it is not used in index.php.","Przed modyfikacją kodu widoku sklepu upewnij się, że nie jest on używany w index.php."
 "Before modifying the website code please make sure that it is not used in index.php.","Przed modyfikacją kodu witryny upewnij się, że nie jest on używany w index.php."
-"Browser Capabilities Detection","Wykrywanie możliwości przeglądarki"
 "Cache Storage Management","Zarządzanie przechowywaniem cache"
 "Cache storage may contain additional data. Are you sure that you want flush it?","Przechowywanie cache może zawierać dodatkowe dane. Czy na pewno chcesz je wyczyścić?"
 "Can't retrieve entity config: %s","Nie można pobrać konfiguracji jednostki: %s"
