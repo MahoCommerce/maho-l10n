@@ -28,6 +28,24 @@
                         {{depend salable}}
                         <p><strong><a href="{{var addAllLink}}">Προσθέστε όλα τα στοιχεία στο καλάθι αγορών</a></strong> Τιμή:???
                         {{/depend}}
+                        <strong><a href="{{var viewOnSiteLink}}">Δείτε όλα τα αντικείμενα στη λίστα επιθυμιών</a></strong>
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="action-content">
+                        <h1>Hey, take a look at my wishlist from {{var store.getFrontendName()}}.</h1>
+                        <table cellspacing="0" cellpadding="0" class="message-container">
+                            <tr>
+                                <td>{{var message}}</td>
+                            </tr>
+                        </table>
+                        {{var items}}
+                        {{depend salable}}
+                        <p><strong><a href="{{var addAllLink}}">Προσθέστε όλα τα στοιχεία στο καλάθι αγορών</a></strong> Τιμή:???
+                        {{/depend}}
                         <strong><a href="{{var viewOnSiteLink}}">Δείτε όλα τα αντικείμενα στη λίστα επιθυμιών</a></strong></p>
                     </td>
                 </tr>
