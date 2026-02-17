@@ -139,6 +139,7 @@
 "Start date has invalid format.","Data de pornire are formatul invalid."
 "Start date is undefined.","Data de pornire e nedefinită."
 "Status","Status"
+"Status ""%s"" cannot be unassigned. It is in used in %d payment method configuration(s): %s","Status ""%s"" cannot be unassigned. It is in used in %d payment method configuration(s): %s"
 "Stores","Stores"
 "Subscriber Name","Nume Abonat"
 "Subtotal","Subtotal"
