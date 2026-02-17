@@ -139,6 +139,7 @@
 "Start date has invalid format.","Η ημερομηνία έναρξης έχει άκυρο μορφότυπο."
 "Start date is undefined.","Η ημερομηνία έναρξης είναι 未 định."
 "Status","Status"
+"Status ""%s"" cannot be unassigned. It is in used in %d payment method configuration(s): %s","Status ""%s"" cannot be unassigned. It is in used in %d payment method configuration(s): %s"
 "Stores","Stores"
 "Subscriber Name","Όνομα Συνδρομητή"
 "Subtotal","Subtotal"
