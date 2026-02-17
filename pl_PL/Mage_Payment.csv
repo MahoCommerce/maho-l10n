@@ -139,6 +139,7 @@
 "Start date has invalid format.","Data rozpoczęcia ma nieprawidłowy format."
 "Start date is undefined.","Data rozpoczęcia jest niezdefiniowana."
 "Status","Status"
+"Status ""%s"" cannot be unassigned. It is in used in %d payment method configuration(s): %s","Status ""%s"" cannot be unassigned. It is in used in %d payment method configuration(s): %s"
 "Stores","Stores"
 "Subscriber Name","Nazwa subskrybenta"
 "Subtotal","Subtotal"
