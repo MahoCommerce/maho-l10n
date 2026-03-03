@@ -92,6 +92,7 @@
 "An error occurred while clearing the configurable swatches image cache.","Wystąpił błąd podczas czyszczenia pamięci obrazu konfigurowalnych nakładek."
 "An error occurred while clearing the image cache.","Wystąpił błąd podczas czyszczenia pamięci cache obrazków."
 "An error occurred while clearing the minified CSS/JS cache.","An error occurred while clearing the minified CSS/JS cache."
+"An error occurred while deleting email log entries.","An error occurred while deleting email log entries."
 "An error occurred while deleting email template data. Please review log and try again.","Wystąpił błąd podczas usuwania danych szablonu e-mail. Przejrzyj dziennik i spróbuj ponownie."
 "An error occurred while deleting record(s).","Wystąpił błąd podczas usuwania rekordu(ów)."
 "An error occurred while deleting this role.","Wystąpił błąd podczas usuwania tej roli."
