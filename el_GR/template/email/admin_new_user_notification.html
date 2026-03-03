@@ -10,19 +10,13 @@
 @-->
 
 {{template config_path="design/email/header"}}
-{{{inlinecss file="email-inline.css"}}
+{{inlinecss file="email-inline.css"}}
 
 <table cellpadding="0" cellspacing="0" border="0">
     <tr>
         <td class="action-content">
-            <h1>Ειδοποίηση νέου λογαριασμού διαχειριστή</h1>
-            <p>Ένας νέος λογαριασμός διαχειριστή δημιουργήθηκε για <b>{htmlescape var=$user.name}}</b> χρησιμοποιώντας email: {{htmlescape var=$user.email}}.
-
-<table cellpadding="0" cellspacing="0" border="0">
-    <tr>
-        <td class="action-content">
-            <h1>Ειδοποίηση νέου λογαριασμού διαχειριστή</h1>
-            <p>Ένας νέος λογαριασμός διαχειριστή δημιουργήθηκε για <b>{htmlescape var=$user.name}}</b> χρησιμοποιώντας email: {{htmlescape var=$user.email}}.</p>
+            <h1>New admin account notification.</h1>
+            <p>A new admin account was created for <b>{{htmlescape var=$user.name}}</b> using email: {{htmlescape var=$user.email}}.</p>
             <p>If you have not requested this action, please review the list of administrator accounts in <a href="{{store url=""}}">your store</a>.</p>
         </td>
     </tr>
