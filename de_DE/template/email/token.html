@@ -11,9 +11,9 @@
     <tr>
         <td class="action-content">
             <h1>Hello, {{htmlescape var=$userName}}</h1>
-            <p>Ihre Autorisierung zu <b>{{htmlescape var=$applicationName}}</b> wurde in <b>{{htmlescape var=$status}}</b> vom Admin-Team geändert.</p>
+            <p>Your authorization to <b>{{htmlescape var=$applicationName}}</b> has been changed to <b>{{htmlescape var=$status}}</b> by Admin team.</p>
         </td>
     </tr>
 </table>
 
-{{Template config_path="design/email/footer"}}
+{{template config_path="design/email/footer"}}
