@@ -14,7 +14,7 @@
 "Can not determine attribute filter type","Attribut-Filtertyp konnte nicht bestimmt werden."
 "Can not find required columns: %s","Erforderliche Spalten konnten nicht gefunden werden: %s "
 "Cannot get table status for %s","Cannot get table status for %s"
-"Categories","Categories"
+"Categories","Kategorien"
 "Check Data","Daten prüfen"
 "Checked rows: %d, checked entities: %d, invalid rows: %d, total errors: %d","Überprüfte Zeilen: %d, überprüfte Datensätze: %d, Fehler gesamt: %d"
 "Column names: ""%s"" are invalid","Spaltennamen: ""%s"" sind ungültig"
