@@ -9,8 +9,8 @@
 <!--@styles
 @-->
 
-template config_path="design/email/header"}}
-{{inlinecss file="email-inline.cs"}}
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
 
 <table cellpadding="0" cellspacing="0" border="0">
     <tr>
@@ -18,7 +18,7 @@ template config_path="design/email/header"}}
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td class="action-content">
-                        <h1>Hei, aruncați o privire la lista mea de dorințe din {{var store.getFrontendName()}}.</h1>
+                        <h1>Hey, take a look at my wishlist from {{var store.getFrontendName()}}.</h1>
                         <table cellspacing="0" cellpadding="0" class="message-container">
                             <tr>
                                 <td>{{var message}}</td>
@@ -26,9 +26,9 @@ template config_path="design/email/header"}}
                         </table>
                         {{var items}}
                         {{depend salable}}
-                        <p><strong><a href="{{var addAllLink}}">Adaugă toate articolele în coşul de cumpărături</a></strong> <unk>
+                        <p><strong><a href="{{var addAllLink}}">Add all items to shopping cart</a></strong> |
                         {{/depend}}
-                        <strong><a href="{{var viewOnSiteLink}}">Vezi toate elementele din lista de dorinţe</a></strong></p>
+                        <strong><a href="{{var viewOnSiteLink}}">View all wishlist items</a></strong></p>
                     </td>
                 </tr>
             </table>
@@ -36,4 +36,4 @@ template config_path="design/email/header"}}
     </tr>
 </table>
 
-template config_path="design/email/footer"}}
+{{template config_path="design/email/footer"}}

@@ -10,7 +10,7 @@
 @-->
 
 {{template config_path="design/email/header"}}
-{{{inlinecss file="email-inline.css"}}
+{{inlinecss file="email-inline.css"}}
 
 <table cellpadding="0" cellspacing="0" border="0">
     <tr>
@@ -26,9 +26,9 @@
                         </table>
                         {{var items}}
                         {{depend salable}}
-                        <p><strong><a href="{{var addAllLink}}">Προσθέστε όλα τα στοιχεία στο καλάθι αγορών</a></strong> Τιμή:???
+                        <p><strong><a href="{{var addAllLink}}">Add all items to shopping cart</a></strong> |
                         {{/depend}}
-                        <strong><a href="{{var viewOnSiteLink}}">Δείτε όλα τα αντικείμενα στη λίστα επιθυμιών</a></strong></p>
+                        <strong><a href="{{var viewOnSiteLink}}">View all wishlist items</a></strong></p>
                     </td>
                 </tr>
             </table>

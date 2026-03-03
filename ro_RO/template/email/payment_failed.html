@@ -16,26 +16,26 @@
 <table>
     <thead>
     <tr>
-        <th>Tranzacția de plată a eșuat.</th>
+        <th>Payment transaction failed.</th>
     </tr>
     </thead>
     <tbody>
     <tr>
         <td>
             <p>
-                <b>Motivul</b><br />
+                <b>Reason</b><br />
                 {{var reason}}
             </p>
             <p>
-                <b>Tipul comenzii</b><br />
+                <b>Checkout Type</b><br />
                 {{var checkoutType}}
             </p>
             <p>
-                <b>Client:</b><br />
+                <b>Customer:</b><br />
                 <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
             </p>
             <p>
-                <b>Elementele</b><br />
+                <b>Items</b><br />
                 {{var items}}
             </p>
             <p>
@@ -43,23 +43,23 @@
                 {{var total}}
             </p>
             <p>
-                <b>Adresa de facturare:</b><br />
+                <b>Billing Address:</b><br />
                 {{var billingAddress.format('html')}}
             </p>
             <p>
-                <b>Adresa de livrare:</b><br />
+                <b>Shipping Address:</b><br />
                 {{var shippingAddress.format('html')}}
             </p>
             <p>
-                <b>Metoda de livrare:</b><br />
+                <b>Shipping Method:</b><br />
                 {{var shippingMethod}}
             </p>
             <p>
-                <b>Metodă de plată:</b><br />
+                <b>Payment Method:</b><br />
                 {{var paymentMethod}}
             </p>
             <p>
-                <b>Data și ora:</b><br />
+                <b>Date & Time:</b><br />
                 {{var dateAndTime}}
             </p>
         </td>

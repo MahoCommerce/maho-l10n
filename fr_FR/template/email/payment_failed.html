@@ -16,14 +16,14 @@
 <table>
     <thead>
     <tr>
-        <th>La transaction de paiement a échoué.</th>
+        <th>Payment transaction failed.</th>
     </tr>
     </thead>
     <tbody>
     <tr>
         <td>
             <p>
-                <b>Raison</b><br />
+                <b>Reason</b><br />
                 {{var reason}}
             </p>
             <p>
@@ -31,35 +31,35 @@
                 {{var checkoutType}}
             </p>
             <p>
-                <b>Client :</b><br />
+                <b>Customer:</b><br />
                 <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
             </p>
             <p>
-                <b>Articles</b><br />
+                <b>Items</b><br />
                 {{var items}}
             </p>
             <p>
-                <b>Total :</b><br />
+                <b>Total:</b><br />
                 {{var total}}
             </p>
             <p>
-                <b>Adresse de facturation :</b><br />
+                <b>Billing Address:</b><br />
                 {{var billingAddress.format('html')}}
             </p>
             <p>
-                <b>Adresse de livraison :</b><br />
+                <b>Shipping Address:</b><br />
                 {{var shippingAddress.format('html')}}
             </p>
             <p>
-                <b>Méthode de livraison :</b><br />
+                <b>Shipping Method:</b><br />
                 {{var shippingMethod}}
             </p>
             <p>
-                <b>Méthode de paiement :</b><br />
+                <b>Payment Method:</b><br />
                 {{var paymentMethod}}
             </p>
             <p>
-                <b>Date & Heure :</b><br />
+                <b>Date & Time:</b><br />
                 {{var dateAndTime}}
             </p>
         </td>

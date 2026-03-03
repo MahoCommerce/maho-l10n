@@ -22,7 +22,7 @@
                 <tr>
                     <td class="action-content">
                         <h1>{{htmlescape var=$billing.getName()}},</h1>
-                        <p>Seu pedido <span class="no-link">#{{var order.increment_id}}</span> foi atualizado para: <strong>{{var order.getStatusLabel()}}</strong></p>
+                        <p>Your order <span class="no-link">#{{var order.increment_id}}</span> has been updated to: <strong>{{var order.getStatusLabel()}}</strong></p>
                         {{if comment}}
                         <table cellspacing="0" cellpadding="0" class="message-container">
                             <tr>
@@ -30,11 +30,11 @@
                             </tr>
                         </table>
                         {{/if}}
-                        <p>Você pode verificar o status do seu pedido acessando <a href="{{store url="customer/account/"}}">sua conta</a>.</p>
+                        <p>You can check the status of your order by <a href="{{store url="customer/account/"}}">logging into your account</a>.</p>
                         <p>
-                            Se você tiver alguma dúvida, por favor, sinta-se à vontade para nos contatar em
+                            If you have any questions, please feel free to contact us at
                             <a href="mailto:{{var store_email}}">{{var store_email}}</a>
-                            {{depend store_phone}} ou por telefone em <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
+                            {{depend store_phone}} or by phone at <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
                         </p>
                     </td>
                 </tr>

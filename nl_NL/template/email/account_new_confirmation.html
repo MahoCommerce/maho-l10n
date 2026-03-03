@@ -23,24 +23,24 @@
                 <tr>
                     <td class="action-content">
                         <h1>{{htmlescape var=$customer.name}},</h1>
-                        <p>Je e-mailadres {{var customer.email}} moet bevestigd worden voordat je in onze winkel kunt inloggen.</p>
+                        <p>Your email {{var customer.email}} must be confirmed before using it to log in to our store.</p>
                         <p class="highlighted-text">
                             Use the following values when prompted to log in:<br/>
                             <strong>Email:</strong> {{var customer.email}}<br/>
                             <strong>Password</strong>: (the password you set when creating your account)
                         </p>
-                        <p>Klik hier om je e-mailadres te bevestigen en direct in te loggen (de link is maar één keer geldig):</p>
+                        <p>Click here to confirm your email and instantly log in (the link is valid only once):</p>
                         <table cellspacing="0" cellpadding="0" class="action-button" >
                             <tr>
                                 <td>
-                                    <a href="{{store url=&quot;customer/account/confirm/&quot; _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}"><span>Account bevestigen</span></a>
+                                    <a href="{{store url="customer/account/confirm/" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}"><span>Confirm Account</span></a>
                                 </td>
                             </tr>
                         </table>
                         <p>
-                            Als je vragen hebt, Neem gerust contact met ons op via
+                            If you have any questions, please feel free to contact us at
                             <a href="mailto:{{var store_email}}">{{var store_email}}</a>
-                            {{depend store_phone}} of via telefoon bij <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
+                            {{depend store_phone}} or by phone at <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
                         </p>
                     </td>
                 </tr>

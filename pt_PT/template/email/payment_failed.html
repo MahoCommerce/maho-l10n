@@ -16,7 +16,7 @@
 <table>
     <thead>
     <tr>
-        <th>A transação de pagamento falhou.</th>
+        <th>Payment transaction failed.</th>
     </tr>
     </thead>
     <tbody>
@@ -27,11 +27,11 @@
                 {{var reason}}
             </p>
             <p>
-                <b>Tipo de check-out</b><br />
+                <b>Checkout Type</b><br />
                 {{var checkoutType}}
             </p>
             <p>
-                <b>Cliente:</b><br />
+                <b>Customer:</b><br />
                 <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
             </p>
             <p>
@@ -43,23 +43,23 @@
                 {{var total}}
             </p>
             <p>
-                <b>Endereço de Cobrança:</b><br />
+                <b>Billing Address:</b><br />
                 {{var billingAddress.format('html')}}
             </p>
             <p>
-                <b>Endereço de Entrega:</b><br />
+                <b>Shipping Address:</b><br />
                 {{var shippingAddress.format('html')}}
             </p>
             <p>
-                <b>Método de Envio:</b><br />
+                <b>Shipping Method:</b><br />
                 {{var shippingMethod}}
             </p>
             <p>
-                <b>Método de pagamento:</b><br />
+                <b>Payment Method:</b><br />
                 {{var paymentMethod}}
             </p>
             <p>
-                <b>Data & Hora:</b><br />
+                <b>Date & Time:</b><br />
                 {{var dateAndTime}}
             </p>
         </td>

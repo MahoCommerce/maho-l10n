@@ -8,46 +8,26 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 #[AsCommand(
     name: 'translate',
-    description: 'Translate CSV files line by line from en_US to a target locale using GROQ API with llama-3.1-70b-versatile model'
+    description: 'Generate translated CSV files from en_US using Magento 2 community translations'
 )]
 class Translate extends Command
 {
-    const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
-    const GROQ_MODEL = 'llama3-70b-8192';
     const MAGENTO2_BASE_URL = 'https://raw.githubusercontent.com/magento-l10n/language-{locale}/master/{locale}.csv';
-    const OPENMAGE_BASE_URL = 'https://raw.githubusercontent.com/luigifab/openmage-translations/main/locales/{locale}/{filename}';
     const SOURCE_DIRECTORY = './en_US/';
 
     private $magento2Translations = [];
-    private $openMageTranslations = [];
     private $locale;
 
     protected function configure(): void
     {
         $this
-            ->addArgument('locale', InputArgument::REQUIRED, 'The target locale code (e.g., it_IT)')
-            ->addArgument('api-key', InputArgument::REQUIRED, 'Your GROQ API key');
+            ->addArgument('locale', InputArgument::REQUIRED, 'The target locale code (e.g., it_IT)');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $this->locale = $input->getArgument('locale');
-        $apiKey = $input->getArgument('api-key');
         $targetDirectory = "./{$this->locale}/";
-
-        /* some tests to decide which model to use
-        $a = $this->translateContent("File MIME Type", $apiKey, $output);
-        $output->writeln($a);
-        $a = $this->translateContent("Automatically Return Credit Memo Item to Stock", $apiKey, $output);
-        $output->writeln($a);
-        $a = $this->translateContent("Gender is mandatory", $apiKey, $output);
-        $output->writeln($a);
-        $a = $this->translateContent("Options is mandatory", $apiKey, $output);
-        $output->writeln($a);
-        $a = $this->translateContent("Newsletter", $apiKey, $output);
-        $output->writeln($a);
-        die();
-        */
 
         if (!is_dir(self::SOURCE_DIRECTORY)) {
             $output->writeln("<error>Error: The source directory ./en_US does not exist.</error>");
@@ -62,31 +42,36 @@ class Translate extends Command
             $output->writeln("<info>Created target directory: $targetDirectory</info>");
         }
 
-        // Load Magento 2 translations before processing files
         $this->loadMagento2Translations($output);
 
+        if (empty($this->magento2Translations)) {
+            $output->writeln("<error>No Magento 2 translations found for {$this->locale}. Aborting.</error>");
+            return Command::FAILURE;
+        }
+
         $csvFiles = glob(self::SOURCE_DIRECTORY . '/*.csv');
+        $totalTranslated = 0;
+        $totalRows = 0;
+
         foreach ($csvFiles as $sourceFilePath) {
             $relativeFilePath = str_replace(self::SOURCE_DIRECTORY, '', $sourceFilePath);
             $targetFilePath = $targetDirectory . $relativeFilePath;
 
-            if (file_exists($targetFilePath)) {
-                $output->writeln("<info>Skipping existing file: $targetFilePath</info>");
-                continue;
-            }
-
-            $output->writeln("Translating CSV file: $sourceFilePath");
-            try {
-                // Load OpenMage translations for the current file
-                $this->loadOpenMageTranslations($output, basename($sourceFilePath));
-                $this->processCSV($sourceFilePath, $targetFilePath, $apiKey, $output);
-            } catch (\Exception $e) {
-                $output->writeln("<error>Error processing file $sourceFilePath: " . $e->getMessage() . "</error>");
-                return Command::FAILURE;
-            }
+            $output->writeln("Processing: $relativeFilePath");
+            [$translated, $rows] = $this->processCSV($sourceFilePath, $targetFilePath, $output);
+            $totalTranslated += $translated;
+            $totalRows += $rows;
         }
 
-        $output->writeln("<info>Translation process completed.</info>");
+        // Copy email templates
+        $templatesCopied = $this->copyTemplates($targetDirectory, $output);
+
+        $percentage = $totalRows > 0 ? round($totalTranslated / $totalRows * 100, 1) : 0;
+        $output->writeln("");
+        $output->writeln("<info>Done. Translated $totalTranslated/$totalRows strings ($percentage%) for {$this->locale}.</info>");
+        $output->writeln("<info>Copied $templatesCopied email templates.</info>");
+        $output->writeln("<info>Remaining strings need translation via Crowdin.</info>");
+
         return Command::SUCCESS;
     }
 
@@ -97,11 +82,11 @@ class Translate extends Command
 
         $content = @file_get_contents($magento2Url);
         if ($content === false) {
-            $output->writeln("<error>Failed to load Magento 2 translations. Proceeding without them.</error>");
+            $output->writeln("<error>Failed to load Magento 2 translations.</error>");
             return;
         }
 
-        $rows = array_map('str_getcsv', explode("\n", $content));
+        $rows = array_map(fn($line) => str_getcsv($line, escape: "\\"), explode("\n", $content));
         foreach ($rows as $row) {
             if (count($row) >= 2) {
                 $this->magento2Translations[$row[0]] = $row[1];
@@ -110,28 +95,7 @@ class Translate extends Command
         $output->writeln("<info>Loaded " . count($this->magento2Translations) . " translations from Magento 2.</info>");
     }
 
-    private function loadOpenMageTranslations(OutputInterface $output, string $filename): void
-    {
-        $openMageUrl = str_replace(['{locale}', '{filename}'], [$this->locale, $filename], self::OPENMAGE_BASE_URL);
-        $output->writeln("<info>Loading translations from OpenMage: $openMageUrl</info>");
-
-        $content = @file_get_contents($openMageUrl);
-        if ($content === false) {
-            $output->writeln("<error>Failed to load OpenMage translations for $filename. Proceeding without them.</error>");
-            return;
-        }
-
-        $this->openMageTranslations = []; // Clear previous translations
-        $rows = array_map('str_getcsv', explode("\n", $content));
-        foreach ($rows as $row) {
-            if (count($row) >= 2) {
-                $this->openMageTranslations[$row[0]] = $row[1];
-            }
-        }
-        $output->writeln("<info>Loaded " . count($this->openMageTranslations) . " translations from OpenMage for $filename.</info>");
-    }
-
-    private function processCSV($sourceFilePath, $targetFilePath, $apiKey, OutputInterface $output): void
+    private function processCSV(string $sourceFilePath, string $targetFilePath, OutputInterface $output): array
     {
         $targetFileDir = dirname($targetFilePath);
         if (!is_dir($targetFileDir)) {
@@ -146,50 +110,57 @@ class Translate extends Command
         }
 
         $rowCount = 0;
+        $translatedCount = 0;
 
-        while (($row = fgetcsv($inputFile)) !== false) {
-            try {
-                $translatedRow = $this->translateRow($row, $apiKey, $output);
-                $this->writeQuotedCsvRow($outputFile, $translatedRow);
-                $rowCount++;
-
-                if ($rowCount % 10 === 0) {
-                    $output->writeln("<info>Processed " . $rowCount . " rows</info>");
+        while (($row = fgetcsv($inputFile, escape: "\\")) !== false) {
+            if (count($row) >= 2) {
+                $source = $row[0];
+                if (isset($this->magento2Translations[$source])) {
+                    $row[1] = $this->magento2Translations[$source];
+                    $translatedCount++;
                 }
-            } catch (\Exception $e) {
-                $output->writeln("<error>Error processing row: " . $e->getMessage() . "</error>");
-                throw $e; // Re-throw the exception to be caught by the execute method
             }
+            $this->writeQuotedCsvRow($outputFile, $row);
+            $rowCount++;
         }
-
-        $output->writeln("Processed a total of " . $rowCount . " rows");
 
         fclose($inputFile);
         fclose($outputFile);
+
+        $output->writeln("  $translatedCount/$rowCount strings translated");
+
+        return [$translatedCount, $rowCount];
     }
 
-    private function translateRow($row, $apiKey, OutputInterface $output): array
+    private function copyTemplates(string $targetDirectory, OutputInterface $output): int
     {
-        if (count($row) > 1) {
-            $identifier = $row[0];
-            $content = $row[1];
-
-            // Check if translation exists in Magento 2 data
-            if (isset($this->magento2Translations[$identifier])) {
-                $row[1] = $this->magento2Translations[$identifier];
-                $output->writeln("Using Magento 2 for: $identifier");
-            }
-            // Check if translation exists in OpenMage data
-            elseif (isset($this->openMageTranslations[$identifier])) {
-                $row[1] = $this->openMageTranslations[$identifier];
-                $output->writeln("Using OpenMage for: $identifier");
-            }
-            else {
-                $translatedContent = $this->translateContent($content, $apiKey, $output);
-                $row[1] = $translatedContent;
-            }
+        $templateDir = self::SOURCE_DIRECTORY . 'template';
+        if (!is_dir($templateDir)) {
+            return 0;
         }
-        return $row;
+
+        $count = 0;
+        $iterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($templateDir));
+
+        foreach ($iterator as $file) {
+            if ($file->isDir()) {
+                continue;
+            }
+
+            $relativePath = str_replace(self::SOURCE_DIRECTORY, '', $file->getPathname());
+            $targetPath = $targetDirectory . $relativePath;
+            $targetDir = dirname($targetPath);
+
+            if (!is_dir($targetDir)) {
+                mkdir($targetDir, 0777, true);
+            }
+
+            copy($file->getPathname(), $targetPath);
+            $count++;
+        }
+
+        $output->writeln("<info>Copied $count email templates from en_US.</info>");
+        return $count;
     }
 
     private function writeQuotedCsvRow($file, $row): void
@@ -198,111 +169,5 @@ class Translate extends Command
             return '"' . str_replace('"', '""', $field) . '"';
         }, $row);
         fwrite($file, implode(',', $quotedRow) . "\n");
-    }
-
-    private function translateContent($content, $apiKey, OutputInterface $output): string
-    {
-        $output->writeln("Using AI for: $content");
-
-        $maxRetries = 999;
-        $retryCount = 0;
-        $waitTime = 20; // seconds
-
-        // Capture leading and trailing spaces
-        $leadingSpaces = strlen($content) - strlen(ltrim($content));
-        $trailingSpaces = strlen($content) - strlen(rtrim($content));
-
-        while ($retryCount < $maxRetries) {
-            sleep(1);
-            try {
-                $data = [
-                    'model' => self::GROQ_MODEL,
-                    'messages' => [
-                        ['role' => 'system', 'content' => <<<EOF
-You are an expert in translations of ecommerce software platforms. Your task is to translate the given content to "{$this->locale}".
-- The context is an ecommerce software/website. For example (in italian) "run" should be translated to "esegui", not "corri". Use this same logic for every language.
-- Only output the translated content, nothing else, no comments or anything.
-- Every time you see the word openmage or magento, translate it to Maho.
-- Try not to translate specific terms like CMS, newsletter, "url rewrites", "layered navigation" or others that may sound weird in the target language.
-- Maintain the casing of the words if possible.
-- Preserve any special characters or formatting in the original text.
-- You have to translate every message you receive, whatever it means.
-EOF
-                        ],
-                        ['role' => 'user', 'content' => $content]
-                    ],
-                    'temperature' => 0,
-                    'max_tokens' => 2000,
-                ];
-
-                $ch = curl_init(self::GROQ_API_URL);
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                curl_setopt($ch, CURLOPT_POST, true);
-                curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
-                curl_setopt($ch, CURLOPT_HTTPHEADER, [
-                    'Content-Type: application/json',
-                    'Authorization: Bearer ' . $apiKey
-                ]);
-
-                $response = curl_exec($ch);
-                $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-
-                if ($response === false) {
-                    $error = curl_error($ch);
-                    curl_close($ch);
-                    throw new \Exception("API call failed: $error");
-                }
-
-                curl_close($ch);
-
-                if ($httpCode != 200) {
-                    throw new \Exception("API call failed with HTTP code $httpCode");
-                }
-
-                $result = json_decode($response, true);
-                if (!isset($result['choices'][0]['message']['content'])) {
-                    throw new \Exception("Unexpected API response format");
-                }
-
-                $translatedContent = $result['choices'][0]['message']['content'];
-
-                // Remove surrounding quotes if they were added by the API
-                if (substr($translatedContent, 0, 1) === '"' && substr($translatedContent, -1) === '"') {
-                    $translatedContent = substr($translatedContent, 1, -1);
-                }
-
-                if (empty($translatedContent)) {
-                    throw new \Exception("Empty translation received");
-                }
-
-                // Ensure the translated content has the same leading and trailing spaces as the original
-                $translatedLeadingSpaces = strlen($translatedContent) - strlen(ltrim($translatedContent));
-                $translatedTrailingSpaces = strlen($translatedContent) - strlen(rtrim($translatedContent));
-
-                if ($translatedLeadingSpaces < $leadingSpaces) {
-                    $translatedContent = str_repeat(' ', $leadingSpaces - $translatedLeadingSpaces) . $translatedContent;
-                }
-
-                if ($translatedTrailingSpaces < $trailingSpaces) {
-                    $translatedContent .= str_repeat(' ', $trailingSpaces - $translatedTrailingSpaces);
-                }
-
-                return $translatedContent;
-
-            } catch (\Exception $e) {
-                $output->writeln("<error>API Error: " . $e->getMessage() . "</error>");
-
-                if ($retryCount < $maxRetries - 1) {
-                    $output->writeln("<info>Retrying in $waitTime seconds...</info>");
-                    sleep($waitTime);
-                    $retryCount++;
-                } else {
-                    $output->writeln("<error>Max retries reached. Exiting...</error>");
-                    throw $e; // Re-throw the exception to be caught by the calling method
-                }
-            }
-        }
-
-        throw new \Exception("Failed to translate content after $maxRetries attempts");
     }
 }

@@ -27,11 +27,11 @@
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td class="email-heading">
-                        <h1>Bedankt voor je bestelling bij {{var store.getFrontendName()}}.</h1>
-                        <p>U kunt de status van uw bestelling controleren door <a href="{{store url="customer/account/"}}">in te loggen op uw account</a>.</p>
+                        <h1>Thank you for your order from {{var store.getFrontendName()}}.</h1>
+                        <p>You can check the status of your order by <a href="{{store url="customer/account/"}}">logging into your account</a>.</p>
                     </td>
                     <td class="store-info">
-                        <h4>Vragen bestellen?</h4>
+                        <h4>Order Questions?</h4>
                         <p>
                             {{depend store_phone}}
                             <b>Call Us:</b>
@@ -51,8 +51,8 @@
     </tr>
     <tr>
         <td class="order-details">
-            <h3>Uw creditfactuur <span class="no-link">#{{var creditmemo.increment_id}}</span></h3>
-            <p>Bestelling <span class="no-link">#{{var order.increment_id}}</span></p>
+            <h3>Your Credit Memo <span class="no-link">#{{var creditmemo.increment_id}}</span></h3>
+            <p>Order <span class="no-link">#{{var order.increment_id}}</span></p>
         </td>
     </tr>
     <tr class="order-information">
@@ -64,29 +64,29 @@
                 </tr>
             </table>
             {{/if}}
-            {{layout handle="sales_email_order_creditmemo_items" creditmemo=$creditmemo order=$order }} }}
+            {{layout handle="sales_email_order_creditmemo_items" creditmemo=$creditmemo order=$order}}
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td class="address-details">
-                        <h6>Factuur voor:</h6>
+                        <h6>Bill to:</h6>
                         <p><span class="no-link">{{var order.billing_address.format('html')}}</span></p>
                     </td>
                     {{depend order.getIsNotVirtual()}}
                     <td class="address-details">
-                        <h6>Verzenden naar:</h6>
+                        <h6>Ship to:</h6>
                         <p><span class="no-link">{{var order.shipping_address.format('html')}}</span></p>
                     </td>
-                    {{/afhankelijk}}
+                    {{/depend}}
                 </tr>
                 <tr>
                     {{depend order.getIsNotVirtual()}}
                     <td class="method-info">
-                        <h6>Verzend methode:</h6>
+                        <h6>Shipping method:</h6>
                         <p>{{var order.shipping_description}}</p>
                     </td>
-                    {{/afhankelijk}}
+                    {{/depend}}
                     <td class="method-info">
-                        <h6>Betaalmethode:</h6>
+                        <h6>Payment method:</h6>
                         {{var payment_html}}
                     </td>
                 </tr>
