@@ -23,24 +23,24 @@
                 <tr>
                     <td class="action-content">
                         <h1>{{htmlescape var=$customer.name}},</h1>
-                        <p>Votre adresse e-mail {{var customer.email}} doit être confirmée avant de l'utiliser pour vous connecter à notre boutique.</p>
+                        <p>Your email {{var customer.email}} must be confirmed before using it to log in to our store.</p>
                         <p class="highlighted-text">
-                            Utilisez les valeurs suivantes lorsque vous êtes invité à vous connecter :<br/>
-                            <strong>E-mail:</strong> {{var customer.email}}<br/>
-                            <strong>Mot de passe</strong>: (le mot de passe que vous avez défini lors de la création de votre compte)
+                            Use the following values when prompted to log in:<br/>
+                            <strong>Email:</strong> {{var customer.email}}<br/>
+                            <strong>Password</strong>: (the password you set when creating your account)
                         </p>
-                        <p>Cliquez ici pour confirmer votre adresse e-mail et vous connecter instantanément (le lien n'est valide qu'une seule fois) :</p>
+                        <p>Click here to confirm your email and instantly log in (the link is valid only once):</p>
                         <table cellspacing="0" cellpadding="0" class="action-button" >
                             <tr>
                                 <td>
-                                    <a href="{{store url=&quot;customer/account/confirm/&quot; _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}"><span>Confirmer le compte</span></a>
+                                    <a href="{{store url=&quot;customer/account/confirm/&quot; _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}"><span>Confirm Account</span></a>
                                 </td>
                             </tr>
                         </table>
                         <p>
-                            Si vous avez des questions, n'hésitez pas à nous contacter à
+                            If you have any questions, please feel free to contact us at
                             <a href="mailto:{{var store_email}}">{{var store_email}}</a>
-                            {{depend store_phone}} ou par téléphone à <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
+                            {{depend store_phone}} or by phone at <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
                         </p>
                     </td>
                 </tr>
