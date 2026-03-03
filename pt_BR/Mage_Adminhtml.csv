@@ -92,6 +92,7 @@
 "An error occurred while clearing the configurable swatches image cache.","Ocorreu um erro ao limpar o cache de imagem de amostras configuráveis."
 "An error occurred while clearing the image cache.","Ocorreu um erro ao limpar o cache de imagem."
 "An error occurred while clearing the minified CSS/JS cache.","An error occurred while clearing the minified CSS/JS cache."
+"An error occurred while deleting email log entries.","An error occurred while deleting email log entries."
 "An error occurred while deleting email template data. Please review log and try again.","Ocorreu um erro ao deletar dados de modelo de email. Por favor, revise o log e tente novamente."
 "An error occurred while deleting record(s).","Ocorreu um erro ao deletar registro(s)."
 "An error occurred while deleting this role.","Ocorreu um erro ao apagar esta permissão."
