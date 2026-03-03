@@ -27,21 +27,21 @@
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td class="email-heading">
-                        <h1>Vielen Dank für Ihre Bestellung von {{var store.getFrontendName()}}.</h1>
+                        <h1>Thank you for your order from {{var store.getFrontendName()}}.</h1>
                         <p>You can check the status of your order by <a href="{{store url="customer/account/"}}">logging into your account</a>.</p>
                     </td>
                     <td class="store-info">
-                        <h4>Fragen bestellen?</h4>
+                        <h4>Order Questions?</h4>
                         <p>
                             {{depend store_phone}}
-                            <b>Anrufen:</b>
+                            <b>Call Us:</b>
                             <a href="tel:{{var phone}}">{{var store_phone}}</a><br>
                             {{/depend}}
                             {{depend store_hours}}
-                            <span class="no-link">{{var store_hours}}</span><br><br>
+                            <span class="no-link">{{var store_hours}}</span><br>
                             {{/depend}}
                             {{depend store_email}}
-                            <b>E-Mail:</b> <a href="mailto:{{var store_email}}">{{var store_email}}</a>
+                            <b>Email:</b> <a href="mailto:{{var store_email}}">{{var store_email}}</a>
                             {{/depend}}
                         </p>
                     </td>
@@ -51,8 +51,8 @@
     </tr>
     <tr>
         <td class="order-details">
-            <h3>Ihre Rechnungskorrektur <span class="no-link">#{{var creditmemo.increment_id}}</span></h3>
-            <p>Bestellung <span class="no-link">#{{var order.increment_id}}</span></p>
+            <h3>Your Credit Memo <span class="no-link">#{{var creditmemo.increment_id}}</span></h3>
+            <p>Order <span class="no-link">#{{var order.increment_id}}</span></p>
         </td>
     </tr>
     <tr class="order-information">
@@ -68,25 +68,25 @@
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td class="address-details">
-                        <h6>Rechnung an:</h6>
+                        <h6>Bill to:</h6>
                         <p><span class="no-link">{{var order.billing_address.format('html')}}</span></p>
                     </td>
                     {{depend order.getIsNotVirtual()}}
                     <td class="address-details">
-                        <h6>Versand an:</h6>
+                        <h6>Ship to:</h6>
                         <p><span class="no-link">{{var order.shipping_address.format('html')}}</span></p>
                     </td>
-                    {{/abhängig}}
+                    {{/depend}}
                 </tr>
                 <tr>
                     {{depend order.getIsNotVirtual()}}
                     <td class="method-info">
-                        <h6>Versandart:</h6>
+                        <h6>Shipping method:</h6>
                         <p>{{var order.shipping_description}}</p>
                     </td>
-                    {{/abhängig}}
+                    {{/depend}}
                     <td class="method-info">
-                        <h6>Zahlungsart:</h6>
+                        <h6>Payment method:</h6>
                         {{var payment_html}}
                     </td>
                 </tr>
@@ -95,4 +95,4 @@
     </tr>
 </table>
 
-{{Template config_path="design/email/footer"}}
+{{template config_path="design/email/footer"}}
