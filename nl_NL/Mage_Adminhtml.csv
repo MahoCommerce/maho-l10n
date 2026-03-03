@@ -92,6 +92,7 @@
 "An error occurred while clearing the configurable swatches image cache.","Er is een fout opgetreden bij het wissen van de configurabele swatches-afbeeldingcache."
 "An error occurred while clearing the image cache.","Er is een fout opgetreden bij het vernieuwen van de afbeeldingen cache."
 "An error occurred while clearing the minified CSS/JS cache.","An error occurred while clearing the minified CSS/JS cache."
+"An error occurred while deleting email log entries.","An error occurred while deleting email log entries."
 "An error occurred while deleting email template data. Please review log and try again.","Er is een fout opgetreden bij het verwijderen van e-mail sjabloongegevens. Controleer het logboek en probeer het opnieuw."
 "An error occurred while deleting record(s).","Er is een fout opgetreden tijdens het verwijderen van record(s)."
 "An error occurred while deleting this role.","Er is een fout opgetreden bij het verwijderen van deze rol"
