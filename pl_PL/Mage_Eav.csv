@@ -66,7 +66,6 @@
 "Invalid attribute name: %s","Niepoprawana nazwa cechy: %s"
 "Invalid attribute requested: %s","Wybrano nieprawidłową cechę: %s"
 "Invalid attribute type","Niepoprawny typ cechy"
-"Invalid character encountered in increment ID: %s","Napotkano na nieprawidłowy znak w polu zwiększania ID: %s"
 "Invalid date","Nieprawidłowa data"
 "Invalid default date","Nieprawidłowa data domyślna"
 "Invalid default decimal value","Nieprawidłowa wartość dziesiętna domyślna"
