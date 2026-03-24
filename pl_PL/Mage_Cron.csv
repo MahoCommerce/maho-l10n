@@ -1,4 +1,5 @@
 "Cron (Scheduled Tasks) - all the times are in minutes","Cron (zadania zaplanowane) – wszystkie czasy podane są w minutach"
+"Cron does not appear to be running. No jobs have been executed in the last hour. Please verify that cron is configured on your server.","Cron does not appear to be running. No jobs have been executed in the last hour. Please verify that cron is configured on your server."
 "Cron Jobs","Cron Jobs"
 "Daily","Codziennie"
 "Failure History Lifetime","Cała historia niepowodzeń"
