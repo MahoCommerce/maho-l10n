@@ -116,6 +116,7 @@
 "Have an account?","Have an account?"
 "HTML","HTML"
 "ID","ID"
+"If customer accounts are disabled in the frontend, guest checkout must remain enabled.","If customer accounts are disabled in the frontend, guest checkout must remain enabled."
 "Incl. Tax","Tasse incl."
 "Invalid data.","Dati non validi."
 "Invalid form key. Please refresh the page.","Invalid form key. Please refresh the page."
