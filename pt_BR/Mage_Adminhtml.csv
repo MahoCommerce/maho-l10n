@@ -413,6 +413,7 @@
 "Grid Only","Apenas Grade"
 "Group:","Grupo:"
 "Guest","Visitante"
+"Health Check","Health Check"
 "Helper attributes should not be used in custom layout updates.","Atributos de helper não devem ser usados em atualizações de layout personalizadas."
 "Helper for options rendering doesn't implement required interface.","Auxiliar para renderização de opções não implementa interface necessária."
 "Home","Início"
