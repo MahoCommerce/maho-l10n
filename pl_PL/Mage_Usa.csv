@@ -288,7 +288,7 @@
 "There is no items in this order","Brak produktów w tym zamówieniu"
 "The response is in wrong format.","Odpowiedź ma niepoprawny format."
 "Title","Tytuł"
-"To obtain your Client ID/Secret you have to:<br />- Register to <a href='https://developer.ups.com' target=_blank>https://developer.ups.com</a><br />- Go to My Apps -> Add Apps and fill all data<br />- Add Rating, Authorization, Shipping, TimeInTransit, Tracking products to the app","To obtain your Client ID/Secret you have to:<br />- Register to <a href='https://developer.ups.com' target=_blank>https://developer.ups.com</a><br />- Go to My Apps -> Add Apps and fill all data<br />- Add Rating, Authorization, Shipping, TimeInTransit, Tracking products to the app"
+"To obtain your Client ID/Secret you have to:<br>- Register to <a href='https://developer.ups.com' target=_blank>https://developer.ups.com</a><br>- Go to My Apps -> Add Apps and fill all data<br>- Add Rating, Authorization, Shipping, TimeInTransit, Tracking products to the app","To obtain your Client ID/Secret you have to:<br>- Register to <a href='https://developer.ups.com' target=_blank>https://developer.ups.com</a><br>- Go to My Apps -> Add Apps and fill all data<br>- Add Rating, Authorization, Shipping, TimeInTransit, Tracking products to the app"
 "Tracking REST URL","Tracking REST URL"
 "Unable to retrieve tracking","Nie udało się pobrać informacji o śledzeniu przesyłki"
 "United Parcel Service REST","United Parcel Service REST"
