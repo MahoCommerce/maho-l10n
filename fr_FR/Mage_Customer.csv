@@ -367,7 +367,7 @@
 "Save Customer Group","Sauvegarder le groupe clients"
 "Saved %d record(s)","Saved %d record(s)"
 "Save in address book","Enregistrer dans le carnet d'adresses"
-"Semicolon (;) separated values.<br/>Put semicolon in the beginning for empty first option.<br/>Leave empty for open text field.","Valeurs séparées par des points-virgules (;).<br/>Commencer par un point-virgule pour une valeur vide en début d'options.<br/>Laisser vide pour un champ texte libre."
+"Semicolon (;) separated values.<br>Put semicolon in the beginning for empty first option.<br>Leave empty for open text field.","Semicolon (;) separated values.<br>Put semicolon in the beginning for empty first option.<br>Leave empty for open text field."
 "Send confirmation link","Envoyer un lien de confirmation"
 "Send From","Envoyé de"
 "Sending","Envoi en cours"
