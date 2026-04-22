@@ -46,6 +46,7 @@
 "Some of the products cannot be ordered in the requested quantity.","Niektóre produkty nie mogą być zamówione w żądanej ilości."
 "Stock Options","Opcje stanów"
 "Stock Status","Stan magazynowy"
+"Sync Stock Availability with Qty","Sync Stock Availability with Qty"
 "The maximum quantity allowed for purchase is %s.","Maksymalna wielkość zamówienia to %d."
 "The minimum quantity allowed for purchase is %s.","Minimalna wielkość zamówienia to %d."
 "The requested quantity for ""%s"" is not available.","Wymagana ilość ""%s"" nie jest dostępna."
@@ -61,3 +62,4 @@
 "Update","Aktualizuj"
 "Update product stock data","Aktualizuj dane stanów magazynowych"
 "Update the Product","Aktualizuj produkt"
+"When enabled, products automatically return to In Stock as soon as Qty rises above the threshold.","When enabled, products automatically return to In Stock as soon as Qty rises above the threshold."
