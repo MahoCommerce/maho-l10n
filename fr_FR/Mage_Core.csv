@@ -318,7 +318,6 @@
 "Rate limit","Rate limit"
 "Recovery Link Expiration Period (hours)","Durée avant expiration (en heure) du lien de récupération"
 "Referrer Policy","Referrer Policy"
-"Requested invalid store ""%s""","Requested invalid store ""%s"""
 "Request Path for Specified Store","Chemin de requête pour le magasin spécifié"
 "Request path length exceeds allowed %s symbols.","Request path length exceeds allowed %s symbols."
 "Resource ""%s"" is not found.","Resource ""%s"" is not found."
