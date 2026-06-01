@@ -13,14 +13,16 @@ jobs:
         uses: actions/checkout@v5
 
       # Uses the runner's preinstalled Node/npm (no setup-node action needed).
-      # Pushes the latest en_US source strings to Crowdin, then machine-translates
-      # any new/untranslated strings across all target languages. Crowdin's GitHub
-      # integration is disabled, so this replaces its automatic source pull and
-      # keeps autotranslate current. One-way: nothing is committed back here
-      # (translations are pulled later by Publish Language Packs).
+      # Pushes the latest en_US source strings to Crowdin, then queues MT
+      # pre-translation across all target languages. Crowdin's GitHub integration
+      # is disabled, so this replaces its automatic source pull. One-way: nothing
+      # is committed back here (translations are pulled later by Publish Language
+      # Packs, once the MT has run).
       #
-      # CROWDIN_MT_ENGINE_ID is the Crowdin Translate engine id, stored as a repo secret.
-      - name: Upload sources and pre-translate
+      # The CLI's `pre-translate` blocks until MT finishes, so MT is triggered via
+      # the REST API instead — it returns immediately and the job ends without
+      # waiting. CROWDIN_MT_ENGINE_ID is the Crowdin Translate engine id (secret).
+      - name: Upload sources and queue autotranslate
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
@@ -29,8 +31,12 @@ jobs:
           set -euo pipefail
           npm install -g @crowdin/cli
           crowdin upload sources --no-progress
-          # No --language-id => all target languages.
-          crowdin pre-translate \
-            --method mt \
-            --engine-id "${CROWDIN_MT_ENGINE_ID}" \
-            --no-progress
+
+          api="https://api.crowdin.com/api/v2"
+          auth="Authorization: Bearer ${CROWDIN_PERSONAL_TOKEN}"
+          langs=$(curl -fsS -H "$auth" "$api/projects/${CROWDIN_PROJECT_ID}" | jq -c '.data.targetLanguageIds')
+          files=$(curl -fsS -H "$auth" "$api/projects/${CROWDIN_PROJECT_ID}/files?limit=500" | jq -c '[.data[].data.id]')
+          curl -fsS -X POST -H "$auth" -H 'Content-Type: application/json' \
+            "$api/projects/${CROWDIN_PROJECT_ID}/pre-translations" \
+            -d "{\"languageIds\":${langs},\"fileIds\":${files},\"method\":\"mt\",\"engineId\":${CROWDIN_MT_ENGINE_ID}}" \
+            | jq -r '"Autotranslate queued (id " + ((.data.identifier|tostring)) + ", status " + (.data.status // "?") + ") — running async on Crowdin."'
