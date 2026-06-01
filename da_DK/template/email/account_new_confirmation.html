@@ -1,0 +1,52 @@
+<!--@subject Account confirmation for {{var customer.name}} @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
+"store url=\"customer/account/\"":"Customer Account Url",
+"htmlescape var=$customer.name":"Customer Name",
+"var customer.email":"Customer Email",
+"store url=\"customer/account/confirm/\" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url":"Confirmation Url"
+}
+@-->
+
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="action-content">
+                        <h1>{{htmlescape var=$customer.name}},</h1>
+                        <p>Din e-mail {{var customer.email}} skal bekræftes, før du bruger den til at logge ind på vores butik.</p>
+                        <p class="highlighted-text">
+                            Brug følgende værdier, når du bliver bedt om at logge ind:<br>
+                            <strong>Email:</strong> {{var customer.email}}<br>
+                            <strong>Password</strong>: (den adgangskode, du har angivet, når du opretter din konto)
+                        </p>
+                        <p>Klik her for at bekræfte din e-mail og log ind med det samme (linket gælder kun én gang):</p>
+                        <table cellspacing="0" cellpadding="0" class="action-button" >
+                            <tr>
+                                <td>
+                                    <a href="{{store url=&quot;customer/account/confirm/&quot; _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}"><span>Bekræft Konto</span></a>
+                                </td>
+                            </tr>
+                        </table>
+                        <p>
+                            Hvis du har spørgsmål, er velkommen til at kontakte os på
+                            <a href="mailto:{{var store_email}}">{{var store_email}}</a>
+                            {{depend store_phone}} eller på telefon <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}
