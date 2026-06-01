@@ -23,23 +23,20 @@ jobs:
       # keeps autotranslate current. One-way: nothing is committed back here
       # (translations are pulled later by Publish Language Packs).
       #
-      # Pre-translate needs the project's MT engine id; set it as the repo
-      # variable CROWDIN_MT_ENGINE_ID to enable the step (skipped if unset).
+      # MT engine for the Maho project is Crowdin Translate (id 336596). It's not
+      # sensitive, so it's hardcoded as a fallback; override via the repo variable
+      # CROWDIN_MT_ENGINE_ID if you ever switch engines.
       - name: Upload sources and pre-translate
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
-          CROWDIN_MT_ENGINE_ID: ${{ vars.CROWDIN_MT_ENGINE_ID }}
+          CROWDIN_MT_ENGINE_ID: ${{ vars.CROWDIN_MT_ENGINE_ID || '336596' }}
         run: |
           set -euo pipefail
           npm install -g @crowdin/cli
           crowdin upload sources --no-progress
-          if [ -n "${CROWDIN_MT_ENGINE_ID:-}" ]; then
-            # No --language-id => all target languages.
-            crowdin pre-translate \
-              --method mt \
-              --engine-id "${CROWDIN_MT_ENGINE_ID}" \
-              --no-progress
-          else
-            echo "CROWDIN_MT_ENGINE_ID not set — skipping pre-translate."
-          fi
+          # No --language-id => all target languages.
+          crowdin pre-translate \
+            --method mt \
+            --engine-id "${CROWDIN_MT_ENGINE_ID}" \
+            --no-progress
