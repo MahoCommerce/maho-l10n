@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Maho L10N is the central localization **monorepo** for Maho Commerce. It is the source of record for translation strings (CSV) and email templates (HTML) across 11 locales. `en_US` is the source locale; every other locale lives in its own committed folder here.
+Maho L10N is the central localization **monorepo** for Maho Commerce. It is the source of record for translation strings (CSV) and email templates (HTML) across every locale configured in Crowdin. `en_US` is the source locale; every other locale lives in its own committed folder here.
 
 Translations are produced via **Crowdin autotranslate** (https://translate.mahocommerce.com). Crowdin's GitHub integration is **disabled** (no auto-PRs); the repo drives Crowdin via its CLI in two workflows: a daily job pushes `en_US` sources up, and the manual publish job pulls translations back and commits them to `main`. The individual `maho-language-<locale>` repos on Packagist are **generated artifacts** — published from this monorepo on demand and never edited by hand.
 
@@ -26,7 +26,7 @@ Two workflows split the two directions:
 - **`<locale>/`** — Target locale directories mirroring `en_US`, populated by Crowdin (committed here permanently)
 - **`crowdin.yml`** — Crowdin source→translation path mapping; reads credentials from `CROWDIN_PROJECT_ID` / `CROWDIN_PERSONAL_TOKEN` env vars
 - **`.github/workflows/upload-sources-to-crowdin.yml`** — Daily one-way push of `en_US` sources to Crowdin + MT pre-translate. Pre-translate runs only if the repo variable `CROWDIN_MT_ENGINE_ID` is set (the project's machine-translation engine id)
-- **`.build/templates/`** — Files used to generate each satellite repo: `composer.json.tpl`, `README.md.tpl`, `.gitignore`, and `locales.tsv` (locale → human language name map). LICENSE files are reused from the repo root.
+- **`.build/templates/`** — Files used to generate each satellite repo: `composer.json.tpl`, `README.md.tpl`, `.gitignore`. LICENSE files are reused from the repo root. The locale list and language names are read live from Crowdin's target languages (no hardcoded list); a locale publishes when its `maho-language-<locale>` repo exists.
 - **`.github/workflows/publish-language-packs.yml`** — Manual workflow that, per locale, does an **authoritative rebuild** of the satellite repo (wipes everything except `.git`, lays down only the generated set, so files the build no longer produces are removed), renders metadata from `.build/templates/`, commits, and tags a version (format: `YY.M.D`). Never delete or recreate a satellite repo — that would drop its version tags and break Packagist/installed `composer require`s; the workflow reconciles them in place.
 
 Each generated package is named `mahocommerce/maho-language-<locale lowercased>`, type `maho-module`, requiring `mahocommerce/maho:*`.
