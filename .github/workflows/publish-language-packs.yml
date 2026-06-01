@@ -1,0 +1,122 @@
+name: Publish Language Packs
+
+on:
+  workflow_dispatch:
+    inputs:
+      locales:
+        description: 'Space-separated locales to publish (e.g. "de_DE fr_FR"), or "all"'
+        required: false
+        default: 'all'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      # Mints a short-lived installation token scoped to the App's org repos.
+      - name: Generate token
+        id: generate_token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ secrets.MAHO_ORGANIZATION_CONTROLLER_CLIENT_ID }}
+          private-key: ${{ secrets.MAHO_ORGANIZATION_CONTROLLER_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+
+      - name: Checkout monorepo
+        uses: actions/checkout@v4
+
+      - name: Set up Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Get current date
+        id: date
+        run: echo "DATE=$(date +'%y.%-m.%-d')" >> "$GITHUB_OUTPUT"
+
+      - name: Publish language packs
+        env:
+          GH_TOKEN: ${{ steps.generate_token.outputs.token }}
+          DATE: ${{ steps.date.outputs.DATE }}
+          INPUT_LOCALES: ${{ github.event.inputs.locales }}
+        run: |
+          set -euo pipefail
+          TPL=.build/templates
+
+          # Build the list of locales to process from locales.tsv, filtered by the input.
+          while IFS=$'\t' read -r locale langname; do
+            [ -z "$locale" ] && continue
+
+            if [ "$INPUT_LOCALES" != "all" ] && ! echo " $INPUT_LOCALES " | grep -q " $locale "; then
+              echo "Skipping $locale (not requested)"
+              continue
+            fi
+
+            if [ ! -d "$locale" ]; then
+              echo "::warning::Locale folder $locale not found in monorepo. Skipping."
+              continue
+            fi
+
+            locale_lc=$(echo "$locale" | tr '[:upper:]' '[:lower:]')
+            echo "Processing $locale ($langname) -> maho-language-$locale"
+
+            # Clone the satellite repo; skip if it doesn't exist (do not auto-create).
+            if ! git clone "https://x-access-token:${GH_TOKEN}@github.com/MahoCommerce/maho-language-${locale}.git" "temp_${locale}" 2>/dev/null; then
+              echo "::warning::Repository maho-language-${locale} does not exist. Skipping."
+              continue
+            fi
+
+            target="temp_${locale}"
+
+            # Authoritative rebuild: the satellite is a pure generated artifact
+            # and l10n is its sole writer, so wipe every tracked/untracked file
+            # (keeping only .git) and lay down exactly the generated set. This
+            # guarantees files the build no longer produces are removed — the
+            # final `git add -A` stages those deletions.
+            find "${target}" -mindepth 1 -maxdepth 1 -not -name '.git' -exec rm -rf {} +
+
+            mkdir -p "${target}/app/locale/${locale}"
+            rsync -a "${locale}/" "${target}/app/locale/${locale}/"
+
+            # Render generated metadata from templates.
+            sed -e "s/{{LOCALE_LC}}/${locale_lc}/g" \
+                -e "s/{{LOCALE}}/${locale}/g" \
+                -e "s/{{LANG_NAME}}/${langname}/g" \
+                "${TPL}/composer.json.tpl" > "${target}/composer.json"
+            sed -e "s/{{LOCALE_LC}}/${locale_lc}/g" \
+                -e "s/{{LOCALE}}/${locale}/g" \
+                -e "s/{{LANG_NAME}}/${langname}/g" \
+                "${TPL}/README.md.tpl" > "${target}/README.md"
+
+            cp LICENSE.txt LICENSE_AFL.txt "${target}/"
+            cp "${TPL}/.gitignore" "${target}/.gitignore"
+            # maho-infrastructure syncs shared org files into THIS repo only and
+            # opts the language repos out of its file sync, so l10n is the single
+            # point that distributes them. Fan out whatever shared files exist
+            # here rather than keeping a second copy. (Repo settings/security on
+            # the packs are still reconciled by infra directly.)
+            if [ -f .github/FUNDING.yml ]; then
+              mkdir -p "${target}/.github"
+              cp .github/FUNDING.yml "${target}/.github/FUNDING.yml"
+            fi
+
+            # Commit, tag and push only if something changed.
+            cd "${target}"
+            if [ -n "$(git status --porcelain)" ]; then
+              git add -A
+              git commit -m "Publish ${locale} language pack - ${DATE}"
+              git push origin HEAD
+
+              if git rev-parse "${DATE}" >/dev/null 2>&1; then
+                echo "Tag ${DATE} already exists for ${locale}, skipping tag."
+              else
+                git tag -a "${DATE}" -m "Version ${DATE}"
+                git push origin "${DATE}"
+                echo "Tagged ${locale} with ${DATE}"
+              fi
+            else
+              echo "No changes for ${locale}"
+            fi
+            cd ..
+
+            rm -rf "${target}"
+          done < "${TPL}/locales.tsv"
