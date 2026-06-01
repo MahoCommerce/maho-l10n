@@ -25,7 +25,7 @@ jobs:
           owner: ${{ github.repository_owner }}
 
       - name: Checkout monorepo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Git
         run: |
@@ -39,19 +39,18 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
-      # The Crowdin GitHub integration is intentionally disabled (no more
-      # "New Crowdin updates" PRs), so this workflow is now responsible for both
-      # directions: push the latest en_US sources up, then pull translations back.
-      - name: Sync translations from Crowdin
+      # Pull the latest translations from Crowdin. en_US sources are pushed up
+      # daily by the separate "Upload Sources to Crowdin" workflow, so this only
+      # downloads. (Crowdin's own GitHub integration is disabled — no auto-PRs.)
+      - name: Download translations from Crowdin
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
         run: |
           set -euo pipefail
           npm install -g @crowdin/cli
-          crowdin upload sources --no-progress
           crowdin download --no-progress
 
       - name: Commit translation updates to the monorepo

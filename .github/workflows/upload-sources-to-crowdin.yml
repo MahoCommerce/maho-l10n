@@ -1,0 +1,45 @@
+name: Upload Sources to Crowdin
+
+on:
+  schedule:
+    - cron: '0 5 * * *'   # daily at 05:00 UTC
+  workflow_dispatch:
+
+jobs:
+  upload-sources:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout monorepo
+        uses: actions/checkout@v5
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # Pushes the latest en_US source strings to Crowdin, then machine-translates
+      # any new/untranslated strings across all target languages. Crowdin's GitHub
+      # integration is disabled, so this replaces its automatic source pull and
+      # keeps autotranslate current. One-way: nothing is committed back here
+      # (translations are pulled later by Publish Language Packs).
+      #
+      # Pre-translate needs the project's MT engine id; set it as the repo
+      # variable CROWDIN_MT_ENGINE_ID to enable the step (skipped if unset).
+      - name: Upload sources and pre-translate
+        env:
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+          CROWDIN_MT_ENGINE_ID: ${{ vars.CROWDIN_MT_ENGINE_ID }}
+        run: |
+          set -euo pipefail
+          npm install -g @crowdin/cli
+          crowdin upload sources --no-progress
+          if [ -n "${CROWDIN_MT_ENGINE_ID:-}" ]; then
+            # No --language-id => all target languages.
+            crowdin pre-translate \
+              --method mt \
+              --engine-id "${CROWDIN_MT_ENGINE_ID}" \
+              --no-progress
+          else
+            echo "CROWDIN_MT_ENGINE_ID not set — skipping pre-translate."
+          fi
