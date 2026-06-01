@@ -6,15 +6,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Maho L10N is the central localization **monorepo** for Maho Commerce. It is the source of record for translation strings (CSV) and email templates (HTML) across 11 locales. `en_US` is the source locale; every other locale lives in its own committed folder here.
 
-Translations are produced via **Crowdin autotranslate** (https://translate.mahocommerce.com), whose GitHub integration writes translated files back into the per-locale folders. The individual `maho-language-<locale>` repos on Packagist are **generated artifacts** — published from this monorepo on demand and never edited by hand.
+Translations are produced via **Crowdin autotranslate** (https://translate.mahocommerce.com). Crowdin's GitHub integration is **disabled** (no auto-PRs); instead the publish workflow drives Crowdin via its CLI — pushing the latest `en_US` sources up and pulling translations back, committing them straight to `main`. The individual `maho-language-<locale>` repos on Packagist are **generated artifacts** — published from this monorepo on demand and never edited by hand.
+
+Requires two repo secrets for the Crowdin CLI: `CROWDIN_PROJECT_ID` and `CROWDIN_PERSONAL_TOKEN`.
 
 ## Workflow
 
 ```
-Crowdin (autotranslate)  ──►  this monorepo (en_US/, de_DE/, es_ES/, …)  ──►  manual publish  ──►  maho-language-<locale> repos  ──►  Packagist
+en_US sources ──upload──► Crowdin (autotranslate) ──download──► this monorepo (en_US/, de_DE/, …) ──build──► maho-language-<locale> repos ──► Packagist
 ```
 
-Publishing is manual: trigger the **Publish Language Packs** GitHub Action (`workflow_dispatch`) with a locale list or `all`.
+Publishing is manual: trigger the **Publish Language Packs** GitHub Action (`workflow_dispatch`) with a locale list or `all`. Each run, in order: uploads `en_US` to Crowdin, downloads translations, commits them to `main`, then rebuilds and tags each satellite.
 
 ## Architecture
 

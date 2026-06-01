@@ -6,7 +6,9 @@ The individual `maho-language-<locale>` packages on Packagist are **auto-generat
 
 ## Publishing a language pack
 
-Run the **Publish Language Packs** workflow from the Actions tab. Provide a space-separated locale list (e.g. `de_DE fr_FR`) or `all` (default). For each locale it rebuilds the satellite repo from this monorepo, renders metadata from `.build/templates/`, commits, and tags `YY.M.D`.
+Run the **Publish Language Packs** workflow from the Actions tab. Provide a space-separated locale list (e.g. `de_DE fr_FR`) or `all` (default). Each run uploads `en_US` to Crowdin, downloads translations and commits them here, then for each locale rebuilds the satellite repo from this monorepo, renders metadata from `.build/templates/`, commits, and tags `YY.M.D`.
+
+Requires repo secrets `CROWDIN_PROJECT_ID` and `CROWDIN_PERSONAL_TOKEN`.
 
 ## Strings to check after generating a language pack
 

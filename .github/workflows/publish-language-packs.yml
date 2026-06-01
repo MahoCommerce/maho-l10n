@@ -11,6 +11,9 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    # Needed so the Crowdin sync step can commit translation updates to this repo.
+    permissions:
+      contents: write
     steps:
       # Mints a short-lived installation token scoped to the App's org repos.
       - name: Generate token
@@ -32,6 +35,37 @@ jobs:
       - name: Get current date
         id: date
         run: echo "DATE=$(date +'%y.%-m.%-d')" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # The Crowdin GitHub integration is intentionally disabled (no more
+      # "New Crowdin updates" PRs), so this workflow is now responsible for both
+      # directions: push the latest en_US sources up, then pull translations back.
+      - name: Sync translations from Crowdin
+        env:
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+        run: |
+          set -euo pipefail
+          npm install -g @crowdin/cli
+          crowdin upload sources --no-progress
+          crowdin download --no-progress
+
+      - name: Commit translation updates to the monorepo
+        env:
+          DATE: ${{ steps.date.outputs.DATE }}
+        run: |
+          set -euo pipefail
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "Update translations from Crowdin - ${DATE}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          else
+            echo "No translation changes from Crowdin."
+          fi
 
       - name: Publish language packs
         env:
