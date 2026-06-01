@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout monorepo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       # Uses the runner's preinstalled Node/npm (no setup-node action needed).
       # Pushes the latest en_US source strings to Crowdin, then queues MT
