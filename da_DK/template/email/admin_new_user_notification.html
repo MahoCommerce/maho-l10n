@@ -1,0 +1,25 @@
+<!--@subject New Admin Account {{var user.name}} Created. @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
+"htmlescape var=$user.name":"New Admin Name"}
+@-->
+
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>Ny admin konto notifikation.</h1>
+            <p>En ny admin konto blev oprettet til <b>{{htmlescape var=$user.name}}</b> ved hjælp af e-mail: {{htmlescape var=$user.email}}.</p>
+            <p>Hvis du ikke har anmodet om denne handling, bedes du gennemgå listen over administratorkonti i <a href="{{store url=""}}">din butik</a>.</p>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}
