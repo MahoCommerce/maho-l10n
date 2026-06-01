@@ -36,7 +36,10 @@ jobs:
           auth="Authorization: Bearer ${CROWDIN_PERSONAL_TOKEN}"
           langs=$(curl -fsS -H "$auth" "$api/projects/${CROWDIN_PROJECT_ID}" | jq -c '.data.targetLanguageIds')
           files=$(curl -fsS -H "$auth" "$api/projects/${CROWDIN_PROJECT_ID}/files?limit=500" | jq -c '[.data[].data.id]')
+          # translateUntranslatedOnly: only MT the strings that have no translation
+          # yet, so daily runs are incremental and don't re-translate / overwrite
+          # existing translations.
           curl -fsS -X POST -H "$auth" -H 'Content-Type: application/json' \
             "$api/projects/${CROWDIN_PROJECT_ID}/pre-translations" \
-            -d "{\"languageIds\":${langs},\"fileIds\":${files},\"method\":\"mt\",\"engineId\":${CROWDIN_MT_ENGINE_ID}}" \
+            -d "{\"languageIds\":${langs},\"fileIds\":${files},\"method\":\"mt\",\"engineId\":${CROWDIN_MT_ENGINE_ID},\"translateUntranslatedOnly\":true}" \
             | jq -r '"Autotranslate queued (id " + ((.data.identifier|tostring)) + ", status " + (.data.status // "?") + ") — running async on Crowdin."'
