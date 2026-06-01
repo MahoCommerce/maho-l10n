@@ -36,14 +36,10 @@ jobs:
         id: date
         run: echo "DATE=$(date +'%y.%-m.%-d')" >> "$GITHUB_OUTPUT"
 
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-
-      # Pull the latest translations from Crowdin. en_US sources are pushed up
-      # daily by the separate "Upload Sources to Crowdin" workflow, so this only
-      # downloads. (Crowdin's own GitHub integration is disabled — no auto-PRs.)
+      # Pull the latest translations from Crowdin (uses the runner's preinstalled
+      # Node/npm). en_US sources are pushed up daily by the separate "Upload
+      # Sources to Crowdin" workflow, so this only downloads. (Crowdin's own
+      # GitHub integration is disabled — no auto-PRs.)
       - name: Download translations from Crowdin
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}

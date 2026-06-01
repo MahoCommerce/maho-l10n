@@ -12,25 +12,19 @@ jobs:
       - name: Checkout monorepo
         uses: actions/checkout@v5
 
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-
+      # Uses the runner's preinstalled Node/npm (no setup-node action needed).
       # Pushes the latest en_US source strings to Crowdin, then machine-translates
       # any new/untranslated strings across all target languages. Crowdin's GitHub
       # integration is disabled, so this replaces its automatic source pull and
       # keeps autotranslate current. One-way: nothing is committed back here
       # (translations are pulled later by Publish Language Packs).
       #
-      # MT engine for the Maho project is Crowdin Translate (id 336596). It's not
-      # sensitive, so it's hardcoded as a fallback; override via the repo variable
-      # CROWDIN_MT_ENGINE_ID if you ever switch engines.
+      # CROWDIN_MT_ENGINE_ID is the Crowdin Translate engine id, stored as a repo secret.
       - name: Upload sources and pre-translate
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
-          CROWDIN_MT_ENGINE_ID: ${{ vars.CROWDIN_MT_ENGINE_ID || '336596' }}
+          CROWDIN_MT_ENGINE_ID: ${{ secrets.CROWDIN_MT_ENGINE_ID }}
         run: |
           set -euo pipefail
           npm install -g @crowdin/cli
