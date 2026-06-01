@@ -1,0 +1,43 @@
+<!--
+/**
+ * Maho
+ *
+ * @package    Maho_FeedManager
+ * @copyright  Copyright (c) 2026 Maho (https://mahocommerce.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<!--@subject [{{var store_name}}] Feed Failed: {{var feed_name}} @-->
+
+<body>
+    <h2>Syöte {{var failure_type}} Epäonnistui</h2>
+
+    <p>Feed "<strong>{{var feed_name}}</strong>" failed to complete.</p>
+
+    <h3>Virheet:</h3>
+    <pre style="background: #f5f5f5; padding: 10px; border: 1px solid #ddd;">{{var error_list}}</pre>
+
+    <h3>Syötteen Lisätiedot:</h3>
+    <table style="border-collapse: collapse;">
+        <tr>
+            <td style="padding: 5px 15px 5px 0; font-weight: bold;">Viimeisin Yritetty:</td>
+            <td>{{var timestamp}}</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px 15px 5px 0; font-weight: bold;">Syötteen Tyyppi:</td>
+            <td>{{var platform}}</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px 15px 5px 0; font-weight: bold;">Tiedosto:</td>
+            <td>{{var filename}}</td>
+        </tr>
+    </table>
+
+    <p style="margin-top: 20px;">
+        <a href="{{var admin_log_url}}" style="background: #eb5202; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 3px;">Näytä Syöte</a>
+    </p>
+
+    <p style="margin-top: 30px; color: #666; font-size: 12px;">
+        Tämä ilmoitus lähetettiin, koska syöte on määritetty ilmoittamaan epäonnistumisesta.
+    </p>
+</body>

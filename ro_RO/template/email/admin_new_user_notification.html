@@ -1,0 +1,25 @@
+<!--@subject New Admin Account {{var user.name}} Created. @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
+"htmlescape var=$user.name":"New Admin Name"}
+@-->
+
+<!--@styles
+@-->
+
+template config_path="design/email/header"}}
+{{inlinecss file="email-inline.cs"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>Notificare cont administrator nou.</h1>
+            <p>A fost creat un nou cont de administrator pentru <b>{{htmlescape var=$user.name}}</b> folosind e-mail: {{htmlescape var=$user.email}}.</p>
+            <p>Dacă nu ai solicitat această acțiune, te rugăm să revizuiești lista conturilor de administrator din <a href="{{store url=""}}">magazinul</a>.</p>
+        </td>
+    </tr>
+</table>
+
+template config_path="design/email/footer"}}

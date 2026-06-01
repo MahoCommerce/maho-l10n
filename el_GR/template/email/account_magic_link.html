@@ -1,0 +1,34 @@
+<!--@subject Login Link for {{var customer.name}} @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
+"htmlescape var=$customer.name":"Customer Name",
+"store url=\"customer/account/magiclinklogin/\" _query_token=$customer.rp_token":"Magic Link Login URL"}
+@-->
+
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>{{htmlescape var=$customer.name}},</h1>
+            <p>Πρόσφατα ζητήσατε έναν σύνδεσμο σύνδεσης για το λογαριασμό σας.</p>
+            <p>Κάντε κλικ στο παρακάτω κουμπί για να συνδεθείτε στο λογαριασμό σας:</p>
+            <table cellspacing="0" cellpadding="0" class="action-button" >
+                <tr>
+                    <td>
+                        <a href="{{store url=&quot;customer/account/magiclinklogin/&quot; _query_token=$customer.rp_token}}"><span>Συνδεθείτε στο λογαριασμό σας</span></a>
+                    </td>
+                </tr>
+            </table>
+            <p>Αν δεν ζητήσατε αυτόν τον σύνδεσμο σύνδεσης, μπορείτε να αγνοήσετε με ασφάλεια αυτό το μήνυμα.</p>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}

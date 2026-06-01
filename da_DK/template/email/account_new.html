@@ -1,0 +1,44 @@
+<!--@subject Welcome, {{var customer.name}}! @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"htmlescape var=$customer.name":"Customer Name",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var customer.email":"Customer Email"}
+@-->
+
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>Velkommen til {{var store.getFrontendName()}}.</h1>
+            <p>For at logge ind, når du besøger vores hjemmeside, skal du blot klikke på <a href="{{store url="customer/account/"}}">Log ind</a> eller <a href="{{store url="customer/account/"}}">Min konto</a> øverst på hver side, og derefter indtaste din e-mail-adresse og adgangskode.</p>
+            <p class="highlighted-text">
+                Brug følgende værdier, når du bliver bedt om at logge ind:<br>
+                <strong>E-mail</strong>: {{var customer.email}}<br>
+                <strong>Password</strong>: (den adgangskode, du har angivet, når du opretter din konto)
+            </p>
+            <p>Når du logger ind på din konto, vil du kunne gøre følgende:</p>
+            <ul>
+                <li>Gå gennem kassen hurtigere, når du foretager et køb</li>
+                <li>Tjek status for ordrer</li>
+                <li>Se tidligere ordrer</li>
+                <li>Foretag ændringer i dine kontooplysninger</li>
+                <li>Skift din adgangskode</li>
+                <li>Gem alternative adresser (til forsendelse til flere familiemedlemmer og venner!)</li>
+            </ul>
+            <p>
+                Hvis du har spørgsmål, er velkommen til at kontakte os på
+                <a href="mailto:{{var store_email}}">{{var store_email}}</a>
+                {{depend store_phone}} eller på telefon <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}
