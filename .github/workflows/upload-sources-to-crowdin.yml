@@ -4,6 +4,13 @@ on:
   schedule:
     - cron: '0 5 * * *'   # daily at 05:00 UTC
   workflow_dispatch:
+  push:
+    branches: [main]
+    # Only when en_US sources change (e.g. a merged PR). Scoped to en_US/** so
+    # the Publish Language Packs workflow's own commits into target-locale dirs
+    # don't re-trigger this upload.
+    paths:
+      - 'en_US/**'
 
 jobs:
   upload-sources:
