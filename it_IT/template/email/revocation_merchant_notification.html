@@ -1,0 +1,48 @@
+<!--@subject New revocation request #{{var request_id}} (order reference {{var order_reference}}) @-->
+<!--@vars
+{"var customer_name":"Customer Name",
+"var customer_email":"Customer Email",
+"var order_reference":"Order Reference as Typed",
+"var order_increment_id":"Matched Order Increment ID",
+"var request_id":"Request Reference Number",
+"var received_store":"Received At (Store Timezone)",
+"var received_utc":"Received At (UTC)",
+"var reason":"Reason (optional)",
+"var verified_label":"Verified Flag",
+"var suppressed":"Customer Email Suppressed Flag",
+"var store.getFrontendName()":"Store Name"}
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.cs"}}
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td class="action-content">
+            <h1>Nuova richiesta di revoca ricevuta</h1>
+            <p>Un consumatore ha esercitato il pulsante di revoca su {{var store.getFrontendName()}}.</p>
+
+            <p><strong>Numero di riferimento:</strong> #{{var request_id}}<br>
+            <strong>Ricevuto a:</strong> {{var received_store}}<br>
+            {{var received_utc}}</p>
+
+            <p><strong>Name:</strong> {{var customer_name}}<br>
+            <strong>Email:</strong> {{var customer_email}}<br>
+            <strong>Riferimento dell'ordine (come digitato):</strong> {{var order_reference}}<br>
+            {{depend order_increment_id}}<strong>Ordine corrispondente:</strong> #{{var order_increment_id}}<br>{{/depend}}
+            <strong>Verified (authenticated session):</strong> {{var verified_label}}</p>
+
+            {{depend reason}}
+            <p><strong>Motivo fornito (volontario):</strong><br>{{var reason}}</p>
+            {{/depend}}
+
+            {{depend suppressed}}
+            <p><strong>Nota:</strong> l'email di ricezione del cliente è stata soppressa dal limite di tasso per destinatario e non è stata consegnata. Rivedere la richiesta nel pannello di amministrazione e inviarla nuovamente dopo la prova.</p>
+            {{/depend}}
+
+            <p>È possibile rivedere ed elaborare questa richiesta nel pannello di amministrazione sotto <strong>Vendite &gt; Richieste di recesso</strong>.</p>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}

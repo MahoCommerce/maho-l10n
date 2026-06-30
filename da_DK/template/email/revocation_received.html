@@ -1,0 +1,46 @@
+<!--@subject Receipt confirmation of your revocation (order {{var order_reference}}) @-->
+<!--@vars
+{"var customer_name":"Customer Name",
+"var customer_email":"Customer Email",
+"var order_reference":"Order Reference",
+"var request_id":"Request Reference Number",
+"var received_store":"Received At (Store Timezone)",
+"var received_utc":"Received At (UTC)",
+"var reason":"Reason (optional)",
+"var store.getFrontendName()":"Store Name"}
+@-->
+
+<!--@styles
+.revocation-receipt-box { border: 1px solid #dddddd; padding: 20px; margin: 20px 0; background-color: #f9f9f9; }
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td class="action-content">
+            <h1>Bekræftelse af modtagelse af din tilbagekaldelse</h1>
+            <p>Dear {{var customer_name}},</p>
+            <p>Vi bekræfter hermed, at din tilbagekaldelseserklæring er blevet <strong>modtaget</strong>.</p>
+
+            <div class="revocation-receipt-box">
+                <p>Referencenummer <strong>:</strong> #{{var request_id}}</p>
+                <p><strong>Modtaget af:</strong> {{var received_store}}<br>
+                {{var received_utc}}</p>
+                <p><strong>Navn:</strong> {{var customer_name}}<br>
+                <strong>E-mail:</strong> {{var customer_email}}<br>
+                <strong>Ordrereference:</strong> {{var order_reference}}</p>
+                {{depend reason}}
+                <p><strong>Begrundelse givet (frivillig):</strong><br>{{var reason}}</p>
+                {{/depend}}
+            </div>
+
+            <p>Denne meddelelse bekræfter kun modtagelsen af din erklæring. Gyldigheden af tilbagekaldelsen vil blive vurderet, og vi vil informere dig separat om den videre behandling.</p>
+
+            <p>Behold venligst referencenummeret til enhver opfølgende kommunikation.</p>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}

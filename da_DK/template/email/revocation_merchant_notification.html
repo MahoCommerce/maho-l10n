@@ -1,0 +1,48 @@
+<!--@subject New revocation request #{{var request_id}} (order reference {{var order_reference}}) @-->
+<!--@vars
+{"var customer_name":"Customer Name",
+"var customer_email":"Customer Email",
+"var order_reference":"Order Reference as Typed",
+"var order_increment_id":"Matched Order Increment ID",
+"var request_id":"Request Reference Number",
+"var received_store":"Received At (Store Timezone)",
+"var received_utc":"Received At (UTC)",
+"var reason":"Reason (optional)",
+"var verified_label":"Verified Flag",
+"var suppressed":"Customer Email Suppressed Flag",
+"var store.getFrontendName()":"Store Name"}
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td class="action-content">
+            <h1>Ny tilbagekaldelsesanmodning modtaget</h1>
+            <p>En forbruger har udøvet tilbagekaldelsesknappen på {{var store.getFrontendName()}}.</p>
+
+            <p><strong>Referencenummer:</strong> #{{var request_id}}<br>
+            <strong>Modtaget af:</strong> {{var received_store}}<br>
+            {{var received_utc}}</p>
+
+            <p><strong>Navn:</strong> {{var customer_name}}<br>
+            <strong>E-mail:</strong> {{var customer_email}}<br>
+            <strong>Ordrereference (som indtastet):</strong> {{var order_reference}}<br>
+            {{depend order_increment_id}}<strong>Matchede ordre:</strong> #{{var order_increment_id}}<br>{{/depend}}
+            <strong>Verificeret (autentificeret session):</strong> {{var verified_label}}</p>
+
+            {{depend reason}}
+            <p><strong>Begrundelse givet (frivillig):</strong><br>{{var reason}}</p>
+            {{/depend}}
+
+            {{depend suppressed}}
+            <p><strong>Bemærk:</strong> kundekvitteringse-mailen blev undertrykt af grænsen pr. modtager og er ikke blevet leveret. Gennemgå anmodningen i admin panelet og send den igen efter triage.</p>
+            {{/depend}}
+
+            <p>Du kan gennemgå og behandle denne anmodning i admin panelet under <strong>Sales &gt; Tilbagekaldelse Anmodninger</strong>.</p>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}
