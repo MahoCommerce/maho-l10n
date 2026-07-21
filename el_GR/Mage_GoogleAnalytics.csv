@@ -1,4 +1,5 @@
 "Account Number","Αριθμός Λογαριασμού"
+"Advanced Matching","Προηγμένη Αντιστοίχιση"
 "Container ID","Id Περιέκτη"
 "Enable","Ενεργοποίηση"
 "Enable GA4 Debug Real Time view for Development IP.","Ενεργοποίηση προβολής πραγματικού χρόνου αποσφαλμάτωσης GA4 για ανάπτυξη IP."
@@ -9,5 +10,6 @@
 "Google API","Google API"
 "Google Tag Manager","Διαχειριστής Ετικετών Google"
 "Meta Pixel ID","Meta Pixel ID"
+"Send hashed customer data (email, phone, name, etc.) with the pixel to improve event matching. Values are SHA-256 hashed server side.","Στείλτε κατακερματισμένα δεδομένα πελάτη (email, τηλέφωνο, όνομα, κλπ.) με το pixel για τη βελτίωση του ταίριασμα εκδήλωσης. Οι τιμές είναι στην πλευρά του διακομιστή SHA-256 κατακερματισμένη"
 "Type","Τύπος"
 "User ID tracking","Εντοπισμός αναγνωριστικού χρήστη"

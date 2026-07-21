@@ -1,4 +1,5 @@
 "Account Number","Număr cont"
+"Advanced Matching","Potrivire avansată"
 "Container ID","ID container"
 "Enable","Activare"
 "Enable GA4 Debug Real Time view for Development IP.","Activează GA4 Debug Real Time view pentru Dezvoltare IP."
@@ -9,5 +10,6 @@
 "Google API","Google API"
 "Google Tag Manager","Manager Google Tag"
 "Meta Pixel ID","Meta Pixel ID"
+"Send hashed customer data (email, phone, name, etc.) with the pixel to improve event matching. Values are SHA-256 hashed server side.","Trimite date client hashed (e-mail, telefon, nume, etc.) cu pixelul pentru a îmbunătăţi potrivirea evenimentului. Valorile sunt SHA-256 hashed server."
 "Type","Tip"
 "User ID tracking","Urmărire ID utilizator"

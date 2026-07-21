@@ -34,6 +34,7 @@
 "Internal Note","Sisäinen Huomautus"
 "Invalid decision.","Päätös ei kelpaa."
 "Invalid form key. Please refresh the page and try again.","Virheellinen lomakkeen avain. Päivitä sivu ja yritä uudelleen."
+"Invalid processing status.","Virheellinen käsittelyn tila."
 "IP Address","Ip Osoite"
 "Leave empty to use the General Contact email address.","Jätä tyhjäksi käyttääksesi General Contact -sähköpostiosoitetta."
 "Leave empty to use the label configured under Sales > Revocation Button.","Jätä tyhjäksi käyttääksesi tarraa, joka on määritetty Myynnin > Peruutuspainikkeella."
