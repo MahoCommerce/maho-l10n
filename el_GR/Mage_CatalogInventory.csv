@@ -1,4 +1,5 @@
 """%s"" is not available in the requested quantity. %s of the items will be backordered.","""%s"" δεν είναι διαθέσιμη στην ζητηθείσα ποσότητα. %s από τα αντικείμενα θα γίνει backordered."
+"%s is available for purchase in increments of %s","%s είναι διαθέσιμη για αγορά σε προσαυξήσεις του %s"
 "%s is available for purchase in increments of %s only.","Το %s είναι διαθέσιμο μόνο για αγορά σε προσαυξήσεις του %s."
 "%s is not a correct comparsion method.","Το %s δεν είναι μια σωστή μέθοδος σύγκρισης."
 "<strong>Note</strong> that these settings are applicable to cart line items, not the whole cart.","<strong>Note</strong> that these settings are applicable to cart line items, not the whole cart."

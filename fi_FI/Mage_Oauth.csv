@@ -1,3 +1,4 @@
+"%s must be an absolute URL without user info.","%s on oltava absoluuttinen URL-osoite ilman käyttäjätietoja."
 "* Required Fields","* Vaaditut Kentät"
 "-- No API Access --","-- Ei API-yhteyttä --"
 "<strong>%s</strong> requests access to your account","<strong>%s</strong> pyytää pääsyä tilillesi"

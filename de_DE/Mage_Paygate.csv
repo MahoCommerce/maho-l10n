@@ -45,6 +45,7 @@
 "Payment updating error.","Fehler beim Aktualisieren der Zahlung."
 "Payment voiding error.","Payment voiding error."
 "Processed Amount","Verarbeiteter Betrag"
+"Processing...","Verarbeitung..."
 "refund","erstatten"
 "Remaining Balance","Restsaldo"
 "Severe 3D Secure Card Validation","Schwere 3D Secure Card Validierung"

@@ -1,3 +1,4 @@
+"%s must be an absolute URL without user info.","%s måste vara en absolut URL utan användarinformation."
 "* Required Fields","* Obligatoriska fält"
 "-- No API Access --","-- Ingen API-åtkomst --"
 "<strong>%s</strong> requests access to your account","<strong>%s</strong> begär åtkomst till ditt konto"

@@ -1,4 +1,5 @@
 """%s"" is not available in the requested quantity. %s of the items will be backordered.","""%s"" er ikke tilgængelig i det ønskede antal. %s af varerne vil blive genbestilt."
+"%s is available for purchase in increments of %s","%s er tilgængelig for køb i intervaller af %s"
 "%s is available for purchase in increments of %s only.","%s er kun tilgængelig for køb i trin af %s."
 "%s is not a correct comparsion method.","%s er ikke en korrekt sammenligningsmetode."
 "<strong>Note</strong> that these settings are applicable to cart line items, not the whole cart.","<strong>Note</strong> that these settings are applicable to cart line items, not the whole cart."

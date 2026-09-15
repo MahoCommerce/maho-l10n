@@ -1,3 +1,4 @@
+"%s must be an absolute URL without user info.","Το %s πρέπει να είναι μια απόλυτη διεύθυνση URL χωρίς πληροφορίες χρήστη."
 "* Required Fields","* Απαιτούμενα Πεδία"
 "-- No API Access --","-- Καμία Πρόσβαση Api --"
 "<strong>%s</strong> requests access to your account","<strong>%s</strong> requests access to your account"

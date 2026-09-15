@@ -1,4 +1,5 @@
 """%s"" is not available in the requested quantity. %s of the items will be backordered.","""%s"" não está disponível na quantidade solicitada. %s dos itens serão devolvidos."
+"%s is available for purchase in increments of %s","%s está disponível para compra em incrementos de %s"
 "%s is available for purchase in increments of %s only.","%s está disponível para compra em incrementos %s apenas."
 "%s is not a correct comparsion method.","%s não é um método de comparação correto."
 "<strong>Note</strong> that these settings are applicable to cart line items, not the whole cart.","<strong>Note</strong> que essas configurações são aplicáveis aos itens da linha do carrinho, não ao carrinho inteiro."

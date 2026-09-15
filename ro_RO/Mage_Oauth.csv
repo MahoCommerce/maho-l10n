@@ -1,3 +1,4 @@
+"%s must be an absolute URL without user info.","%s trebuie să fie o adresă URL absolută fără informații de utilizator."
 "* Required Fields","* Câmpuri obligatorii"
 "-- No API Access --","-- Fără acces API --"
 "<strong>%s</strong> requests access to your account","<strong>%s</strong> solicită acces la contul tău"

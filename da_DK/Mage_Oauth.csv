@@ -1,3 +1,4 @@
+"%s must be an absolute URL without user info.","%s skal være en absolut URL uden brugerinfo."
 "* Required Fields","* Obligatoriske Felter"
 "-- No API Access --","-- Ingen API-adgang --"
 "<strong>%s</strong> requests access to your account","<strong>%s</strong> anmoder om adgang til din konto"
