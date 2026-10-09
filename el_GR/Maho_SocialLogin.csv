@@ -22,7 +22,6 @@
 "How long an issued sign-in nonce stays valid. Values below 60 seconds are raised to 60.","Πόσο καιρό παραμένει έγκυρο ένα σήμα nonce που έχει εκδοθεί. Τιμές κάτω των 60 δευτερολέπτων αυξάνονται στα 60."
 "How many failed social sign-in attempts one IP address can make per hour. Set 0 to disable the limit.","Πόσες αποτυχημένες προσπάθειες κοινωνικής σύνδεσης μία διεύθυνση IP μπορεί να κάνει ανά ώρα. Ορίστε 0 για να απενεργοποιήσετε το όριο."
 "Invalid authentication token.","Μη έγκυρο διακριτικό ταυτοποίησης."
-"Invalid form key. Please refresh the page and try again.","Μη έγκυρο κλειδί φόρμας. Ανανεώστε τη σελίδα και προσπαθήστε ξανά."
 "Linked Sign-In Providers","Συνδεδεμένοι Πάροχοι Σύνδεσης"
 "or","ή"
 "Please complete the required fields of your profile.","Παρακαλώ συμπληρώστε τα απαιτούμενα πεδία του προφίλ σας."

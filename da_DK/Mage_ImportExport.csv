@@ -30,6 +30,7 @@
 "Done import data validation","Validering af importdata"
 "Duplicate Unique Attribute for '%s'","Dupliker entydig attribut for '%s'"
 "Each data row must be an array","Hver datarække skal være et array"
+"Entity adapter object must be an instance of Mage_ImportExport_Model_Export_Entity_Abstract","Entity adapter objekt skal være en instans af Mage_ImportExport_Model_Export_Entity_Abstract"
 "Entity adapter object must be an instance of Mage_ImportExport_Model_Import_Entity_Abstract","Entity adapter objekt skal være en instans af Mage_ImportExport_Model_Import_Entity_Abstract"
 "Entity is unknown","Enhed er ukendt"
 "Entity Type","Enhedstype"

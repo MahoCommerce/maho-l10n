@@ -118,7 +118,6 @@
 "If customer accounts are disabled in the frontend, guest checkout must remain enabled.","Jos asiakastilit on poistettu käytöstä frontentissä, vierailijoiden on pysyttävä käytössä."
 "Incl. Tax","Sis. Verollinen"
 "Invalid data.","Virheellinen tieto."
-"Invalid form key. Please refresh the page.","Virheellinen lomakkeen avain. Ole hyvä ja päivitä sivu."
 "Invalid method: %s","Virheellinen menetelmä: %s"
 "Invalid shipping method.","Virheellinen toimitustapa."
 "Items","Kohteet"

@@ -26,7 +26,6 @@
 "Enable Contact Us","Aktivera Kontakta oss"
 "Enable Honeypot Field","Aktivera Honeypot Field"
 "Honeypot Field","Honeypot fält"
-"Invalid Form Key. Please submit your request again.","Ogiltig formulärnyckel. Vänligen skicka in din begäran igen."
 "Invisible background measures (honeypot, rate limits) that blunt spam and email-bombing without inconveniencing real customers. Do not set the limits so low that legitimate visitors are blocked.","Osynliga bakgrundsåtgärder (honeypot, räntegränser) som trubbigt skräppost och e-post-bombning utan att besvära verkliga kunder. Ställ inte in gränserna så låga att legitima besökare blockeras."
 "Name","Namn"
 "Per email address. Default 3 per hour. 0 to disable.","Per e-postadress. Standard 3 per timme. 0 för att inaktivera."

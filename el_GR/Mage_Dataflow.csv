@@ -1,4 +1,3 @@
-"<a href=""%s"" target=""_blank"">Link</a>","<a href=""%s"" target=""_blank"">Σύνδεσμος</a>"
 "Actions XML is not valid.","Το XML ενεργειών δεν είναι έγκυρο."
 "An error occurred while opening file: ""%s"".","Παρουσιάστηκε σφάλμα κατά το άνοιγμα του αρχείου: ""%s""."
 "Could not load file: ""%s"".","Αδυναμία φόρτωσης αρχείου: ""%s""."
@@ -17,6 +16,7 @@
 "Invalid file path.","Μη έγκυρη διαδρομή αρχείου."
 "Invalid node.","Μη έγκυρος κόμβος."
 "Less than a minute","Λιγότερο από ένα λεπτό"
+"Link: %s","Σύνδεσμος: %s"
 "Loaded successfully: ""%s"".","Φορτώθηκε επιτυχώς: ""%s""."
 "Memory Used: %s","Χρησιμοποιούμενη Μνήμη: %s"
 "Method ""%s"" not defined in adapter %s.","Μέθοδος ""%s"" δεν ορίζεται στον προσαρμογέα %s."

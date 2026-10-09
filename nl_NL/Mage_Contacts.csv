@@ -26,7 +26,6 @@
 "Enable Contact Us","Schakel contact in"
 "Enable Honeypot Field","Honeypot veld inschakelen"
 "Honeypot Field","Honeypot Veld"
-"Invalid Form Key. Please submit your request again.","Ongeldige formuliersleutel. Gelieve uw verzoek opnieuw in te dienen."
 "Invisible background measures (honeypot, rate limits) that blunt spam and email-bombing without inconveniencing real customers. Do not set the limits so low that legitimate visitors are blocked.","Onzichtbare maatregelen op de achtergrond (honingpot, snelheidsgrenzen) die spam en email-bommen bot maken zonder echte klanten ongemakkelijk te maken. Stel de limieten niet zo laag in dat legitieme bezoekers geblokkeerd worden."
 "Name","naam"
 "Per email address. Default 3 per hour. 0 to disable.","Standaard 3 per uur. 0 om uit te schakelen."

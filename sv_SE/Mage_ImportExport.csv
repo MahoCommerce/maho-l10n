@@ -30,6 +30,7 @@
 "Done import data validation","Validering av utförd importdata"
 "Duplicate Unique Attribute for '%s'","Duplicera unika attribut för '%s'"
 "Each data row must be an array","Varje datarad måste vara en array"
+"Entity adapter object must be an instance of Mage_ImportExport_Model_Export_Entity_Abstract","Entity adapter objekt måste vara en instans av Mage_ImportExport_Model_Export_Entity_Abstract"
 "Entity adapter object must be an instance of Mage_ImportExport_Model_Import_Entity_Abstract","Entity adapter object måste vara en instans av Mage_ImportExport_Model_Import_Entity_Abstract"
 "Entity is unknown","Enheten är okänd"
 "Entity Type","Typ av enhet"

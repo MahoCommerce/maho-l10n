@@ -30,6 +30,7 @@
 "Done import data validation","Tuontitietojen validointi valmis"
 "Duplicate Unique Attribute for '%s'","Monista yksilöllinen attribuutti '%s'"
 "Each data row must be an array","Jokaisen tietorivin on oltava taulukko."
+"Entity adapter object must be an instance of Mage_ImportExport_Model_Export_Entity_Abstract","Entiteetin adapteriobjektin on oltava Mage_ImportExport_Model_Export_Entity_Abstract instanssi"
 "Entity adapter object must be an instance of Mage_ImportExport_Model_Import_Entity_Abstract","Entiteetin adapteriobjektin on oltava Mage_ImportExport_Model_Import_Entity_Abstract instanssi"
 "Entity is unknown","Entiteetti on tuntematon"
 "Entity Type","Entiteetin Tyyppi"

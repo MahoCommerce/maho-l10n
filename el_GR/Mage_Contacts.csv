@@ -26,7 +26,6 @@
 "Enable Contact Us","Ενεργοποίηση Επικοινωνήστε Μαζί Μας"
 "Enable Honeypot Field","Ενεργοποίηση Πεδίου Honeypot"
 "Honeypot Field","Πεδίο Honeypot"
-"Invalid Form Key. Please submit your request again.","Μη έγκυρο κλειδί φόρμας. Παρακαλώ υποβάλετε το αίτημά σας ξανά."
 "Invisible background measures (honeypot, rate limits) that blunt spam and email-bombing without inconveniencing real customers. Do not set the limits so low that legitimate visitors are blocked.","Αόρατα μέτρα υποβάθρου (honeypot, όρια ρυθμού) που αμβλώνουν spam και βομβαρδισμό ηλεκτρονικού ταχυδρομείου χωρίς να ενοχλούν τους πραγματικούς πελάτες. Μην θέτετε τα όρια τόσο χαμηλά ώστε οι νόμιμοι επισκέπτες να αποκλείονται."
 "Name","Όνομα"
 "Per email address. Default 3 per hour. 0 to disable.","Ανά διεύθυνση email. Προεπιλογή 3 ανά ώρα. 0 για απενεργοποίηση."

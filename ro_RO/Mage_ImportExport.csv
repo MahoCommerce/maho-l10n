@@ -30,6 +30,7 @@
 "Done import data validation","Validarea datelor de import finalizată"
 "Duplicate Unique Attribute for '%s'","Duplică atributul unic pentru '%s'"
 "Each data row must be an array","Fiecare rând de date trebuie să fie un array"
+"Entity adapter object must be an instance of Mage_ImportExport_Model_Export_Entity_Abstract","Obiectul adaptorului de entitate trebuie să fie o instanță de Mage_ImportExport_Model_Export_Entity_Abstract"
 "Entity adapter object must be an instance of Mage_ImportExport_Model_Import_Entity_Abstract","Obiectul adaptorului de entitate trebuie să fie o instanță de Mage_ImportExport_Model_Import_Entity_Abstract"
 "Entity is unknown","Entitatea este necunoscută"
 "Entity Type","Tip entitate"

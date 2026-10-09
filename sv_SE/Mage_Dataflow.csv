@@ -1,4 +1,3 @@
-"<a href=""%s"" target=""_blank"">Link</a>","<a href=""%s"" target=""_blank"">Länk</a>"
 "Actions XML is not valid.","Åtgärder XML är inte giltigt."
 "An error occurred while opening file: ""%s"".","Ett fel uppstod när du öppnade filen: ""%s""."
 "Could not load file: ""%s"".","Kunde inte ladda fil: ""%s""."
@@ -17,6 +16,7 @@
 "Invalid file path.","Ogiltig sökväg."
 "Invalid node.","Ogiltig nod."
 "Less than a minute","Mindre än en minut"
+"Link: %s","Länk: %s"
 "Loaded successfully: ""%s"".","Laddades framgångsrikt: ""%s""."
 "Memory Used: %s","Använt minne: %s"
 "Method ""%s"" not defined in adapter %s.","Metoden ""%s"" inte definierad i adaptern %s."

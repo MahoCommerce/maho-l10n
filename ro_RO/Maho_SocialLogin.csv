@@ -22,7 +22,6 @@
 "How long an issued sign-in nonce stays valid. Values below 60 seconds are raised to 60.","Cât timp un semn emis rămâne valabil. Valorile mai mici de 60 secunde sunt ridicate la 60."
 "How many failed social sign-in attempts one IP address can make per hour. Set 0 to disable the limit.","Câte încercări de semnare socială eșuate pot crea o adresă IP pe oră. Setați 0 pentru a dezactiva limita."
 "Invalid authentication token.","Token de autentificare invalid."
-"Invalid form key. Please refresh the page and try again.","Cheie formular nevalidă. Vă rugăm să reîncărcați pagina și să încercați din nou."
 "Linked Sign-In Providers","Furnizori de conectare legați"
 "or","sau"
 "Please complete the required fields of your profile.","Vă rugăm să completați câmpurile obligatorii ale profilului dvs."

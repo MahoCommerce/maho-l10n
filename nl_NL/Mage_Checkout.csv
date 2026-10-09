@@ -118,7 +118,6 @@
 "If customer accounts are disabled in the frontend, guest checkout must remain enabled.","Als klantaccounts zijn uitgeschakeld in de frontend, moet gastafhandeling ingeschakeld blijven."
 "Incl. Tax","Incl. BTW"
 "Invalid data.","Ongeldige gegevens."
-"Invalid form key. Please refresh the page.","Ongeldige formuliersleutel. Gelieve de pagina te vernieuwen."
 "Invalid method: %s","Ongeldige methode: %s"
 "Invalid shipping method.","Ongeldige verzendmethode."
 "Items","Artikelen"

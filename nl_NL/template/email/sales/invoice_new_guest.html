@@ -77,7 +77,7 @@
                         <h6>Verzenden naar:</h6>
                         <p><span class="no-link">{{var order.shipping_address.format('html')}}</span></p>
                     </td>
-                    {{/afhankelijk}}
+                    {{/depend}}
                 </tr>
                 <tr>
                     {{depend order.getIsNotVirtual()}}
@@ -85,7 +85,7 @@
                         <h6>Verzend methode:</h6>
                         <p>{{var order.shipping_description}}</p>
                     </td>
-                    {{/afhankelijk}}
+                    {{/depend}}
                     <td class="method-info">
                         <h6>Betaalmethode:</h6>
                         {{var payment_html}}

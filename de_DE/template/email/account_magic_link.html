@@ -22,7 +22,7 @@
             <table cellspacing="0" cellpadding="0" class="action-button" >
                 <tr>
                     <td>
-                        <a href="{{url=&quot;Kunden/Konto/magiclinklogin/&quot; _query_token=$customer.rp_token}}"><span>Bei Ihrem Konto anmelden</span></a>
+                        <a href="{{store url="customer/account/magiclinklogin/" _query_token=$customer.rp_token}}"><span>Bei Ihrem Konto anmelden</span></a>
                     </td>
                 </tr>
             </table>
@@ -31,4 +31,4 @@
     </tr>
 </table>
 
-{{Template config_path="design/email/footer"}}
+{{template config_path="design/email/footer"}}

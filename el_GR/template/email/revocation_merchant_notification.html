@@ -14,7 +14,7 @@
 @-->
 
 {{template config_path="design/email/header"}}
-{{{inlinecss file="email-inline.css"}}
+{{inlinecss file="email-inline.css"}}
 
 <table cellpadding="0" cellspacing="0" border="0" width="100%">
     <tr>
@@ -29,7 +29,7 @@
             <p><strong>Όνομα:</strong> {{var customer_name}}<br>
             <strong>Email:</strong> {{var customer_email}}<br>
             <strong>Αναφορά παραγγελίας (όπως πληκτρολογείται):</strong> {{var order_reference}}<br>
-            {{depend order_increment_id}}<strong>Αντιστοιχισμένη παραγγελία:</strong> #{{var order_increment_id}}<br>{/depend}}
+            {{depend order_increment_id}}<strong>Αντιστοιχισμένη παραγγελία:</strong> #{{var order_increment_id}}<br>{{/depend}}
             <strong>Επαληθευμένη (επικυρωμένη συνεδρία):</strong> {{var verified_label}}</p>
 
             {{depend reason}}

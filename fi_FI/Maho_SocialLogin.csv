@@ -22,7 +22,6 @@
 "How long an issued sign-in nonce stays valid. Values below 60 seconds are raised to 60.","Kuinka kauan annettu kirjautuminen nonce pysyy voimassa. Alle 60 sekunnin arvot nostetaan 60."
 "How many failed social sign-in attempts one IP address can make per hour. Set 0 to disable the limit.","Kuinka monta epäonnistunutta sosiaalisen kirjautumisen yritystä yksi IP-osoite voi tehdä tunnissa. Aseta 0 poistaaksesi rajoituksen käytöstä."
 "Invalid authentication token.","Virheellinen todennus."
-"Invalid form key. Please refresh the page and try again.","Virheellinen lomakkeen avain. Päivitä sivu ja yritä uudelleen."
 "Linked Sign-In Providers","Linkitetyt Sisäänkirjautumisen Tarjoajat"
 "or","tai"
 "Please complete the required fields of your profile.","Ole hyvä ja täytä profiilisi vaaditut kentät."

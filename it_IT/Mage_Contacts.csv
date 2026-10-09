@@ -26,7 +26,6 @@
 "Enable Contact Us","Abilita Contatti"
 "Enable Honeypot Field","Abilita Honeypot Field"
 "Honeypot Field","Campo Honeypot"
-"Invalid Form Key. Please submit your request again.","Chiave modulo non valida. Si prega di inviare nuovamente la richiesta."
 "Invisible background measures (honeypot, rate limits) that blunt spam and email-bombing without inconveniencing real customers. Do not set the limits so low that legitimate visitors are blocked.","Misure di sfondo invisibili (honeypot, limiti di tasso) che smussano lo spam e l'e-bombardamento senza disagi i clienti reali. Non impostare i limiti così bassi che i visitatori legittimi sono bloccati."
 "Name","Nome"
 "Per email address. Default 3 per hour. 0 to disable.","Per indirizzo email. Predefinito 3 all'ora. 0 da disabilitare."

@@ -118,7 +118,6 @@
 "If customer accounts are disabled in the frontend, guest checkout must remain enabled.","Si las cuentas de clientes están desactivadas en el frontend, el checkout de invitados debe permanecer activado."
 "Incl. Tax","Incl. impuestos"
 "Invalid data.","Datos inválidos."
-"Invalid form key. Please refresh the page.","Clave de formulario no válida. Por favor, actualiza la página."
 "Invalid method: %s","Método no válido: %s"
 "Invalid shipping method.","Método de envío inválido."
 "Items","Elementos"

@@ -22,7 +22,6 @@
 "How long an issued sign-in nonce stays valid. Values below 60 seconds are raised to 60.","Hvor længe en udstedt sign-in nonce forbliver gyldig. Værdier under 60 sekunder er hævet til 60."
 "How many failed social sign-in attempts one IP address can make per hour. Set 0 to disable the limit.","Hvor mange mislykkede forsøg på social sign-in en IP-adresse kan lave per time. Sæt 0 for at deaktivere grænsen."
 "Invalid authentication token.","Ugyldig godkendelses token."
-"Invalid form key. Please refresh the page and try again.","Ugyldig formularnøgle. Opdater venligst siden og prøv igen."
 "Linked Sign-In Providers","Tilknyttede Login-Udbydere"
 "or","eller"
 "Please complete the required fields of your profile.","Udfyld venligst de obligatoriske felter i din profil."

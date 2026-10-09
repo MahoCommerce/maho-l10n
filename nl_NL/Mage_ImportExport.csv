@@ -30,6 +30,7 @@
 "Done import data validation","Datavalidatie voltooid"
 "Duplicate Unique Attribute for '%s'","Dupliceer unieke attributen voor '%s'"
 "Each data row must be an array","Elke gegevensrij moet een array zijn"
+"Entity adapter object must be an instance of Mage_ImportExport_Model_Export_Entity_Abstract","Entity adapter object moet een instance zijn van Mage_ImportExport_Model_Export_Entity_Abstract"
 "Entity adapter object must be an instance of Mage_ImportExport_Model_Import_Entity_Abstract","Entity adapter object moet een instance zijn van Mage_ImportExport_Model_Import_Entity_Abstract"
 "Entity is unknown","Entiteit is onbekend"
 "Entity Type","Entiteit type"

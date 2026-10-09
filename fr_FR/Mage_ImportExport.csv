@@ -30,6 +30,7 @@
 "Done import data validation","Validation des données d'importation terminée"
 "Duplicate Unique Attribute for '%s'","Dupliquer l'attribut unique pour '%s'"
 "Each data row must be an array","Chaque ligne de données doit être un tableau"
+"Entity adapter object must be an instance of Mage_ImportExport_Model_Export_Entity_Abstract","L'objet adaptateur d'entité doit être une instance de Mage_ImportExport_Model_Export_Entity_Abstract"
 "Entity adapter object must be an instance of Mage_ImportExport_Model_Import_Entity_Abstract","L'objet adaptateur d'entité doit être une instance de Mage_ImportExport_Model_Import_Entity_Abstract"
 "Entity is unknown","L'entité est inconnue"
 "Entity Type","Type d'entité"

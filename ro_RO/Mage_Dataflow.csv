@@ -1,4 +1,3 @@
-"<a href=""%s"" target=""_blank"">Link</a>","<a href=""%s"" target=""_blank"">Link</a>"
 "Actions XML is not valid.","Acțiunile XML nu sunt valide."
 "An error occurred while opening file: ""%s"".","A aparut o eroare la deschiderea fisierului: ""%s""."
 "Could not load file: ""%s"".","Nu s-a putut încărca fișierul: ""%s""."
@@ -17,6 +16,7 @@
 "Invalid file path.","Calea fişierului este invalidă."
 "Invalid node.","Nod invalid."
 "Less than a minute","Mai puțin de un minut"
+"Link: %s","Link: %s"
 "Loaded successfully: ""%s"".","Încărcat cu succes: ""%s""."
 "Memory Used: %s","Memorie utilizată: %s"
 "Method ""%s"" not defined in adapter %s.","Metoda ""%s"" nu este definită în adaptorul %s."

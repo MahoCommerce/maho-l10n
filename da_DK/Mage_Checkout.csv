@@ -118,7 +118,6 @@
 "If customer accounts are disabled in the frontend, guest checkout must remain enabled.","Hvis kundekonti er deaktiveret i fronten, skal gæstebetaling forblive aktiveret."
 "Incl. Tax","Inkl. Moms"
 "Invalid data.","Ugyldige data."
-"Invalid form key. Please refresh the page.","Ugyldig formularnøgle. Opdater venligst siden."
 "Invalid method: %s","Ugyldig metode: %s"
 "Invalid shipping method.","Ugyldig forsendelsesmetode."
 "Items","Varer"

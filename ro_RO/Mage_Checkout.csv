@@ -118,7 +118,6 @@
 "If customer accounts are disabled in the frontend, guest checkout must remain enabled.","Daca conturile de client sunt dezactivate in frontend, comanda pentru oaspete trebuie sa ramana activata."
 "Incl. Tax","Taxe incluse"
 "Invalid data.","Date incorecte."
-"Invalid form key. Please refresh the page.","Cheie formular invalidă. Vă rugăm să reîncărcaţi pagina."
 "Invalid method: %s","Metodă invalidă: %s"
 "Invalid shipping method.","Metodă de livrare invalidă."
 "Items","Articole"

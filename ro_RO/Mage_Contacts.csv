@@ -26,7 +26,6 @@
 "Enable Contact Us","Activează Contactează-ne"
 "Enable Honeypot Field","Activează câmpul Honeypot"
 "Honeypot Field","Câmp Honeypot"
-"Invalid Form Key. Please submit your request again.","Cheie Formular nevalidă. Vă rugăm să trimiteți din nou cererea."
 "Invisible background measures (honeypot, rate limits) that blunt spam and email-bombing without inconveniencing real customers. Do not set the limits so low that legitimate visitors are blocked.","Măsurători de fundal invizibile (apetituri de miere, limite de rată) care afectează spamul și bombardarea cu emailuri fără inconveniente pentru clienții reali. Nu setați limitele atât de jos încât vizitatorii legitimi să fie blocați."
 "Name","Nume"
 "Per email address. Default 3 per hour. 0 to disable.","Pentru fiecare adresă de e-mail. Implicit 3 pe oră. 0 pentru dezactivare."

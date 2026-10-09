@@ -26,7 +26,6 @@
 "Enable Contact Us","Kontakt uns aktivieren"
 "Enable Honeypot Field","Honeypot Feld aktivieren"
 "Honeypot Field","Honeypot-Feld"
-"Invalid Form Key. Please submit your request again.","Ungültiger Formularschlüssel. Bitte senden Sie Ihre Anfrage erneut ab."
 "Invisible background measures (honeypot, rate limits) that blunt spam and email-bombing without inconveniencing real customers. Do not set the limits so low that legitimate visitors are blocked.","Unsichtbare Hintergrundmessungen (Honigtopf, Ratenzahlen), die Spam und E-Mail-Bombardierungen stumpfen, ohne echte Kunden zu stören. Setzen Sie die Grenzen nicht so niedrig, dass legitime Besucher blockiert werden."
 "Name","Name"
 "Per email address. Default 3 per hour. 0 to disable.","Pro E-Mail-Adresse. Standard 3 pro Stunde. 0 zum Deaktivieren."

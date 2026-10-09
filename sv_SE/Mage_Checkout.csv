@@ -118,7 +118,6 @@
 "If customer accounts are disabled in the frontend, guest checkout must remain enabled.","Om kundkonton är inaktiverade i fronten måste gästkassan förbli aktiverad."
 "Incl. Tax","Inkl. Moms"
 "Invalid data.","Ogiltig data."
-"Invalid form key. Please refresh the page.","Ogiltig formulärnyckel. Vänligen uppdatera sidan."
 "Invalid method: %s","Ogiltig metod: %s"
 "Invalid shipping method.","Ogiltig fraktmetod."
 "Items","Objekt"

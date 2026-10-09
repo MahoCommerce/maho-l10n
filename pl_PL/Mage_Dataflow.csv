@@ -1,4 +1,3 @@
-"<a href=""%s"" target=""_blank"">Link</a>","<a href=""%s"" target=""_blank"">Link</a>"
 "Actions XML is not valid.","XML akcji jest nieprawidłowy."
 "An error occurred while opening file: ""%s"".","Wystąpił błąd podczas otwierania pliku: ""%s""."
 "Could not load file: ""%s"".","Nie można załadować pliku: ""%s""."
@@ -17,6 +16,7 @@
 "Invalid file path.","Nieprawidłowa ścieżka pliku."
 "Invalid node.","Nieprawidłowy węzeł."
 "Less than a minute","Mniej niż minuta"
+"Link: %s","Link: %s"
 "Loaded successfully: ""%s"".","Załadowano pomyślnie: ""%s""."
 "Memory Used: %s","Użycie pamięci: %s"
 "Method ""%s"" not defined in adapter %s.","Metoda ""%s"" nie została zdefiniowana w adapterze %s."

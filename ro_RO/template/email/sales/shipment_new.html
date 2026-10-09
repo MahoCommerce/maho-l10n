@@ -19,8 +19,8 @@
 <!--@styles
 @-->
 
-template config_path="design/email/header"}}
-{{inlinecss file="email-inline.cs"}}
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
 
 <table cellpadding="0" cellspacing="0" border="0">
     <tr>
@@ -92,9 +92,9 @@ template config_path="design/email/header"}}
                     </td>
                 </tr>
             </table>
-            {{block type='core/template' zonă='frontend' template='email/order/shipment/track.phtml' -$shipment order=$order}}
+            {{block type='core/template' area='frontend' template='email/order/shipment/track.phtml' shipment=$shipment order=$order}}
         </td>
     </tr>
 </table>
 
-template config_path="design/email/footer"}}
+{{template config_path="design/email/footer"}}

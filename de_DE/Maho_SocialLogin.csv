@@ -22,7 +22,6 @@
 "How long an issued sign-in nonce stays valid. Values below 60 seconds are raised to 60.","Wie lange eine ausgestellte Anmeldung gültig bleibt. Werte unter 60 Sekunden werden auf 60 erhöht."
 "How many failed social sign-in attempts one IP address can make per hour. Set 0 to disable the limit.","Anzahl fehlgeschlagener sozialer Anmeldeversuche pro Stunde. Legen Sie 0 ein, um das Limit zu deaktivieren."
 "Invalid authentication token.","Ungültiger Authentifizierungstoken."
-"Invalid form key. Please refresh the page and try again.","Ungültiger Formularschlüssel. Bitte aktualisieren Sie die Seite und versuchen Sie es erneut."
 "Linked Sign-In Providers","Verknüpfte Anmeldeanbieter"
 "or","oder"
 "Please complete the required fields of your profile.","Bitte füllen Sie die erforderlichen Felder Ihres Profils aus."

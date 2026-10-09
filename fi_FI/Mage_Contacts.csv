@@ -26,7 +26,6 @@
 "Enable Contact Us","Ota Yhteydet Käyttöön"
 "Enable Honeypot Field","Ota Käyttöön Honeypot-kenttä"
 "Honeypot Field","Honeypotin Kenttä"
-"Invalid Form Key. Please submit your request again.","Virheellinen lomakkeen avain. Ole hyvä ja lähetä pyyntö uudelleen."
 "Invisible background measures (honeypot, rate limits) that blunt spam and email-bombing without inconveniencing real customers. Do not set the limits so low that legitimate visitors are blocked.","Näkymätön tausta mittaa (hunajapot, nopeusrajat), että tylppä roskapostia ja sähköpostin pommitusta haittaamatta todellisia asiakkaita. Älä aseta rajoja niin alhaisiksi, että lailliset vierailijat on estetty."
 "Name","Nimi"
 "Per email address. Default 3 per hour. 0 to disable.","Per sähköpostiosoite. Oletus 3 per tunti. 0 poistaa käytöstä."

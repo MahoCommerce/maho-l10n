@@ -118,7 +118,6 @@
 "If customer accounts are disabled in the frontend, guest checkout must remain enabled.","Εάν οι λογαριασμοί πελατών είναι απενεργοποιημένοι στην περιοχή πελατών, η ολοκλήρωση αγοράς επισκεπτών πρέπει να παραμείνει ενεργή."
 "Incl. Tax","Με Φπα"
 "Invalid data.","Μη έγκυρα δεδομένα."
-"Invalid form key. Please refresh the page.","Μη έγκυρο κλειδί φόρμας. Παρακαλώ ανανεώστε τη σελίδα."
 "Invalid method: %s","Μη έγκυρη μέθοδος: %s"
 "Invalid shipping method.","Μη έγκυρη μέθοδος αποστολής."
 "Items","Στοιχεία"

@@ -1,4 +1,3 @@
-"<a href=""%s"" target=""_blank"">Link</a>","<a href=""%s"" target=""_blank"">Linkki</a>"
 "Actions XML is not valid.","Toiminnot XML ei kelpaa."
 "An error occurred while opening file: ""%s"".","Tiedoston avaamisessa tapahtui virhe: ""%s""."
 "Could not load file: ""%s"".","Tiedostoa ei voitu ladata: ""%s""."
@@ -17,6 +16,7 @@
 "Invalid file path.","Virheellinen tiedostopolku."
 "Invalid node.","Virheellinen solmu."
 "Less than a minute","Alle minuutti"
+"Link: %s","Linkki: %s"
 "Loaded successfully: ""%s"".","Ladattu onnistuneesti: ""%s""."
 "Memory Used: %s","Muistin Käytetty: %s"
 "Method ""%s"" not defined in adapter %s.","Menetelmää ""%s"" ei ole määritelty adapterissa %s."

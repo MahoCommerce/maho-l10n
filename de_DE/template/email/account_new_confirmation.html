@@ -33,7 +33,7 @@
                         <table cellspacing="0" cellpadding="0" class="action-button" >
                             <tr>
                                 <td>
-                                    <a href="{{url=&quot;Kunden/Account/confirm/&quot; _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}"><span>Konto bestätigen</span></a>
+                                    <a href="{{store url="customer/account/confirm/" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}"><span>Konto bestätigen</span></a>
                                 </td>
                             </tr>
                         </table>
@@ -49,4 +49,4 @@
     </tr>
 </table>
 
-{{Template config_path="design/email/footer"}}
+{{template config_path="design/email/footer"}}
