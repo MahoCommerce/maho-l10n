@@ -13,6 +13,10 @@ files:
   - source: /en_US/template/email/*.html
     translation: /%locale_with_underscore%/template/email/%original_file_name%
   - source: /en_US/template/email/html/*.html
+    # header.html has no text to translate, and the Crowdin HTML parser breaks the
+    # {{if}} directives inside its <img> tag. Maho falls back to the en_US file.
+    ignore:
+      - /en_US/template/email/html/header.html
     translation: /%locale_with_underscore%/template/email/html/%original_file_name%
   - source: /en_US/template/email/sales/*.html
     translation: /%locale_with_underscore%/template/email/sales/%original_file_name%
