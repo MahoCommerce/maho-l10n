@@ -49,6 +49,15 @@ jobs:
           npm install -g @crowdin/cli
           crowdin download --no-progress
 
+      - name: Decode the quotes inside template directives
+        run: php .build/decode-directive-quotes.php
+
+      # A translation that changes a {{...}} directive breaks the email or the
+      # text, so stop before anything is committed or published. Fix the strings
+      # in Crowdin, then run the workflow again.
+      - name: Check template directives
+        run: php .build/check-directives.php
+
       - name: Commit translation updates to the monorepo
         env:
           DATE: ${{ steps.date.outputs.DATE }}
