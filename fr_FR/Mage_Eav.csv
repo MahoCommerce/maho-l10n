@@ -20,7 +20,7 @@
 "A joint field with this alias (%s) is already declared","Un champ joint avec cet alias (%s) est déjà déclaré"
 "An error occurred while loading a record, aborting. Error: %s","Une erreur s'est produite lors du chargement d'un enregistrement, annulation. Erreur : %s"
 "An error occurred while loading the collection, aborting. Error: %s","Une erreur s'est produite lors du chargement de la collection, annulation. Erreur : %s"
-"An error occurred while saving a record, aborting. Error: ","Une erreur s'est produite lors de l'enregistrement de l'enregistrement, annulation. Erreur: "
+"An error occurred while saving a record, aborting. Error: %s","Une erreur s'est produite lors de l'enregistrement de l'enregistrement, annulation. Erreur : %s"
 "Are you sure you want to delete this set? Type ""confirm"" to proceed.","Êtes-vous sûr de vouloir supprimer cet ensemble ? Tapez ""confirmer"" pour continuer."
 "Attempt to add an invalid object","Tentative d’ajout d’un objet invalide"
 "Attribute '%s' used in configurable products","Attribut '%s' utilisé dans les produits configurables"

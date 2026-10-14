@@ -1085,6 +1085,7 @@
 "The tag has been deleted.","Taggen har tagits bort."
 "The tag has been saved.","Taggen har sparats."
 "The transaction details have been updated.","Detaljerna för transaktionen har uppdaterats."
+"The upload directory must be below the media folder.","Uppladdningsmappen måste vara under mediamappen."
 "The URL Rewrite has been deleted.","URL-omskrivning har tagits bort."
 "The URL Rewrite has been saved.","URL-omskrivning har sparats."
 "The user has been deleted.","Användaren har tagits bort."

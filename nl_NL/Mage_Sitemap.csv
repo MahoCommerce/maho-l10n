@@ -26,7 +26,6 @@
 "Error Email Template","Fout e-mail sjabloon"
 "Extra Content","Extra Content"
 "Feeding the pages to an AI model at answer time, which is how a store reaches AI search answers. Reserving it asks assistants to leave the store out of their answers.","De pagina's op het moment van antwoord aan een AI-model voeden en dat is hoe een winkel AI zoekantwoorden bereikt. Het reserveren vraagt medewerkers om de winkel buiten hun antwoorden te houden."
-"File ""%s"" cannot be saved. Please, make sure the directory ""%s"" is writeable by web server.","Bestand ""%s"" kan niet worden opgeslagen. Zorg ervoor dat de map ""%s"" beschrijfbaar is door de webserver."
 "Filename","Bestandsnaam"
 "Frequency","Frequentie"
 "Full: keep and reuse the content","Volledig: houd de inhoud bij en hergebruik deze"

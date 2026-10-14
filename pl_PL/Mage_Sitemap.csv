@@ -26,7 +26,6 @@
 "Error Email Template","Błąd szablonu wiadomości e-mail"
 "Extra Content","Extra Content"
 "Feeding the pages to an AI model at answer time, which is how a store reaches AI search answers. Reserving it asks assistants to leave the store out of their answers.","Karmienie stron modelem ptasiej grypy w czasie odpowiedzi, w jaki sposób sklep osiąga odpowiedzi na wyszukiwanie ptasiej grypy. Zastrzeżenie prosi asystentów o pozostawienie sklepu poza ich odpowiedziami."
-"File ""%s"" cannot be saved. Please, make sure the directory ""%s"" is writeable by web server.","Plik ""%s"" nie może zostać zapisany. Upewnij się, że katalog ""%s"" jest zapisywalny przez serwer WWW."
 "Filename","Nazwa pliku"
 "Frequency","Częstotliwość"
 "Full: keep and reuse the content","Pełne: zachowaj i ponownie wykorzystaj zawartość"

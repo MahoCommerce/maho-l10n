@@ -26,7 +26,6 @@
 "Error Email Template","Gabarit d'email d'erreur"
 "Extra Content","Extra Content"
 "Feeding the pages to an AI model at answer time, which is how a store reaches AI search answers. Reserving it asks assistants to leave the store out of their answers.","Nourrir les pages à un modèle IA au moment de la réponse, c'est comment un magasin atteint les réponses de recherche IA. En réservant il demande aux assistants de laisser le magasin en dehors de leurs réponses."
-"File ""%s"" cannot be saved. Please, make sure the directory ""%s"" is writeable by web server.","Le fichier «%s» ne peut pas être sauvegardé. Veuillez vous assurer que le répertoire «%s» est accessible en écriture par le serveur web."
 "Filename","Nom du fichier"
 "Frequency","Fréquence"
 "Full: keep and reuse the content","Plein : conserver et réutiliser le contenu"

@@ -20,6 +20,7 @@
 "Image not found.","Billedet blev ikke fundet."
 "It was not possible to delete one or more files from the %s folder.","Det var ikke muligt at slette en eller flere filer fra mappen %s."
 "It was not possible to delete one or more files from the filesystem.","Det var ikke muligt at slette en eller flere filer fra filsystemet."
+"It was not possible to read the ""%s"" folder.","Det var ikke muligt at læse ""%s""-mappen."
 "Media Cleaner","Medie Renser"
 "Never identify or delete files and folders in this list (wildcards allowed), one per line. Root dir is ""media"". Eg: ""wysiwyg/landing*/*.jpg"" or ""wysiwyg/images2021"" etc.","Aldrig identificere eller slette filer og mapper i denne liste (jokertegn tilladt), en pr. linje. Root dir er ""media"". Eks.: ""wysiwyg/landing*/*.jpg"" eller ""wysiwyg/images2021"" osv."
 "Product","Produkt"

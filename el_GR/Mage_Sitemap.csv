@@ -26,7 +26,6 @@
 "Error Email Template","Πρότυπο Email Σφάλματος"
 "Extra Content","Extra Content"
 "Feeding the pages to an AI model at answer time, which is how a store reaches AI search answers. Reserving it asks assistants to leave the store out of their answers.","Διατροφή των σελίδων σε ένα μοντέλο τεχνητής νοημοσύνης κατά την ώρα απάντησης, το οποίο είναι το πώς ένα κατάστημα φτάνει στις απαντήσεις αναζήτησης τεχνητής νοημοσύνης. Κρατώντας το ζητά από τους βοηθούς να φύγουν από το κατάστημα από τις απαντήσεις τους."
-"File ""%s"" cannot be saved. Please, make sure the directory ""%s"" is writeable by web server.","Αρχείο ""%s"" δεν μπορεί να αποθηκευτεί. Παρακαλώ, βεβαιωθείτε ότι ο κατάλογος ""%s"" είναι εγγράψιμος από το διακομιστή web."
 "Filename","Όνομα Αρχείου"
 "Frequency","Συχνότητα"
 "Full: keep and reuse the content","Πλήρης: διατήρηση και επαναχρησιμοποίηση του περιεχομένου"

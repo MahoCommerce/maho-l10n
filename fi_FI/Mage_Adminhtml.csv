@@ -1085,6 +1085,7 @@
 "The tag has been deleted.","Tunniste on poistettu."
 "The tag has been saved.","Tunniste on tallennettu."
 "The transaction details have been updated.","Tapahtuman tiedot on päivitetty."
+"The upload directory must be below the media folder.","Lähetyshakemiston on oltava mediahakemiston alapuolella."
 "The URL Rewrite has been deleted.","URL uudelleenohjaus on poistettu."
 "The URL Rewrite has been saved.","URL-osoitteen uudelleenohjaus on tallennettu."
 "The user has been deleted.","Käyttäjä on poistettu."

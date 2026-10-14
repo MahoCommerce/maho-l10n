@@ -135,7 +135,6 @@
 "Can be used only with catalog input type Dropdown, Multiple Select and Price","Voidaan käyttää vain katalogin syöttötyypillä Dropdown, Multiple Select ja Price"
 "Cancel","Peruuta"
 "Cannot create image.","Kuvaa ei voi luoda."
-"Cannot create writeable directory '%s'.","Ei voida luoda kirjoitettavaa hakemistoa '%s'."
 "Carousel","Carousel"
 "Cart Item Attribute","Ostoskorin Tuotteen Määrite"
 "Catalog","Katalogi"

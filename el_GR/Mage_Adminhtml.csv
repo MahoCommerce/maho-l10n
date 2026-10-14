@@ -1085,6 +1085,7 @@
 "The tag has been deleted.","Η ετικέτα έχει διαγραφεί."
 "The tag has been saved.","Η ετικέτα έχει αποθηκευτεί."
 "The transaction details have been updated.","Οι λεπτομέρειες της συναλλαγής έχουν ενημερωθεί."
+"The upload directory must be below the media folder.","Ο κατάλογος αποστολής πρέπει να είναι κάτω από το φάκελο πολυμέσων."
 "The URL Rewrite has been deleted.","Η διεύθυνση επανεγγραφής URL έχει διαγραφεί."
 "The URL Rewrite has been saved.","Η διεύθυνση επανεγγραφής URL έχει αποθηκευτεί."
 "The user has been deleted.","Ο χρήστης έχει διαγραφεί."

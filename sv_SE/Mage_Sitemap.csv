@@ -26,7 +26,6 @@
 "Error Email Template","E-postmall för fel"
 "Extra Content","Extra Content"
 "Feeding the pages to an AI model at answer time, which is how a store reaches AI search answers. Reserving it asks assistants to leave the store out of their answers.","Utfodra sidorna till en AI-modell vid svarstid, vilket är hur en butik når AI söksvar. Reservera det ber assistenter att lämna butiken utanför sina svar."
-"File ""%s"" cannot be saved. Please, make sure the directory ""%s"" is writeable by web server.","Filen ""%s"" kan inte sparas. Se till att katalogen ""%s"" är skrivbar av webbservern."
 "Filename","Filnamn"
 "Frequency","Frekvens"
 "Full: keep and reuse the content","Full: behåll och återanvänd innehållet"

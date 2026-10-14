@@ -20,7 +20,7 @@
 "A joint field with this alias (%s) is already declared","Et fælles felt med dette alias (%s) er allerede erklæret"
 "An error occurred while loading a record, aborting. Error: %s","Der opstod en fejl under indlæsning af en post, afbrudt. Fejl: %s"
 "An error occurred while loading the collection, aborting. Error: %s","Der opstod en fejl under indlæsning af samlingen, afbrydelse. Fejl: %s"
-"An error occurred while saving a record, aborting. Error: ","Der opstod en fejl under lagring af en post, afbrudt. Fejl: "
+"An error occurred while saving a record, aborting. Error: %s","En fejl opstod under lagring af en post, afbrudt. Fejl: %s"
 "Are you sure you want to delete this set? Type ""confirm"" to proceed.","Er du sikker på, at du vil slette dette sæt? Skriv ""bekræft"" for at fortsætte."
 "Attempt to add an invalid object","Forsøg på at tilføje et ugyldigt objekt"
 "Attribute '%s' used in configurable products","Attribut '%s' brugt i konfigurerbare produkter"

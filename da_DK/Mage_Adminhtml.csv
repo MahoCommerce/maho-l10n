@@ -1085,6 +1085,7 @@
 "The tag has been deleted.","Tagget er blevet slettet."
 "The tag has been saved.","Tagget er blevet gemt."
 "The transaction details have been updated.","Transaktionsoplysningerne er blevet opdateret."
+"The upload directory must be below the media folder.","Upload mappen skal være under mediemappen."
 "The URL Rewrite has been deleted.","URL omskrivning er blevet slettet."
 "The URL Rewrite has been saved.","URL omskrivning er blevet gemt."
 "The user has been deleted.","Brugeren er blevet slettet."

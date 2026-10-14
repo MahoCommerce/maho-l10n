@@ -26,7 +26,6 @@
 "Error Email Template","Virhe Sähköpostin Malli"
 "Extra Content","Extra Content"
 "Feeding the pages to an AI model at answer time, which is how a store reaches AI search answers. Reserving it asks assistants to leave the store out of their answers.","Sivujen syöttäminen tekoälyn malliin vastausajankohtana, mikä on se, miten kauppa saavuttaa tekoälyn hakuvastaukset. Varattaessa se pyytää avustajia jättämään varastosta pois vastauksia."
-"File ""%s"" cannot be saved. Please, make sure the directory ""%s"" is writeable by web server.","Tiedostoa ""%s"" ei voi tallentaa. Varmista, että hakemisto ""%s"" on kirjoitettavissa web-palvelimella."
 "Filename","Tiedostonimi"
 "Frequency","Taajuus"
 "Full: keep and reuse the content","Täynnä sisältö: säilytä ja käytä sisältöä uudelleen."

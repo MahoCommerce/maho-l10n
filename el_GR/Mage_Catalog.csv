@@ -135,7 +135,6 @@
 "Can be used only with catalog input type Dropdown, Multiple Select and Price","Μπορεί να χρησιμοποιηθεί μόνο με τον τύπο εισόδου Αναπτυσσόμενου Μενού καταλόγου, Πολλαπλών Επιλογών και Τιμής"
 "Cancel","Ακύρωση"
 "Cannot create image.","Αδυναμία δημιουργίας εικόνας."
-"Cannot create writeable directory '%s'.","Αδυναμία δημιουργίας εγγράψιμου καταλόγου '%s'."
 "Carousel","Carousel"
 "Cart Item Attribute","Χαρακτηριστικό Στοιχείου Καλαθιού"
 "Catalog","Κατάλογος"

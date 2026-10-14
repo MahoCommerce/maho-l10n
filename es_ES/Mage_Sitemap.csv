@@ -26,7 +26,6 @@
 "Error Email Template","Plantilla de Email de Error"
 "Extra Content","Extra Content"
 "Feeding the pages to an AI model at answer time, which is how a store reaches AI search answers. Reserving it asks assistants to leave the store out of their answers.","Alimentar las páginas a un modelo de IA en tiempo de respuesta, que es cómo una tienda llega a las respuestas de búsqueda de IA. Reservar pide a los asistentes que dejen la tienda fuera de sus respuestas."
-"File ""%s"" cannot be saved. Please, make sure the directory ""%s"" is writeable by web server.","El archivo ""%s"" no se puede guardar. Por favor, asegúrese de que el directorio ""%s"" tiene permisos de escritura en el servidor web."
 "Filename","Nombre de archivo"
 "Frequency","Frecuencia"
 "Full: keep and reuse the content","Completo: mantener y reutilizar el contenido"

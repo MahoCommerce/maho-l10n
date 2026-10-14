@@ -1085,6 +1085,7 @@
 "The tag has been deleted.","De tag is verwijderd."
 "The tag has been saved.","Het label is opgeslagen."
 "The transaction details have been updated.","De transactie details zijn bijgewerkt."
+"The upload directory must be below the media folder.","De uploadmap moet onder de media-map liggen."
 "The URL Rewrite has been deleted.","De URL Rewrite is verwijderd."
 "The URL Rewrite has been saved.","De URL Rewrite is opgeslagen."
 "The user has been deleted.","De gebruiker is verwijderd."

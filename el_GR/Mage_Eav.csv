@@ -20,7 +20,7 @@
 "A joint field with this alias (%s) is already declared","Ένα κοινό πεδίο με αυτό το ψευδώνυμο (%s) έχει ήδη δηλωθεί"
 "An error occurred while loading a record, aborting. Error: %s","Παρουσιάστηκε σφάλμα κατά τη φόρτωση εγγραφής, εγκατάλειψη. Σφάλμα: %s"
 "An error occurred while loading the collection, aborting. Error: %s","Παρουσιάστηκε σφάλμα κατά τη φόρτωση της συλλογής, εγκατάλειψη. Σφάλμα: %s"
-"An error occurred while saving a record, aborting. Error: ","Παρουσιάστηκε σφάλμα κατά την αποθήκευση της εγγραφής, εγκατάλειψη. Σφάλμα: "
+"An error occurred while saving a record, aborting. Error: %s","Παρουσιάστηκε σφάλμα κατά την αποθήκευση της εγγραφής, εγκατάλειψη. Σφάλμα: %s"
 "Are you sure you want to delete this set? Type ""confirm"" to proceed.","Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το σετ? Πληκτρολογήστε ""επιβεβαίωση"" για να συνεχίσετε."
 "Attempt to add an invalid object","Προσπάθεια προσθήκης μη έγκυρου αντικειμένου"
 "Attribute '%s' used in configurable products","Χαρακτηριστικό '%s' που χρησιμοποιείται στα διαμορφώσιμα προϊόντα"

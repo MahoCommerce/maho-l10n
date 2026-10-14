@@ -1085,6 +1085,7 @@
 "The tag has been deleted.","Eticheta a fost ștearsă."
 "The tag has been saved.","Eticheta a fost salvată."
 "The transaction details have been updated.","Detaliile tranzacției au fost actualizate."
+"The upload directory must be below the media folder.","Directorul de încărcare trebuie să fie sub directorul media."
 "The URL Rewrite has been deleted.","Rescrierea adresei URL a fost ștearsă."
 "The URL Rewrite has been saved.","Rescrierea URL a fost salvată."
 "The user has been deleted.","Utilizatorul a fost șters."

@@ -26,7 +26,6 @@
 "Error Email Template","Fejl E-Mail Skabelon"
 "Extra Content","Extra Content"
 "Feeding the pages to an AI model at answer time, which is how a store reaches AI search answers. Reserving it asks assistants to leave the store out of their answers.","Fodring af siderne til en AI model på svar tid, hvilket er, hvordan en butik når AI søgning svar. Reservering det beder assistenter om at forlade butikken ud af deres svar."
-"File ""%s"" cannot be saved. Please, make sure the directory ""%s"" is writeable by web server.","Filen ""%s"" kan ikke gemmes. Sørg for, at mappen ""%s"" er skrivbar for webserveren."
 "Filename","Filnavn"
 "Frequency","Frekvens"
 "Full: keep and reuse the content","Fuld: Behold og genbrug indholdet"

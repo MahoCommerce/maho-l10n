@@ -1085,6 +1085,7 @@
 "The tag has been deleted.","Der Tag wurde gelöscht."
 "The tag has been saved.","Das Tag wurde gespeichert."
 "The transaction details have been updated.","Die Transaktionsdetails wurden aktualisiert."
+"The upload directory must be below the media folder.","Das Upload-Verzeichnis muss unter dem Medienordner liegen."
 "The URL Rewrite has been deleted.","Der URL-Rewrite wurde gelöscht."
 "The URL Rewrite has been saved.","Der URL-Rewrite wurde gespeichert."
 "The user has been deleted.","Der Benutzer wurde gelöscht."

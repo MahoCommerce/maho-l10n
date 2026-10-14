@@ -20,7 +20,7 @@
 "A joint field with this alias (%s) is already declared","Een gezamenlijk veld met deze alias (%s) is al aangegeven"
 "An error occurred while loading a record, aborting. Error: %s","Er is een fout opgetreden tijdens het laden van een record, afbreken. Fout: %s"
 "An error occurred while loading the collection, aborting. Error: %s","Er is een fout opgetreden tijdens het laden van de verzameling, afbreken. Fout: %s"
-"An error occurred while saving a record, aborting. Error: ","Er is een fout opgetreden bij het opslaan van een record, afbreken. Fout: "
+"An error occurred while saving a record, aborting. Error: %s","Er is een fout opgetreden bij het opslaan van een record, afbreken. Fout: %s"
 "Are you sure you want to delete this set? Type ""confirm"" to proceed.","Weet u zeker dat u deze set wilt verwijderen? Type ""bevestigen"" om verder te gaan."
 "Attempt to add an invalid object","Poging om een ongeldig object toe te voegen"
 "Attribute '%s' used in configurable products","Attribuut '%s' gebruikt in configureerbare producten"
