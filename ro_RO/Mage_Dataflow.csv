@@ -29,6 +29,7 @@
 "Sheet 1","Placă 1"
 "Skip undefined row.","Sari peste rândul nedefinit."
 "Starting %s :: %s","Începe %s :: %s"
+"The profile XML names a type that is not a Dataflow container.","Profilul XML denumește un tip care nu este un container pentru date."
 "Total records: %s","Total înregistrări: %s"
 "Upload failed. Can not find required columns: %s in file %s.","Încărcarea a eșuat. Nu se pot găsi coloanele necesare: %s în fișierul %s."
 "Upload failed. Wrong data format in file: %s.","Încărcare eșuată. Formatul de date greșit în fișierul: %s."

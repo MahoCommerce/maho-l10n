@@ -29,6 +29,7 @@
 "Sheet 1","Blad 1"
 "Skip undefined row.","Sla ongedefinieerde rij over."
 "Starting %s :: %s","Starting %s :: %s"
+"The profile XML names a type that is not a Dataflow container.","Het profiel XML-naam een type dat geen Dataflow container is."
 "Total records: %s","Totaal aantal records: %s"
 "Upload failed. Can not find required columns: %s in file %s.","Uploaden mislukt. Kan de vereiste kolommen niet vinden: %s in bestand %s."
 "Upload failed. Wrong data format in file: %s.","Upload mislukt. Verkeerd gegevensformaat in bestand: %s."

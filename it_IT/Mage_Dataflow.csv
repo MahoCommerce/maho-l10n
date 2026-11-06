@@ -29,6 +29,7 @@
 "Sheet 1","Foglio 1"
 "Skip undefined row.","Salta riga non definita."
 "Starting %s :: %s","Avvio %s :: %s"
+"The profile XML names a type that is not a Dataflow container.","Il profilo XML nomina un tipo che non è un contenitore Datafluss."
 "Total records: %s","Totale record: %s"
 "Upload failed. Can not find required columns: %s in file %s.","Caricamento fallito. Impossibile trovare le colonne richieste: %s nel file %s."
 "Upload failed. Wrong data format in file: %s.","Caricamento fallito. Formato dati errato nel file: %s."

@@ -16,7 +16,7 @@
 """%s"" length must be equal or less than %s characters.","""%s"" lengte moet gelijk zijn of kleiner zijn dan %s tekens."
 """%s"" width exceeds allowed value of %s px.","""%s"" breedte overschrijdt toegestane waarde van %s px."
 ". Do not use ""event"" for an attribute code, it is a reserved keyword.",". Gebruik geen ""event"" voor een attribuutcode, het is een gereserveerd trefwoord."
-"Add Option","Optie toevoegen"
+"Add","Toevoegen"
 "A joint field with this alias (%s) is already declared","Een gezamenlijk veld met deze alias (%s) is al aangegeven"
 "An error occurred while loading a record, aborting. Error: %s","Er is een fout opgetreden tijdens het laden van een record, afbreken. Fout: %s"
 "An error occurred while loading the collection, aborting. Error: %s","Er is een fout opgetreden tijdens het laden van de verzameling, afbreken. Fout: %s"

@@ -3,7 +3,6 @@
 "%s is available for purchase in increments of %s only.","%s är endast tillgänglig för köp i steg om %s."
 "%s is not a correct comparsion method.","%s är inte en korrekt jämförelsemetod."
 "<strong>Note</strong> that these settings are applicable to cart line items, not the whole cart.","<strong>Notera</strong> att dessa inställningar är tillämpliga på kundvagnsrader, inte hela kundvagnen."
-"Add Minimum Qty","Lägga till minsta antal"
 "Allow Qty Below 0","Tillåt antal under 0"
 "Allow Qty Below 0 and Notify Customer","Tillåt antal under 0 och meddela kunden"
 "Automatically Return Credit Memo Item to Stock","Returnera automatiskt kreditnotans objekt till lagret"

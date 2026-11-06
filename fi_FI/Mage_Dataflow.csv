@@ -29,6 +29,7 @@
 "Sheet 1","Arkki 1"
 "Skip undefined row.","Ohita määrittelemätön rivi."
 "Starting %s :: %s","Käynnistetään %s :: %s"
+"The profile XML names a type that is not a Dataflow container.","Profiilin XML nimi tyyppi, joka ei ole Dataflow kontti."
 "Total records: %s","Tietueita yhteensä: %s"
 "Upload failed. Can not find required columns: %s in file %s.","Lataaminen epäonnistui. Vaadittuja sarakkeita ei löytynyt: %s tiedostossa %s."
 "Upload failed. Wrong data format in file: %s.","Lataaminen epäonnistui. Väärä tiedostomuoto: %s."

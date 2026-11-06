@@ -29,6 +29,7 @@
 "Sheet 1","Ark 1"
 "Skip undefined row.","Spring over udefineret række."
 "Starting %s :: %s","Starter %s :: %s"
+"The profile XML names a type that is not a Dataflow container.","Profilen XML navngiver en type, der ikke er en Dataflow beholder."
 "Total records: %s","Samlet antal poster: %s"
 "Upload failed. Can not find required columns: %s in file %s.","Upload mislykkedes. Kan ikke finde påkrævede kolonner: %s i fil %s."
 "Upload failed. Wrong data format in file: %s.","Upload mislykkedes. Forkert dataformat i fil: %s."

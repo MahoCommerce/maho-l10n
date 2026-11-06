@@ -29,6 +29,7 @@
 "Sheet 1","Arkusz 1"
 "Skip undefined row.","Pomiń niezdefiniowany wiersz."
 "Starting %s :: %s","Rozpoczęcie %s :: %s"
+"The profile XML names a type that is not a Dataflow container.","Profil XML określa typ, który nie jest pojemnikiem Dataflow"
 "Total records: %s","Wszystkich wpisów: %s"
 "Upload failed. Can not find required columns: %s in file %s.","Przesyłanie nie powiodło się. Nie można znaleźć wymaganych kolumn: %s w pliku %s."
 "Upload failed. Wrong data format in file: %s.","Przesyłanie nie powiodło się. Błędny format danych w pliku: %s."

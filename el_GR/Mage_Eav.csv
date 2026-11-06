@@ -16,7 +16,7 @@
 """%s"" length must be equal or less than %s characters.","""%s"" μήκος πρέπει να είναι ίσο ή μικρότερο από %s χαρακτήρες."
 """%s"" width exceeds allowed value of %s px.","""%s"" πλάτος υπερβαίνει την επιτρεπόμενη τιμή %s px."
 ". Do not use ""event"" for an attribute code, it is a reserved keyword.",". Μην χρησιμοποιείτε το ""event"" για έναν κωδικό χαρακτηριστικού, είναι μια δεσμευμένη λέξη-κλειδί."
-"Add Option","Προσθήκη Επιλογής"
+"Add","Προσθήκη"
 "A joint field with this alias (%s) is already declared","Ένα κοινό πεδίο με αυτό το ψευδώνυμο (%s) έχει ήδη δηλωθεί"
 "An error occurred while loading a record, aborting. Error: %s","Παρουσιάστηκε σφάλμα κατά τη φόρτωση εγγραφής, εγκατάλειψη. Σφάλμα: %s"
 "An error occurred while loading the collection, aborting. Error: %s","Παρουσιάστηκε σφάλμα κατά τη φόρτωση της συλλογής, εγκατάλειψη. Σφάλμα: %s"

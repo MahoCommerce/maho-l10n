@@ -20,27 +20,23 @@
     <tr>
         <td class="action-content">
             <h1>Neue Widerrufsanfrage erhalten</h1>
-            <p>Ein Verbraucher hat den Widerrufs-Button auf {{var store.getFrontendName()}} ausgeübt.</p>
+            <p>Ein Verbraucher hat die Widerrufsschaltfläche auf {{var store.getFrontendName()}} verwendet.</p>
 
             <p><strong>Referenznummer:</strong> #{{var request_id}}<br>
             <strong>Empfangen:</strong> {{var received_store}}<br>
             {{var received_utc}}</p>
 
-            <p><strong>Name:</strong> {{var customer_name}}<br>
-            <strong>Email:</strong> {{var customer_email}}<br>
-            <strong>Order reference (as typed):</strong> {{var order_reference}}<br>
-            {{depend order_increment_id}}<strong>Matched order:</strong> #{{var order_increment_id}}<br>{{/depend}}
-            <strong>Verified (authenticated session):</strong> {{var verified_label}}</p>
+            <p><strong>Name:</strong> {{var customer_name}}<br><strong>E-Mail:</strong> {{var customer_email}}<br><strong>Bestellnummer (wie eingegeben):</strong> {{var order_reference}}<br>{{depend order_increment_id}}<strong>Zugeordnete Bestellung:</strong> #{{var order_increment_id}}<br>{{/depend}}<strong>Verifiziert (angemeldete Sitzung):</strong> {{var verified_label}}</p>
 
             {{depend reason}}
             <p><strong>Grund (freiwillig):</strong><br>{{var reason}}</p>
             {{/depend}}
 
             {{depend suppressed}}
-            <p><strong>Hinweis:</strong> die Kundenquittungs-E-Mail wurde durch das Preislimit pro Empfänger unterdrückt und wurde nicht ausgeliefert. Überprüfen Sie die Anfrage im Admin-Panel und senden Sie sie erneut nach dem Triage.</p>
+            <p><strong>Hinweis:</strong> Die Empfangsbestätigung an den Kunden wurde durch das Versandlimit pro Empfänger unterdrückt und nicht zugestellt. Prüfen Sie die Anfrage im Admin-Bereich und senden Sie die Bestätigung danach erneut.</p>
             {{/depend}}
 
-            <p>Sie können diese Anfrage im Admin-Panel unter <strong>Sales &gt; Widerrufsanfragen</strong> überprüfen und bearbeiten.</p>
+            <p>Sie können diese Anfrage im Admin-Bereich unter <strong>Verkäufe &gt; Widerrufsanfragen</strong> prüfen und bearbeiten.</p>
         </td>
     </tr>
 </table>

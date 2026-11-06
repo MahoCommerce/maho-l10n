@@ -16,7 +16,7 @@
 """%s"" length must be equal or less than %s characters.","La longueur ""%s"" doit être égale ou inférieure à %s caractères."
 """%s"" width exceeds allowed value of %s px.","La largeur «%s» dépasse la valeur autorisée de %s px."
 ". Do not use ""event"" for an attribute code, it is a reserved keyword.",". N'utilisez pas ""event"" pour un code d'attribut, c'est un mot clé réservé."
-"Add Option","Ajouter une option"
+"Add","Ajouter"
 "A joint field with this alias (%s) is already declared","Un champ joint avec cet alias (%s) est déjà déclaré"
 "An error occurred while loading a record, aborting. Error: %s","Une erreur s'est produite lors du chargement d'un enregistrement, annulation. Erreur : %s"
 "An error occurred while loading the collection, aborting. Error: %s","Une erreur s'est produite lors du chargement de la collection, annulation. Erreur : %s"

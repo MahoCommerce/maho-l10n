@@ -16,7 +16,7 @@
 """%s"" length must be equal or less than %s characters.","""%s"" längd måste vara lika eller mindre än %s tecken."
 """%s"" width exceeds allowed value of %s px.","""%s"" bredd överstiger tillåtet värde %s px."
 ". Do not use ""event"" for an attribute code, it is a reserved keyword.",". Använd inte ""händelse"" för en attributkod, det är ett reserverat sökord."
-"Add Option","Lägg till alternativ"
+"Add","Lägg till"
 "A joint field with this alias (%s) is already declared","Ett gemensamt fält med detta alias (%s) är redan deklarerat"
 "An error occurred while loading a record, aborting. Error: %s","Ett fel inträffade vid laddning av en post, avbryter. Fel: %s"
 "An error occurred while loading the collection, aborting. Error: %s","Ett fel inträffade vid inläsning av samlingen, avbryter. Fel: %s"

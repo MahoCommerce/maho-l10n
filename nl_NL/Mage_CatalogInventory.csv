@@ -3,7 +3,6 @@
 "%s is available for purchase in increments of %s only.","%s is alleen beschikbaar voor aankoop in veelvoud van %s."
 "%s is not a correct comparsion method.","%s is geen juiste vergelijkingsmethode."
 "<strong>Note</strong> that these settings are applicable to cart line items, not the whole cart.","<strong>Merk op</strong> dat deze instellingen van toepassing zijn op artikelartikelen, niet de hele winkelwagen."
-"Add Minimum Qty","Voeg minimum hoeveelheid toe"
 "Allow Qty Below 0","Aantal onder 0 toestaan"
 "Allow Qty Below 0 and Notify Customer","Aantal onder 0 toestaan en klant inlichten"
 "Automatically Return Credit Memo Item to Stock","Automatisch creditfactuur product voorraad terugzetten"

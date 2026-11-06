@@ -3,7 +3,6 @@
 "%s is available for purchase in increments of %s only.","%s este disponibil doar pentru cumpărare în trepte de %s."
 "%s is not a correct comparsion method.","%s nu este o metodă corectă de comparare."
 "<strong>Note</strong> that these settings are applicable to cart line items, not the whole cart.","<strong>Nota</strong> că aceste setări sunt aplicabile elementelor liniei de coș, nu întregului coș."
-"Add Minimum Qty","Adaugă Cantitate Minimă"
 "Allow Qty Below 0","Permite cantitate sub 0"
 "Allow Qty Below 0 and Notify Customer","Permite cantitatea mai jos de 0 si notifica clientul"
 "Automatically Return Credit Memo Item to Stock","Returnează automat nota de credit în stoc"

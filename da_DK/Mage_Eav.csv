@@ -16,7 +16,7 @@
 """%s"" length must be equal or less than %s characters.","""%s"" længde skal være lig med eller mindre end %s tegn."
 """%s"" width exceeds allowed value of %s px.","""%s"" bredde overstiger den tilladte værdi af %s px."
 ". Do not use ""event"" for an attribute code, it is a reserved keyword.",". Brug ikke ""event"" til en attributkode, det er et reserveret søgeord."
-"Add Option","Tilføj Valgmulighed"
+"Add","Tilføj"
 "A joint field with this alias (%s) is already declared","Et fælles felt med dette alias (%s) er allerede erklæret"
 "An error occurred while loading a record, aborting. Error: %s","Der opstod en fejl under indlæsning af en post, afbrudt. Fejl: %s"
 "An error occurred while loading the collection, aborting. Error: %s","Der opstod en fejl under indlæsning af samlingen, afbrydelse. Fejl: %s"

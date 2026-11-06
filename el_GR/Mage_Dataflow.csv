@@ -29,6 +29,7 @@
 "Sheet 1","Φύλλο 1"
 "Skip undefined row.","Παράλειψη απροσδιόριστης γραμμής."
 "Starting %s :: %s","Ξεκινώντας %s :: %s"
+"The profile XML names a type that is not a Dataflow container.","Το προφίλ XML ονομάζει έναν τύπο που δεν είναι δοχείο Dataflow"
 "Total records: %s","Σύνολο εγγραφών: %s"
 "Upload failed. Can not find required columns: %s in file %s.","Η μεταφόρτωση απέτυχε. Δεν βρέθηκε οι απαιτούμενες στήλες: %s στο αρχείο %s."
 "Upload failed. Wrong data format in file: %s.","Η μεταφόρτωση απέτυχε. Λάθος μορφή δεδομένων στο αρχείο: %s."

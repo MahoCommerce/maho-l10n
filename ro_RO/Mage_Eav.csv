@@ -16,7 +16,7 @@
 """%s"" length must be equal or less than %s characters.","""%s"" lungimea trebuie să fie egală sau mai mică decât %s caractere."
 """%s"" width exceeds allowed value of %s px.","""%s"" lățimea depășește valoarea permisă de %s px."
 ". Do not use ""event"" for an attribute code, it is a reserved keyword.",". Nu utilizaţi ""eveniment"" pentru un cod de atribut, este un cuvânt cheie rezervat."
-"Add Option","Adaugă Opțiune"
+"Add","Adăugare"
 "A joint field with this alias (%s) is already declared","Un câmp comun cu acest alias (%s) este deja declarat"
 "An error occurred while loading a record, aborting. Error: %s","A aparut o eroare la incarcarea unei inregistrari, la abandonare. Eroare: %s"
 "An error occurred while loading the collection, aborting. Error: %s","A aparut o eroare la incarcarea colectiei, la abandonare. Eroare: %s"

@@ -29,6 +29,7 @@
 "Sheet 1","Ark 1"
 "Skip undefined row.","Hoppa över odefinierad rad."
 "Starting %s :: %s","Startar %s :: %s"
+"The profile XML names a type that is not a Dataflow container.","Profilen XML namnger en typ som inte är en Dataflow behållare."
 "Total records: %s","Totalt antal poster: %s"
 "Upload failed. Can not find required columns: %s in file %s.","Uppladdningen misslyckades. Hittade inte obligatoriska kolumner: %s i filen %s."
 "Upload failed. Wrong data format in file: %s.","Uppladdningen misslyckades. Fel dataformat i filen: %s."

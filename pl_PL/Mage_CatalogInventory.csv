@@ -3,7 +3,6 @@
 "%s is available for purchase in increments of %s only.","%s jest dostępny do zakupu tylko w przyroście %s."
 "%s is not a correct comparsion method.","%s nie jest poprawną metodą porównania."
 "<strong>Note</strong> that these settings are applicable to cart line items, not the whole cart.","<strong>Uwaga</strong> że te ustawienia mają zastosowanie do produktów z wiersza koszyka, a nie do całego koszyka."
-"Add Minimum Qty","Dodaj minimalną ilość"
 "Allow Qty Below 0","Zezwalaj na ilość poniżej 0"
 "Allow Qty Below 0 and Notify Customer","Zezwalaj na ilość poniżej 0 i powiadamiaj klienta"
 "Automatically Return Credit Memo Item to Stock","Automatycznie zwracaj element faktury korygującej do zapasów"

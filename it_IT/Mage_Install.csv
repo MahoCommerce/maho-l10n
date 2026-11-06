@@ -111,6 +111,6 @@
 "Web Access Options","Opzioni Di Accesso Web"
 "Welcome to Maho's Installation Wizard","Benvenuto nella procedura guidata di installazione di Maho"
 "Would you like to install sample products and content? This helps you explore Maho features with realistic demo data.","Vuoi installare prodotti di esempio e contenuto? Questo ti aiuta a esplorare le caratteristiche di Maho con dati demo realistici."
-"You're All Set","Sei Tutto Impostato"
+"You're All Set","Hai Impostato Tutto"
 "You can specify server port, ex.: localhost:3307<br>If you are not using default UNIX socket, you can specify it here instead of host, ex.: /var/run/mysqld/mysqld.sock","È possibile specificare la porta del server, es. localhost:3307<br>Se non si utilizza il socket predefinito UNIX, è possibile specificarlo qui al posto dell'host, es.: /var/run/mysqld/mysqld.sock"
 "You can specify server port, ex.: localhost:5432","È possibile specificare la porta del server, es.: localhost:5432"

@@ -3,7 +3,6 @@
 "%s is available for purchase in increments of %s only.","%s er kun tilgængelig for køb i trin af %s."
 "%s is not a correct comparsion method.","%s er ikke en korrekt sammenligningsmetode."
 "<strong>Note</strong> that these settings are applicable to cart line items, not the whole cart.","<strong>Note</strong> that these settings are applicable to cart line items, not the whole cart."
-"Add Minimum Qty","Tilføj Minimum Antal"
 "Allow Qty Below 0","Tillad Antal Under 0"
 "Allow Qty Below 0 and Notify Customer","Tillad antal under 0 og underret kunden"
 "Automatically Return Credit Memo Item to Stock","Returnér automatisk kreditnota til lager"
